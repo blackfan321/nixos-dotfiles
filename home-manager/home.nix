@@ -1,6 +1,6 @@
 { ... }:
-{
 
+{
   imports = [
     ./modules
   ];
@@ -11,6 +11,8 @@
     stateVersion = "25.11";
   };
 
-  programs.home-manager.enable = true;
+  xdg.userDirs.enable = true;
+  xdg.userDirs.createDirectories = true;  
 
+  programs.home-manager.enable = true;
 }

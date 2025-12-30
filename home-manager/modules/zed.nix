@@ -6,8 +6,9 @@
     extraPackages = [
       pkgs.nixd
       pkgs.nil
+      pkgs.just-lsp
     ];
-    extensions = [ "nix" ];
+    extensions = [ "nix" "toml" "csv" "just"];
   };
 
 }

@@ -6,14 +6,16 @@
     # Desktop apps
     keepassxc
     telegram-desktop
-    jetbrains.pycharm-community-bin
     remmina
     anki
     cider-2
     qbittorrent
     vlc
-    hyprlock
     hyprcursor
+    yaak
+    onlyoffice-desktopeditors
+    hyprpanel
+    loupe
 
     # CLI utils
     bc
@@ -23,6 +25,9 @@
     wget
     dysk
     bat
+    onefetch
+    killall
+    just
 
     # Coding stuff
     uv
@@ -32,9 +37,10 @@
 
     # Games
     prismlauncher
+    sgdboop
 
     # Fonts
-    inter
+    rubik
   ];
 
 }

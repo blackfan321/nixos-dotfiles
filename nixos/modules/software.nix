@@ -6,26 +6,27 @@
   environment.systemPackages = with pkgs; [
     zsh
     vim
-    wget
-    htop
-    file
     fastfetch
     kitty
     fzf
     ulauncher
-    hyprpanel
-    amnezia-vpn
-    hyprshot
-    yazi
     networkmanagerapplet
     uv
     uutils-coreutils-noprefix
     doggo
+    nautilus
+
+    wget
+    file
+    htop
+    unixtools.netstat
+    file
   ];
 
   programs.zsh.enable = true;
   programs.nano.enable = false;
   programs.gamemode.enable = true;
+  programs.amnezia-vpn.enable = true;
 
   programs.hyprland = {
     enable = true;
@@ -40,5 +41,10 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
+  };
+
+  programs.nautilus-open-any-terminal = {
+    enable = true;
+    terminal = "kitty";
   };
 }
