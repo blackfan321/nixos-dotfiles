@@ -1,11 +1,11 @@
 {
   imports = [
-    ./zsh.nix
+    ./dconf.nix
     ./firefox.nix
+    ./fzf.nix
     ./git.nix
-    ./hyprland
-    ./gtk.nix
     ./packages.nix
     ./zed.nix
+    ./zsh.nix
   ];
 }

@@ -11,11 +11,9 @@
     cider-2
     qbittorrent
     vlc
-    hyprcursor
     yaak
     onlyoffice-desktopeditors
-    hyprpanel
-    loupe
+    ptyxis
 
     # CLI utils
     bc
@@ -28,12 +26,11 @@
     onefetch
     killall
     just
+    libnotify
+    asciinema
 
     # Coding stuff
     uv
-
-    # WM stuff
-    xdg-desktop-portal-hyprland
 
     # Games
     prismlauncher
@@ -41,6 +38,14 @@
 
     # Fonts
     rubik
+
+    adwaita-qt
+
+    # Gnome Extensions
+    gnomeExtensions.appindicator
+    gnomeExtensions.caffeine
+    gnomeExtensions.tiling-assistant
+    gnomeExtensions.xwayland-indicator
   ];
 
 }
