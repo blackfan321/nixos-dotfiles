@@ -28,6 +28,7 @@
     just
     libnotify
     asciinema
+    kdotool
 
     # Coding stuff
     uv

@@ -63,6 +63,9 @@
         switch-to-workspace-3 = [ "<Super>3" ];
         switch-to-workspace-4 = [ "<Super>4" ];
       };
+      "org/gnome/desktop/interface" = {
+        clock-show-seconds = true;
+      };
       "org/gnome/settings-daemon/plugins/media-keys" = {
         custom-keybindings = [
           "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
