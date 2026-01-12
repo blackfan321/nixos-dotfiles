@@ -12,6 +12,7 @@
     uv
     uutils-coreutils-noprefix
     doggo
+    doas-sudo-shim
 
     wget
     file
