@@ -1,11 +1,15 @@
 {
-  security.sudo.enable = false; 
-  security.doas.enable = true;
-  security.doas.extraRules = [
-    {
-      users = [ "blackfan321" ];
-      keepEnv = true;
-      persist = true;
-    }
-  ];
+  security = {
+    sudo.enable = false; # sudo sucks
+    doas = {
+      enable = true;
+      extraRules = [
+        {
+          users = [ "blackfan321" ];
+          keepEnv = true;
+          persist = true;
+        }
+      ];
+    };
+  };
 }

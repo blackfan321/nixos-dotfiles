@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
   programs.firefox = {
     enable = true;
@@ -37,6 +38,7 @@
         };
 
         # Return YouTube Dislike
+        # does not work yet
         "return-youtube-dislike@theo773" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/return-youtube-dislikes/latest.xpi";
           installation_mode = "force_installed";
@@ -79,6 +81,10 @@
                 template = "https://search.nixos.org/packages";
                 params = [
                   {
+                    name = "channel";
+                    value = "unstable";
+                  }
+                  {
                     name = "query";
                     value = "{searchTerms}";
                   }
@@ -94,6 +100,10 @@
               {
                 template = "https://search.nixos.org/options";
                 params = [
+                  {
+                    name = "channel";
+                    value = "unstable";
+                  }
                   {
                     name = "query";
                     value = "{searchTerms}";
@@ -113,6 +123,10 @@
                   {
                     name = "query";
                     value = "{searchTerms}";
+                  }
+                  {
+                    name = "release";
+                    value = "master";
                   }
                 ];
               }
@@ -156,6 +170,7 @@
             icon = "https://github.githubassets.com/favicons/favicon.svg";
           };
 
+          # does not work yet
           "youtube".metaData.hidden = false;
           "youtube".metaData.alias = "@yt";
 

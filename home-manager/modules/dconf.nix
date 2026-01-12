@@ -4,23 +4,38 @@
   dconf = {
     enable = true;
     settings = {
-      "org/gnome/Weather" = let
-        gv = lib.gvariant;
-        belgorodLocation = gv.mkVariant (gv.mkTuple [
-          (gv.mkUint32 2)
-          (gv.mkVariant (gv.mkTuple [
-            "Belgorod"
-            ""
-            false
-            (gv.mkArray [ (gv.mkTuple [ 0.8830565625 0.638568455 ]) ])
-            (gv.mkEmptyArray (gv.type.tupleOf [ gv.type.double gv.type.double ]))
-          ]))
-        ]);
-        weatherLocations = gv.mkArray [ belgorodLocation ];
-      in
-      {
-        locations = weatherLocations;
-      };
+      "org/gnome/Weather" =
+        let
+          gv = lib.gvariant;
+          belgorodLocation = gv.mkVariant (
+            gv.mkTuple [
+              (gv.mkUint32 2)
+              (gv.mkVariant (
+                gv.mkTuple [
+                  "Belgorod"
+                  ""
+                  false
+                  (gv.mkArray [
+                    (gv.mkTuple [
+                      0.8830565625
+                      0.638568455
+                    ])
+                  ])
+                  (gv.mkEmptyArray (
+                    gv.type.tupleOf [
+                      gv.type.double
+                      gv.type.double
+                    ]
+                  ))
+                ]
+              ))
+            ]
+          );
+          weatherLocations = gv.mkArray [ belgorodLocation ];
+        in
+        {
+          locations = weatherLocations;
+        };
       "org/gnome/shell" = {
         enabled-extensions = with pkgs.gnomeExtensions; [
           appindicator.extensionUuid
@@ -29,24 +44,39 @@
           xwayland-indicator.extensionUuid
         ];
       };
-      "org/gnome/shell/weather" = let
-        gv = lib.gvariant;
-        belgorodLocation = gv.mkVariant (gv.mkTuple [
-          (gv.mkUint32 2)
-          (gv.mkVariant (gv.mkTuple [
-            "Belgorod"
-            ""
-            false
-            (gv.mkArray [ (gv.mkTuple [ 0.8830565625 0.638568455 ]) ])
-            (gv.mkEmptyArray (gv.type.tupleOf [ gv.type.double gv.type.double ]))
-          ]))
-        ]);
-        weatherLocations = gv.mkArray [ belgorodLocation ];
-      in
-      {
-        automatic-location = false;
-        locations = weatherLocations;
-      };
+      "org/gnome/shell/weather" =
+        let
+          gv = lib.gvariant;
+          belgorodLocation = gv.mkVariant (
+            gv.mkTuple [
+              (gv.mkUint32 2)
+              (gv.mkVariant (
+                gv.mkTuple [
+                  "Belgorod"
+                  ""
+                  false
+                  (gv.mkArray [
+                    (gv.mkTuple [
+                      0.8830565625
+                      0.638568455
+                    ])
+                  ])
+                  (gv.mkEmptyArray (
+                    gv.type.tupleOf [
+                      gv.type.double
+                      gv.type.double
+                    ]
+                  ))
+                ]
+              ))
+            ]
+          );
+          weatherLocations = gv.mkArray [ belgorodLocation ];
+        in
+        {
+          automatic-location = false;
+          locations = weatherLocations;
+        };
       "org/gnome/mutter" = {
         experimental-features = [
           "variable-refresh-rate"

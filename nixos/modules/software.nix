@@ -5,26 +5,28 @@
 
   environment.systemPackages = with pkgs; [
     git
-    zsh
     vim
-    fastfetch
-    fzf
-    uv
     uutils-coreutils-noprefix
-    doggo
     doas-sudo-shim
-
+    doggo
     wget
-    file
+    killall
     htop
+    file
+    unzip
     unixtools.netstat
+    inetutils
+    pciutils
+    mtr
   ];
 
-  programs.zsh.enable = true;
-  programs.nano.enable = false;
-  programs.nix-ld.enable = true;
-  programs.gamemode.enable = true;
-  programs.amnezia-vpn.enable = true;
+  programs = {
+    zsh.enable = true;
+    nano.enable = false; # nano sucks
+    nix-ld.enable = true;
+    gamemode.enable = true;
+    amnezia-vpn.enable = true;
+  };
 
   programs.steam = {
     enable = true;

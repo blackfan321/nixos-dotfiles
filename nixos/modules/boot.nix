@@ -1,15 +1,21 @@
 { pkgs, ... }:
 
 {
-  boot.loader.timeout = 15;
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.systemd-boot.windows = {
-    "windows" = {
-      title = "Windows 11";
-      efiDeviceHandle = "HD0b";
+  boot = {
+    loader = {
+      timeout = 15;
+      systemd-boot = {
+        enable = true;
+        memtest86.enable = true;
+        windows = {
+          "windows" = {
+            title = "Windows 11";
+            efiDeviceHandle = "HD0b";
+          };
+        };
+      };
+      efi.canTouchEfiVariables = true;
     };
+    kernelPackages = pkgs.linuxPackages_latest;
   };
-  boot.loader.systemd-boot.memtest86.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 }

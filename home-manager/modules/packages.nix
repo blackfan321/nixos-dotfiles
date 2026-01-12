@@ -1,5 +1,6 @@
-{ pkgs, ... }: {
+{ pkgs, ... }:
 
+{
   nixpkgs.config.allowUnfree = true;
 
   home.packages = with pkgs; [
@@ -18,35 +19,43 @@
     # CLI utils
     bc
     fzf
-    htop
-    unzip
-    wget
     dysk
     bat
-    onefetch
-    killall
     just
     libnotify
     asciinema
-    kdotool
+    dive
+    caligula
+    sshuttle
+    tldr
+    fd
+    sd
+    ripgrep
+    tokei
+    bandwhich
+    broot
+    jq
+    btop
+
+    # Fetch utilities
+    onefetch
+    fastfetch
 
     # Coding stuff
     uv
 
-    # Games
+    # Gaming staff
     prismlauncher
     sgdboop
+    osu-lazer-bin
 
-    # Fonts
-    rubik
-
+    # Theming staff
     adwaita-qt
 
-    # Gnome Extensions
+    # GNOME extensions
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
     gnomeExtensions.tiling-assistant
     gnomeExtensions.xwayland-indicator
   ];
-
 }
