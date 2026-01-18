@@ -21,6 +21,5 @@
     gnome-user-docs
     showtime
     snapshot
-    gnome-user-docs
   ];
 }

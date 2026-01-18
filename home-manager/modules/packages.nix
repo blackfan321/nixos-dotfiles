@@ -57,5 +57,8 @@
     gnomeExtensions.caffeine
     gnomeExtensions.tiling-assistant
     gnomeExtensions.xwayland-indicator
+
+    # I just want to play Hytale
+    flatpak
   ];
 }

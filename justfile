@@ -11,19 +11,19 @@ home-manager-sync:
 flake-sync:
     git add {{ flake_sources }}
 
-flake-check:
-    nix flake check
-
 flake-sync-commit:
     git add {{ flake_sources }}
     git diff --cached --quiet || git commit -m "chore: flake sync"
 
+flake-check:
+    nix flake check
+
 flake-update:
     nix flake update
 
-flake-switch:
-    nixos-rebuild switch --sudo --flake .
-
 flake-update-switch:
     nix flake update
+    nixos-rebuild switch --sudo --flake .
+
+flake-switch:
     nixos-rebuild switch --sudo --flake .
