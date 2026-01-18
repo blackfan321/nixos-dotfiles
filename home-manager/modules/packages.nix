@@ -57,6 +57,7 @@
     gnomeExtensions.caffeine
     gnomeExtensions.tiling-assistant
     gnomeExtensions.xwayland-indicator
+    gnomeExtensions.notification-timeout
 
     # I just want to play Hytale
     flatpak

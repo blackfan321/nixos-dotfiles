@@ -42,6 +42,7 @@
           caffeine.extensionUuid
           tiling-assistant.extensionUuid
           xwayland-indicator.extensionUuid
+          notification-timeout.extensionUuid
         ];
       };
       "org/gnome/shell/weather" =
@@ -77,6 +78,9 @@
           automatic-location = false;
           locations = weatherLocations;
         };
+      "org/gnome/shell/extensions/notification-timeout" = {
+        timeout = 60000;
+      };
       "org/gnome/mutter" = {
         experimental-features = [
           "variable-refresh-rate"
