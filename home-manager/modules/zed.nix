@@ -7,6 +7,7 @@
     extraPackages = with pkgs; [
       nixd
       just-lsp
+      helm-ls
       nixfmt
     ];
     extensions = [
@@ -14,6 +15,7 @@
       "toml"
       "csv"
       "just"
+      "helm"
     ];
   };
 }
