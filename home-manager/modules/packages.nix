@@ -36,6 +36,7 @@
     broot
     jq
     btop
+    helm
 
     # Fetch utilities
     onefetch
