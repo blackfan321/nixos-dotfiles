@@ -36,7 +36,7 @@
     broot
     jq
     btop
-    helm
+    kubernetes-helm
 
     # Fetch utilities
     onefetch
