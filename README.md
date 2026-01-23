@@ -29,10 +29,10 @@ rg -l "blackfan321" | xargs sed -i 's/blackfan321/alice/g'
 
 4) Edit the configs as you like, especially `nixos/modules/hardware.nix` and `nixos/modules/boot.nix`.
 
-5) Apply the system configuration (no sudo; I am a trusted user):
+5) Build and apply the flake (you can do it as a non-root user):
 
 ```sh
-nixos-rebuild switch --flake .#nixos
+nixos-rebuild switch --sudo --flake .
 ```
 
 ## Desktop software
