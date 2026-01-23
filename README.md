@@ -27,10 +27,33 @@ rg -l "blackfan321" | xargs sed -i 's/blackfan321/alice/g'
 
 3) The default hostname is `nixos` (change it if you want to).
 
-4) Edit the configs as you like, and you should really use your own files like `nixos/hardware.nix` and `nixos/boot.nix`.
+4) Edit the configs as you like, especially `nixos/modules/hardware.nix` and `nixos/modules/boot.nix`.
 
-5) Build the flake (you can do it as a non-root user):
+5) Apply the system configuration (no sudo; I am a trusted user):
 
 ```sh
 nixos-rebuild switch --flake .#nixos
 ```
+
+## Desktop software
+
+- DE: `GNOME`
+- Browser: `Firefox`
+- Editor: `Zed`
+- Terminal: `Ptyxis`
+- Password manager: `KeePassXC`
+- Gaming: `Steam`, `PrismLauncher`, `osu!lazer`
+- Media player: `VLC`
+- Messenger: `Telegram`
+- Office suite: `OnlyOffice`
+- Music client: `Cider`
+- Remote desktop: `Remmina`
+- Torrent client: `qBittorrent`
+- Learning: `Anki`
+- API client: `Yaak`
+
+And some other stuff.
+
+## CLI software
+
+TBD.
