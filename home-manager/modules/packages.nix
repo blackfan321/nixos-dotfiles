@@ -49,6 +49,7 @@
     prismlauncher
     sgdboop
     osu-lazer-bin
+    protonplus
 
     # Theming staff
     adwaita-qt
