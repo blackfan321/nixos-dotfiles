@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
@@ -61,7 +61,7 @@
     gnomeExtensions.xwayland-indicator
     gnomeExtensions.notification-timeout
 
-    # I just want to play Hytale
-    flatpak
+    # Hytale
+    inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher
   ];
 }
