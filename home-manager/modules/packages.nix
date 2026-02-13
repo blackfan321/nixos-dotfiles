@@ -51,9 +51,6 @@
     osu-lazer-bin
     protonplus
 
-    # Theming staff
-    adwaita-qt
-
     # GNOME extensions
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
