@@ -18,6 +18,7 @@
     inetutils
     pciutils
     mtr
+    nautilus-python
   ];
 
   programs = {
