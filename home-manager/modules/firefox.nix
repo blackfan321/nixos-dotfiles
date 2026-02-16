@@ -48,6 +48,18 @@
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/microslop/latest.xpi";
           installation_mode = "force_installed";
         };
+
+        # Consent-O-Matic
+        "gdpr@cavi.au.dk" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/consent-o-matic/latest.xpi";
+          installation_mode = "force_installed";
+        };
+
+        # ClearURLs
+        "{74145f27-f039-47ce-a470-a662b129930a}" = {
+          install_url = "https://addons.mozilla.org/firefox/downloads/latest/clearurls/latest.xpi";
+          installation_mode = "force_installed";
+        };
       };
 
       "3rdparty" = {
@@ -175,10 +187,24 @@
             icon = "https://github.githubassets.com/favicons/favicon.svg";
           };
 
-          # does not work yet
-          "youtube".metaData.hidden = false;
-          "youtube".metaData.alias = "@yt";
-
+          youtube-custom = {
+            name = "YouTube";
+            definedAliases = [ "@yt" ];
+            urls = [
+              {
+                template = "https://www.youtube.com/results";
+                params = [
+                  {
+                    name = "search_query";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            icon = "https://www.youtube.com/favicon.ico";
+          };
+          
+          youtube.metaData.hidden = true;
           bing.metaData.hidden = true;
           ebay.metaData.hidden = true;
           ecosia.metaData.hidden = true;
