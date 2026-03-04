@@ -55,7 +55,7 @@ final: prev: {
 
       # Desktop file
       substituteInPlace deploy/installer/config/AmneziaVPN.desktop.in \
-        --replace-fail "/usr/share/pixmaps/AmneziaVPN.png" "$out/share/pixmaps/AmneziaVPN.png"
+        --replace-fail "/usr/share/pixmaps/AmneziaVPN.png" "$out/share/icons/hicolor/512x512/apps/AmneziaVPN.png"
 
       # Systemd service
       substituteInPlace deploy/data/linux/AmneziaVPN.service \
