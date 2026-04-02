@@ -15,6 +15,7 @@
     yaak
     onlyoffice-desktopeditors
     ptyxis
+    pinta
 
     # CLI utils
     bc

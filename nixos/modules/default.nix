@@ -14,8 +14,4 @@
     ./virtualisation.nix
     ./users.nix
   ];
-
-    nixpkgs.overlays = [
-      (import ../../overlays/amnezia.nix)
-    ];
 }
