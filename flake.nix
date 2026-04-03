@@ -23,10 +23,16 @@
     hytale-launcher = {
       url = "github:JPyke3/hytale-launcher-nix";
     };
+    express-messenger = {
+      url = "github:blackfan321/express-messenger-nix";
+    };
+    loop-messenger = {
+      url = "github:blackfan321/loop-messenger-nix";
+    };
   };
 
   outputs =
-    { nixpkgs, home-manager, hytale-launcher, ... }@inputs:
+    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ... }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

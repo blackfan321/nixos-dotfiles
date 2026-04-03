@@ -61,5 +61,11 @@
 
     # Hytale
     inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher
+
+    # eXpress
+    inputs.express-messenger.packages.${pkgs.system}.express
+
+    # Loop
+    inputs.loop-messenger.packages.${pkgs.system}.loop-desktop
   ];
 }
