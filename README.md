@@ -4,8 +4,8 @@ My flake for NixOS + Home Manager.
 
 ## Structure
 
-- `flake.nix` - main flake-file (system + home-manager)
-- `flake.lock` - locked inputs (pins nixpkgs and home-manager)
+- `flake.nix` - main flake-file
+- `flake.lock` - pinned versions of flake inputs
 - `nixos/` - NixOS configuration
 - `home-manager/` - user configuration
 - `justfile` - some handy commands
@@ -42,9 +42,9 @@ nixos-rebuild switch --sudo --flake .
 - Editor: `Zed`
 - Terminal: `Ptyxis`
 - Password manager: `KeePassXC`
-- Gaming: `Steam`, `PrismLauncher`, `osu!lazer`
+- Gaming: `Steam`, `PrismLauncher`, `osu!lazer`, `Hytale`
 - Media player: `VLC`
-- Messenger: `Telegram`
+- Messaging: `Telegram`, `eXpress`, `Loop`
 - Office suite: `OnlyOffice`
 - Music client: `Cider`
 - Remote desktop: `Remmina`
