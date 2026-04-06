@@ -29,10 +29,13 @@
     loop-messenger = {
       url = "github:blackfan321/loop-messenger-nix";
     };
+    steam-platform-stats = {
+      url = "github:blackfan321/steam-platform-stats";
+    };
   };
 
   outputs =
-    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ... }@inputs:
+    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, steam-platform-stats, ... }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

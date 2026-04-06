@@ -25,11 +25,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775143651,
-        "narHash": "sha256-S0RqAyDPMTcv9vASMaE8eY1QexFysAOdnxUxFHIPOyE=",
+        "lastModified": 1775457580,
+        "narHash": "sha256-ikws/ssAmG20AGrEwBuwspwPlkubJu34mB+Uz2fJBJs=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d166a078541982a76f14d3e06e9665fa5c9ed85e",
+        "rev": "5de7dbd151b0bd65d45785553d4a22d832733ffc",
         "type": "github"
       },
       "original": {
@@ -138,13 +138,48 @@
         "type": "github"
       }
     },
+    "nixpkgs_5": {
+      "locked": {
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "express-messenger": "express-messenger",
         "home-manager": "home-manager",
         "hytale-launcher": "hytale-launcher",
         "loop-messenger": "loop-messenger",
-        "nixpkgs": "nixpkgs_4"
+        "nixpkgs": "nixpkgs_4",
+        "steam-platform-stats": "steam-platform-stats"
+      }
+    },
+    "steam-platform-stats": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_5"
+      },
+      "locked": {
+        "lastModified": 1775464874,
+        "narHash": "sha256-8viWbpOAlS1MDfW8+GxzbhSJg+fZFUeIF6TEohTLTwE=",
+        "owner": "blackfan321",
+        "repo": "steam-platform-stats",
+        "rev": "c73b47358c8a6f9616b1ab152050459f80b5d452",
+        "type": "github"
+      },
+      "original": {
+        "owner": "blackfan321",
+        "repo": "steam-platform-stats",
+        "type": "github"
       }
     }
   },

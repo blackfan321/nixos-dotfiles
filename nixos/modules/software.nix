@@ -18,6 +18,7 @@
     inetutils
     pciutils
     mtr
+    git-crypt
     nautilus-python
   ];
 
