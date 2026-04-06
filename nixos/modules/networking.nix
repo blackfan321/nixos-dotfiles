@@ -9,7 +9,7 @@
         networkmanager-openvpn
       ];
     };
-    # Encrypted in git (git-crypt); see ../../secrets/networking-hosts.nix
+    # Encrypted using git-crypt; see ../../secrets/networking-hosts.nix
     hosts = import ../../secrets/networking-hosts.nix;
   };
 }
