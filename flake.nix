@@ -22,15 +22,19 @@
     };
     hytale-launcher = {
       url = "github:JPyke3/hytale-launcher-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     loop-messenger = {
       url = "github:blackfan321/loop-messenger-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
       url = "github:blackfan321/steam-platform-stats";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
