@@ -20,6 +20,7 @@
     mtr
     git-crypt
     nautilus-python
+    sequoia-sq
   ];
 
   programs = {
