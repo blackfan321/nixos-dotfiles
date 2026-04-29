@@ -69,6 +69,9 @@
     # Loop
     inputs.loop-messenger.packages.${pkgs.system}.loop-desktop
 
+    # KTalk
+    inputs.ktalk.packages.${pkgs.system}.ktalk
+
     # steam-platform-stats
     inputs.steam-platform-stats.packages.${pkgs.system}.steam-platform-stats
   ];

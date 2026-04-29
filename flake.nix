@@ -32,6 +32,10 @@
       url = "github:blackfan321/loop-messenger-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ktalk = {
+      url = "github:blackfan321/ktalk-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     steam-platform-stats = {
       url = "github:blackfan321/steam-platform-stats";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -39,7 +43,7 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, steam-platform-stats, ... }@inputs:
+    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ktalk, steam-platform-stats, ... }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

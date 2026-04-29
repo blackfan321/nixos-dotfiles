@@ -27,11 +27,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777308348,
-        "narHash": "sha256-DJx9wnerjsOqKOo8I7/u5ENRhRWFF2mbYcACF+mn5LU=",
+        "lastModified": 1777434174,
+        "narHash": "sha256-KwTyQ5g2qDhWIs/O6vH8HeF8n4JCzZIT/VYE7nYnukQ=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "a28e848a01044f47679453aae75f6253bef7903e",
+        "rev": "d3b4e4b1bd59aedd3d4eb0a8df7162edb6da4607",
         "type": "github"
       },
       "original": {
@@ -47,16 +47,36 @@
         ]
       },
       "locked": {
-        "lastModified": 1777058250,
-        "narHash": "sha256-AaR4O0gWExPGMLVDyrcShyS94QGigishrTtDYMHMqgw=",
+        "lastModified": 1777394001,
+        "narHash": "sha256-FNHydw2We/qvxBJ2cMNc/eGcxSZkvOXZn2WYGiH6WfE=",
         "owner": "JPyke3",
         "repo": "hytale-launcher-nix",
-        "rev": "52773389f815060d1658ec577ca6c4f387f3eade",
+        "rev": "822e54c97348a6fbc28dfac563e5bbe9fe1783b8",
         "type": "github"
       },
       "original": {
         "owner": "JPyke3",
         "repo": "hytale-launcher-nix",
+        "type": "github"
+      }
+    },
+    "ktalk": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777445905,
+        "narHash": "sha256-13zF6K4z+u5vUAhw89ui+V9KMWWsEC85JlN95kliNho=",
+        "owner": "blackfan321",
+        "repo": "ktalk-nix",
+        "rev": "c2405a551139fe94c8573f1b3f977062b4737b07",
+        "type": "github"
+      },
+      "original": {
+        "owner": "blackfan321",
+        "repo": "ktalk-nix",
         "type": "github"
       }
     },
@@ -82,11 +102,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1776877367,
-        "narHash": "sha256-EHq1/OX139R1RvBzOJ0aMRT3xnWyqtHBRUBuO1gFzjI=",
+        "lastModified": 1777268161,
+        "narHash": "sha256-bxrdOn8SCOv8tN4JbTF/TXq7kjo9ag4M+C8yzzIRYbE=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0726a0ecb6d4e08f6adced58726b95db924cef57",
+        "rev": "1c3fe55ad329cbcb28471bb30f05c9827f724c76",
         "type": "github"
       },
       "original": {
@@ -101,6 +121,7 @@
         "express-messenger": "express-messenger",
         "home-manager": "home-manager",
         "hytale-launcher": "hytale-launcher",
+        "ktalk": "ktalk",
         "loop-messenger": "loop-messenger",
         "nixpkgs": "nixpkgs",
         "steam-platform-stats": "steam-platform-stats"
