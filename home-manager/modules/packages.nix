@@ -58,6 +58,7 @@
     gnomeExtensions.tiling-assistant
     gnomeExtensions.xwayland-indicator
     gnomeExtensions.notification-timeout
+    gnomeExtensions.pip-on-top
 
     # Hytale
     inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher

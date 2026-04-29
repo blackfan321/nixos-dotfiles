@@ -43,6 +43,7 @@
           tiling-assistant.extensionUuid
           xwayland-indicator.extensionUuid
           notification-timeout.extensionUuid
+          pip-on-top.extensionUuid
         ];
       };
       "org/gnome/shell/weather" =

@@ -7,11 +7,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775173350,
-        "narHash": "sha256-3YWQo8ZXKKjdCsS/9+RApS/wk+kD7PrS3oO9JemVBYA=",
+        "lastModified": 1777016605,
+        "narHash": "sha256-MP6DtHYygNbpqvPWbBviC8IyniZUHgrTffo3wc9zs4Y=",
         "owner": "blackfan321",
         "repo": "express-messenger-nix",
-        "rev": "778260889685be51a47039f47961f4a035f6136e",
+        "rev": "a1b9a73d447b268cfda9d52b4861de68ca376f7b",
         "type": "github"
       },
       "original": {
@@ -27,11 +27,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775457580,
-        "narHash": "sha256-ikws/ssAmG20AGrEwBuwspwPlkubJu34mB+Uz2fJBJs=",
+        "lastModified": 1777308348,
+        "narHash": "sha256-DJx9wnerjsOqKOo8I7/u5ENRhRWFF2mbYcACF+mn5LU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5de7dbd151b0bd65d45785553d4a22d832733ffc",
+        "rev": "a28e848a01044f47679453aae75f6253bef7903e",
         "type": "github"
       },
       "original": {
@@ -47,11 +47,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1774383212,
-        "narHash": "sha256-PyF1nTQp+q5oUYk05yjZMOFvd/rT43mMN1zXyycivBw=",
+        "lastModified": 1777058250,
+        "narHash": "sha256-AaR4O0gWExPGMLVDyrcShyS94QGigishrTtDYMHMqgw=",
         "owner": "JPyke3",
         "repo": "hytale-launcher-nix",
-        "rev": "f9392e30a2e74e502116eec6c7d42da7be87de0f",
+        "rev": "52773389f815060d1658ec577ca6c4f387f3eade",
         "type": "github"
       },
       "original": {
@@ -82,11 +82,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1775036866,
-        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
+        "lastModified": 1776877367,
+        "narHash": "sha256-EHq1/OX139R1RvBzOJ0aMRT3xnWyqtHBRUBuO1gFzjI=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
+        "rev": "0726a0ecb6d4e08f6adced58726b95db924cef57",
         "type": "github"
       },
       "original": {
@@ -113,11 +113,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775464874,
-        "narHash": "sha256-8viWbpOAlS1MDfW8+GxzbhSJg+fZFUeIF6TEohTLTwE=",
+        "lastModified": 1775465904,
+        "narHash": "sha256-mMU0A95St4A57eMljFB9cexI5Dm0bW+PTtjD/LnrNck=",
         "owner": "blackfan321",
         "repo": "steam-platform-stats",
-        "rev": "c73b47358c8a6f9616b1ab152050459f80b5d452",
+        "rev": "1395c16531f4b7a42cdeb3325fc7c90c0dd87e72",
         "type": "github"
       },
       "original": {
