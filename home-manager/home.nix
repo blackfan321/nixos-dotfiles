@@ -8,7 +8,7 @@
   home = {
     username = "blackfan321";
     homeDirectory = "/home/blackfan321";
-    stateVersion = "25.11";
+    stateVersion = "26.05";
   };
 
   xdg.userDirs.enable = true;

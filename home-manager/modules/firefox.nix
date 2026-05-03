@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs,... }:
 
 {
   programs.firefox = {
@@ -203,7 +203,7 @@
             ];
             icon = "https://www.youtube.com/favicon.ico";
           };
-          
+
           youtube.metaData.hidden = true;
           bing.metaData.hidden = true;
           ebay.metaData.hidden = true;
