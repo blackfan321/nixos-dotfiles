@@ -38,6 +38,7 @@
     jq
     btop
     kubernetes-helm
+    tree
 
     # Fetch utilities
     onefetch

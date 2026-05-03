@@ -8,6 +8,7 @@
     vim
     uutils-coreutils-noprefix
     doas-sudo-shim
+    nh
     doggo
     wget
     killall
