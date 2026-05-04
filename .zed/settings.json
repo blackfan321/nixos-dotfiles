@@ -1,0 +1,21 @@
+{
+  "languages": {
+    "Nix": {
+      "language_servers": ["nixd"]
+    }
+  },
+  "lsp": {
+    "nixd": {
+      "settings": {
+        "formatting": {
+          "command": ["nixfmt"]
+        },
+        "options": {
+          "home-manager": {
+            "expr": "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []"
+          }
+        }
+      }
+    }
+  }
+}
