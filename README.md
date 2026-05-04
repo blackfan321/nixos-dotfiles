@@ -46,7 +46,6 @@ nixos-rebuild switch --sudo --flake .
 - Media player: `VLC`
 - Messaging: `Telegram`, `eXpress`, `Loop`
 - Office suite: `OnlyOffice`
-- Music client: `Cider`
 - Remote desktop: `Remmina`
 - Torrent client: `qBittorrent`
 - Learning: `Anki`

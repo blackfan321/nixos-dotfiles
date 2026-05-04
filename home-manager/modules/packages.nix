@@ -9,7 +9,6 @@
     telegram-desktop
     remmina
     anki
-    cider-2
     qbittorrent
     vlc
     yaak
@@ -50,7 +49,6 @@
     # Gaming staff
     prismlauncher
     sgdboop
-    osu-lazer-bin
     protonplus
 
     # GNOME extensions
