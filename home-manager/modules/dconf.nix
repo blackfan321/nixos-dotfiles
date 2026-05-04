@@ -100,6 +100,7 @@
       };
       "org/gnome/desktop/interface" = {
         clock-show-seconds = true;
+        icon-theme = "MoreWaita";
       };
       "org/gnome/settings-daemon/plugins/color" = {
         night-light-enabled = true;

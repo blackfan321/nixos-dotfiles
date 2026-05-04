@@ -59,6 +59,9 @@
     gnomeExtensions.notification-timeout
     gnomeExtensions.pip-on-top
 
+    # Theming
+    morewaita-icon-theme
+
     # Hytale
     inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher
 
