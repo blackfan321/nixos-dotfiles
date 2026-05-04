@@ -6,7 +6,7 @@
     users = {
       blackfan321 = {
         isNormalUser = true;
-        description = "Ivan";
+        description = "Ivan Batrakov";
         extraGroups = [
           "networkmanager"
           "wheel"

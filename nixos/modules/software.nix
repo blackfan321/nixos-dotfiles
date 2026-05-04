@@ -37,7 +37,8 @@
     remotePlay.openFirewall = true;
     protontricks.enable = true;
     extraCompatPackages = with pkgs; [
-      proton-ge-bin
+      proton-ge-bin # for cool games
+      dwproton-bin # for chinese casino games
     ];
   };
 

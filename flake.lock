@@ -39,11 +39,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777016605,
-        "narHash": "sha256-MP6DtHYygNbpqvPWbBviC8IyniZUHgrTffo3wc9zs4Y=",
+        "lastModified": 1777933231,
+        "narHash": "sha256-sOGZtBYaO/hLngvLq4uYWKSpMO6f9oJe0Q3BR3ahL7k=",
         "owner": "blackfan321",
         "repo": "express-messenger-nix",
-        "rev": "a1b9a73d447b268cfda9d52b4861de68ca376f7b",
+        "rev": "894b0d7f91f625fb3f7fe3525f44a0ae5e5f5bb5",
         "type": "github"
       },
       "original": {
@@ -93,11 +93,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777815398,
-        "narHash": "sha256-MrIhEoqXc4YsHEUfH4rDU/K09XnWcKntNhCjs7n7zi8=",
+        "lastModified": 1777913624,
+        "narHash": "sha256-4MwfrGuqjsnEORQbM3cmkmG/9cWhDV63dTDguDj4FXw=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "b5e86c1b19f178a8ee10f7cb747325e02e3d3991",
+        "rev": "a89686d115e970e200eb2caa7603f3673050e00c",
         "type": "github"
       },
       "original": {
