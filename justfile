@@ -23,7 +23,7 @@ flake-update:
 
 flake-update-switch:
     nix flake update
-    nixos-rebuild switch --sudo --flake .
+    nh os switch .
 
 flake-switch:
-    nixos-rebuild switch --sudo --flake .
+    nh os switch .
