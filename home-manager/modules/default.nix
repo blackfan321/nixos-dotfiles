@@ -1,6 +1,7 @@
 {
   imports = [
     ./dconf.nix
+    ./direnv.nix
     ./firefox.nix
     ./fzf.nix
     ./git.nix
