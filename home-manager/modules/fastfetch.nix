@@ -63,7 +63,7 @@
         {
           type = "custom";
           key = "  󰍺";
-          format = "TCL 34R83Q (34″ UltraWide)";
+          format = "TCL 34R83Q (34″ UWQHD)";
         }
 
         {
