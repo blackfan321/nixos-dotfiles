@@ -41,7 +41,6 @@
 
     # Fetch utilities
     onefetch
-    fastfetch
 
     # Coding stuff
     uv
