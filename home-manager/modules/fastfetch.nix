@@ -126,12 +126,6 @@
         }
 
         {
-          type = "terminalfont";
-          key = "  ";
-          format = "{combined}";
-        }
-
-        {
           type = "packages";
           key = "  󰏖";
           format = "{nix-system} (nixos), {nix-user} (home-manager)";
