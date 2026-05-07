@@ -74,6 +74,23 @@
 
         {
           type = "custom";
+          key = "  󰌌";
+          format = "Corsair K66";
+        }
+
+        {
+          type = "custom";
+          key = "  󰍽";
+          format = "ZET GAMING Overhit";
+        }
+
+        {
+          type = "gamepad";
+          key = "  󰺵";
+        }
+
+        {
+          type = "custom";
           format = "└────────────────────────────────────────────────────┘";
           outputColor = "blue";
         }
@@ -109,6 +126,12 @@
         }
 
         {
+          type = "terminalfont";
+          key = "  ";
+          format = "{combined}";
+        }
+
+        {
           type = "packages";
           key = "  󰏖";
           format = "{nix-system} (nixos), {nix-user} (home-manager)";
@@ -128,6 +151,7 @@
         {
           type = "colors";
           symbol = "circle";
+          paddingLeft = 2;
           keyColor = "blue";
         }
       ];
