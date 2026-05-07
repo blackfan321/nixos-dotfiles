@@ -38,6 +38,7 @@
     btop
     kubernetes-helm
     tree
+    hwinfo
 
     # Fetch utilities
     onefetch
