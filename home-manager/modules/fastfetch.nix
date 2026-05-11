@@ -8,6 +8,10 @@
       "$schema" =
         "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json";
 
+      size = {
+        ndigits = 1;
+      };
+
       logo = {
         padding = {
           top = 0;
@@ -37,14 +41,14 @@
         {
           type = "cpu";
           key = "  ";
-          format = "{name} ({cores-logical}) @ {freq-max}";
+          format = "{name} ({cores-physical}) @ {freq-max}";
         }
 
         {
           type = "gpu";
           key = "  󰢮";
           hideType = "integrated";
-          format = "{name}";
+          format = "{name} (16 GiB)";
         }
 
         {
