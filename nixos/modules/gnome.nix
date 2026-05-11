@@ -13,12 +13,14 @@
 
   environment.gnome.excludePackages = with pkgs; [
     epiphany
+    decibels
     gnome-console
     gnome-maps
     gnome-text-editor
     gnome-contacts
     gnome-tour
     gnome-user-docs
+    gnome-music
     showtime
     snapshot
   ];

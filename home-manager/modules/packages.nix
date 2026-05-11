@@ -15,6 +15,7 @@
     onlyoffice-desktopeditors
     ptyxis
     pinta
+    amberol
 
     # CLI utils
     bc
@@ -49,7 +50,6 @@
     # Gaming staff
     prismlauncher
     sgdboop
-    protonplus
 
     # GNOME extensions
     gnomeExtensions.appindicator
