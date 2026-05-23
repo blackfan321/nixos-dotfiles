@@ -3,7 +3,6 @@
     ./dconf.nix
     ./direnv.nix
     ./fastfetch.nix
-    ./firefox.nix
     ./fzf.nix
     ./git.nix
     ./packages.nix
