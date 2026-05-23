@@ -127,8 +127,8 @@
         binding = "<Super>e";
       };
       "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-        name = "Open Firefox";
-        command = "firefox";
+        name = "Open Zen Browser";
+        command = "zen-beta";
         binding = "<Super>w";
       };
     };

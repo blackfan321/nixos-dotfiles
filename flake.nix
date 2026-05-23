@@ -27,6 +27,11 @@
     nix-cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
     };
+    zen-browser = {
+      url = "github:0xc000022070/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
     hytale-launcher = {
       url = "github:JPyke3/hytale-launcher-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -50,7 +55,7 @@
   };
 
   outputs =
-    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ktalk, steam-platform-stats, ... }@inputs:
+    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ktalk, steam-platform-stats, zen-browser, ... }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -63,6 +68,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = { inherit inputs; };
+            home-manager.backupFileExtension = "hm-bak";
             home-manager.users.blackfan321 = import ./home-manager/home.nix;
           }
         ];

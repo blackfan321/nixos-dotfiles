@@ -1,8 +1,10 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   imports = [
     ./modules
+
+    inputs.zen-browser.homeModules.beta
   ];
 
   home = {

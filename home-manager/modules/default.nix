@@ -10,6 +10,7 @@
     ./vim.nix
     ./vesktop.nix
     ./zed.nix
+    ./zen.nix
     ./zsh.nix
   ];
 }
