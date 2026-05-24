@@ -52,10 +52,13 @@
       url = "github:blackfan321/steam-platform-stats";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    text-extractor-ocr = {
+      url = "github:blackfan321/text-extractor-ocr-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs =
-    { nixpkgs, home-manager, hytale-launcher, express-messenger, loop-messenger, ktalk, steam-platform-stats, zen-browser, ... }@inputs:
+  outputs = { nixpkgs, home-manager, ... }@inputs:
     {
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";

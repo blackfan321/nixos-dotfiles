@@ -38,11 +38,11 @@ nixos-rebuild switch --sudo --flake .
 ## Desktop software
 
 - DE: `GNOME`
-- Browser: `Firefox`
+- Browser: `Zen Browser`
 - Editor: `Zed`
 - Terminal: `Ptyxis`
 - Password manager: `KeePassXC`
-- Gaming: `Steam`, `PrismLauncher`, `osu!lazer`, `Hytale`
+- Gaming: `Steam`, `PrismLauncher`, `Hytale`
 - Media player: `VLC`
 - Messaging: `Telegram`, `eXpress`, `Loop`
 - Office suite: `OnlyOffice`

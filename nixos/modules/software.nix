@@ -1,7 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [ inputs.nix-cachyos-kernel.overlays.pinned ];
 
   environment.systemPackages = with pkgs; [
     git

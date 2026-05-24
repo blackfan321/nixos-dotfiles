@@ -51,6 +51,9 @@
     prismlauncher
     sgdboop
 
+    # Theming
+    morewaita-icon-theme
+
     # GNOME extensions
     gnomeExtensions.appindicator
     gnomeExtensions.caffeine
@@ -58,9 +61,11 @@
     gnomeExtensions.xwayland-indicator
     gnomeExtensions.notification-timeout
     gnomeExtensions.pip-on-top
+    gnomeExtensions.text-extractor
 
-    # Theming
-    morewaita-icon-theme
+    # text-extractor-ocr: OCR helper (not bundled in gnomeExtensions.text-extractor)
+    # also contains tesseract package
+    inputs.text-extractor-ocr.packages.${pkgs.system}.text-extractor-ocr
 
     # Hytale
     inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher

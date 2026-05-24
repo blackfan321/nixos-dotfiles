@@ -44,6 +44,7 @@
           xwayland-indicator.extensionUuid
           notification-timeout.extensionUuid
           pip-on-top.extensionUuid
+          text-extractor.extensionUuid
         ];
       };
       "org/gnome/shell/weather" =
