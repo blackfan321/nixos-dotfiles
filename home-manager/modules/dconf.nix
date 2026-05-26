@@ -46,7 +46,9 @@
           pip-on-top.extensionUuid
           copyous.extensionUuid
           text-extractor.extensionUuid
+          quick-settings-audio-panel.extensionUuid
         ];
+        disable-extension-version-validation = true;
       };
       "org/gnome/shell/weather" =
         let
@@ -88,10 +90,17 @@
         shortcut = [ "<Super>Print" ];
         save-screenshots = false;
       };
+      "org/gnome/shell/extensions/quick-settings-audio-panel" = {
+        always-show-input-volume-slider = true;
+      };
       "org/gnome/mutter" = {
         experimental-features = [
           "variable-refresh-rate"
         ];
+        dynamic-workspaces = false;
+      };
+      "org/gnome/desktop/wm/preferences" = {
+        num-workspaces = 4;
       };
       "org/gnome/desktop/wm/keybindings" = {
         close = [ "<Super>q" ];
@@ -107,6 +116,9 @@
       "org/gnome/desktop/interface" = {
         clock-show-seconds = true;
         icon-theme = "MoreWaita";
+        font-name = "Adwaita Sans 11";
+        document-font-name = "Adwaita Sans 12";
+        monospace-font-name = "Adwaita Mono 11";
       };
       "org/gnome/settings-daemon/plugins/color" = {
         night-light-enabled = true;

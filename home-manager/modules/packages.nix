@@ -63,6 +63,7 @@
     gnomeExtensions.pip-on-top
     gnomeExtensions.copyous
     gnomeExtensions.text-extractor
+    gnomeExtensions.quick-settings-audio-panel
 
     # text-extractor-ocr: OCR helper (not bundled in gnomeExtensions.text-extractor)
     # also contains tesseract package
