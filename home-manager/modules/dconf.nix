@@ -44,6 +44,7 @@
           xwayland-indicator.extensionUuid
           notification-timeout.extensionUuid
           pip-on-top.extensionUuid
+          copyous.extensionUuid
           text-extractor.extensionUuid
         ];
       };
@@ -82,6 +83,10 @@
         };
       "org/gnome/shell/extensions/notification-timeout" = {
         timeout = 60000;
+      };
+      "org/gnome/shell/extensions/text-extractor" = {
+        shortcut = [ "<Super>Print" ];
+        save-screenshots = false;
       };
       "org/gnome/mutter" = {
         experimental-features = [

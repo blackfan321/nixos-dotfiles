@@ -61,6 +61,7 @@
     gnomeExtensions.xwayland-indicator
     gnomeExtensions.notification-timeout
     gnomeExtensions.pip-on-top
+    gnomeExtensions.copyous
     gnomeExtensions.text-extractor
 
     # text-extractor-ocr: OCR helper (not bundled in gnomeExtensions.text-extractor)
