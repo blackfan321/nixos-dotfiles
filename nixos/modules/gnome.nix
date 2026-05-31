@@ -23,5 +23,6 @@
     gnome-music
     showtime
     snapshot
+    yelp
   ];
 }

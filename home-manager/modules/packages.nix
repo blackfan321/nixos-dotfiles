@@ -40,6 +40,8 @@
     kubernetes-helm
     tree
     hwinfo
+    kubeconform
+    kubectl
 
     # Fetch utilities
     onefetch
