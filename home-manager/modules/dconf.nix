@@ -93,6 +93,9 @@
       "org/gnome/shell/extensions/quick-settings-audio-panel" = {
         always-show-input-volume-slider = true;
       };
+      "org/gnome/shell/extensions/pip-on-top" = {
+        stick = true;
+      };
       "org/gnome/mutter" = {
         experimental-features = [
           "variable-refresh-rate"

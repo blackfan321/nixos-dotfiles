@@ -37,11 +37,15 @@
     broot
     jq
     btop
-    kubernetes-helm
     tree
     hwinfo
-    kubeconform
+
+    # K8S utils
     kubectl
+    kubelogin-oidc
+    kubectx   # kubens, kubectx
+    kubeconform
+    kubernetes-helm
 
     # Fetch utilities
     onefetch
