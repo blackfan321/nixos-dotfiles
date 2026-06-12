@@ -1,12 +1,9 @@
-{ ... }:
-
 {
   programs.fastfetch = {
     enable = true;
 
     settings = {
-      "$schema" =
-        "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json";
+      "$schema" = "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json";
 
       size = {
         ndigits = 1;

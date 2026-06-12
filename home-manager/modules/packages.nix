@@ -43,7 +43,7 @@
     # K8S utils
     kubectl
     kubelogin-oidc
-    kubectx   # kubens, kubectx
+    kubectx # kubens, kubectx
     kubeconform
     kubernetes-helm
 

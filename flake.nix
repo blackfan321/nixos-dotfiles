@@ -24,6 +24,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    git-hooks = {
+      url = "github:cachix/git-hooks.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
     };
@@ -62,8 +66,37 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs:
+  outputs =
     {
+      self,
+      nixpkgs,
+      home-manager,
+      git-hooks,
+      ...
+    }@inputs:
+    let
+      system = "x86_64-linux";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    {
+      checks.${system}.pre-commit = git-hooks.lib.${system}.run {
+        src = self;
+        hooks = {
+          nixfmt.enable = true;
+
+          deadnix.enable = true;
+          deadnix.after = [ "nixfmt" ];
+
+          statix.enable = true;
+          statix.after = [ "deadnix" ];
+        };
+      };
+
+      devShells.${system}.default = pkgs.mkShell {
+        inherit (self.checks.${system}.pre-commit) shellHook;
+        buildInputs = self.checks.${system}.pre-commit.enabledPackages;
+      };
+
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
@@ -72,11 +105,13 @@
 
           home-manager.nixosModules.home-manager
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.extraSpecialArgs = { inherit inputs; };
-            home-manager.backupFileExtension = "hm-bak";
-            home-manager.users.blackfan321 = import ./home-manager/home.nix;
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = { inherit inputs; };
+              backupFileExtension = "hm-bak";
+              users.blackfan321 = import ./home-manager/home.nix;
+            };
           }
         ];
       };
