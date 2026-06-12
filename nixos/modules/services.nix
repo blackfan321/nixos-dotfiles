@@ -1,7 +1,10 @@
 {
-  services.xserver.xkb = {
-    layout = "us,ru";
-    variant = "";
+  services = {
+    xserver.xkb = {
+      layout = "us,ru";
+      variant = "";
+    };
+
+    fwupd.enable = true;
   };
-  services.fwupd.enable = true;
 }
