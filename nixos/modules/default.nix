@@ -1,6 +1,7 @@
 {
   imports = [
     ./boot.nix
+    ./kernel.nix
     ./fonts.nix
     ./gnome.nix
     ./hardware.nix

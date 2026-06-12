@@ -2,7 +2,9 @@
 
 {
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ inputs.nix-cachyos-kernel.overlays.pinned ];
+  nixpkgs.overlays = [
+    inputs.networkmanager-amneziawg.overlays.default
+  ];
 
   environment.systemPackages = with pkgs; [
     git
@@ -22,6 +24,7 @@
     mtr
     git-crypt
     nautilus-python
+    amneziawg-tools
   ];
 
   programs = {
@@ -29,7 +32,6 @@
     nano.enable = false; # nano sucks
     nix-ld.enable = true;
     gamemode.enable = true;
-    amnezia-vpn.enable = true;
   };
 
   programs.steam = {

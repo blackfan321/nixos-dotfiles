@@ -36,6 +36,10 @@
       url = "github:JPyke3/hytale-launcher-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    networkmanager-amneziawg = {
+      url = "github:Exeteres/wg-feed";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix";
       inputs.nixpkgs.follows = "nixpkgs";
