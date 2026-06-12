@@ -7,3 +7,6 @@ result-*
 
 # git-crypt key
 git-crypt.key
+
+# git-hooks.nix
+.pre-commit-config.yaml
