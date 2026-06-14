@@ -1,0 +1,6 @@
+# statix has no inline ignores (like pyright: ignore). Options: disable a lint repo-wide,
+# or skip whole files via ignore.
+ignore = [
+  ".direnv",
+  "home-manager/modules/zen.nix",
+]
