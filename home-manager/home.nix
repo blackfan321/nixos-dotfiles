@@ -1,16 +1,17 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   imports = [
     ./modules
-
-    inputs.zen-browser.homeModules.beta
   ];
 
   home = {
     username = "blackfan321";
     homeDirectory = "/home/blackfan321";
     stateVersion = "26.05";
+    file = {
+      ".face".source = ./assets/face.png;
+    };
   };
 
   xdg.userDirs.enable = true;
