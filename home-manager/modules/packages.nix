@@ -39,6 +39,7 @@
     btop
     tree
     hwinfo
+    prek
 
     # K8S utils
     kubectl

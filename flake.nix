@@ -79,22 +79,24 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      checks.${system}.pre-commit = git-hooks.lib.${system}.run {
+      checks.${system}.prek = git-hooks.lib.${system}.run {
         src = self;
+        package = pkgs.prek;
         hooks = {
           nixfmt.enable = true;
+          nixfmt.priority = 0;
 
           deadnix.enable = true;
-          deadnix.after = [ "nixfmt" ];
+          deadnix.priority = 1;
 
           statix.enable = true;
-          statix.after = [ "deadnix" ];
+          statix.priority = 2;
         };
       };
 
       devShells.${system}.default = pkgs.mkShell {
-        inherit (self.checks.${system}.pre-commit) shellHook;
-        buildInputs = self.checks.${system}.pre-commit.enabledPackages;
+        inherit (self.checks.${system}.prek) shellHook;
+        buildInputs = self.checks.${system}.prek.enabledPackages;
       };
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {

@@ -8,5 +8,5 @@ result-*
 # git-crypt key
 git-crypt.key
 
-# git-hooks.nix
+# git-hooks.nix / prek
 .pre-commit-config.yaml

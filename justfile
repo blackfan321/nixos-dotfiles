@@ -28,8 +28,8 @@ flake-update-switch:
 flake-switch:
     nh os switch .
 
-pre-commit-install:
-    nix develop -c pre-commit install
+prek-install:
+    nix develop -c prek install
 
-pre-commit:
-    nix develop -c pre-commit run --all-files
+prek:
+    nix develop -c prek run --all-files

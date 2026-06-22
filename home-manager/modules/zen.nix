@@ -102,7 +102,6 @@
           "664c54f9-d97d-410b-a479-23dd8a08a628" # Better Tab Indicators
         ];
 
-        # Close Zen before `home-manager switch` so activation can update zen-sessions.jsonlz4.
         spacesForce = true;
         spaces = {
           Home = {
