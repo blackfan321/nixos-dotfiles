@@ -1,8 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 
 let
-  username = "blackfan321";
-  faceIcon = ../../home-manager/assets/face.png;
+  faceIcon = ../../assets/face.png;
 in
 {
   services = {

@@ -1,19 +1,17 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 
 {
   users = {
     defaultUserShell = pkgs.zsh;
-    users = {
-      blackfan321 = {
-        isNormalUser = true;
-        description = "Ivan Batrakov";
-        extraGroups = [
-          "networkmanager"
-          "wheel"
-          "gamemode"
-          "docker"
-        ];
-      };
+    users.${username} = {
+      isNormalUser = true;
+      description = "Ivan Batrakov";
+      extraGroups = [
+        "networkmanager"
+        "wheel"
+        "gamemode"
+        "docker"
+      ];
     };
   };
 }

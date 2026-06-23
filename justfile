@@ -1,6 +1,6 @@
 set shell := ["zsh", "-cu"]
 
-flake_sources := "flake.nix flake.lock nixos home-manager"
+flake_sources := "flake.nix flake.lock nixos home-manager assets"
 
 nixos-sync:
     git add nixos

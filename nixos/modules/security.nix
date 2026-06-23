@@ -1,3 +1,5 @@
+{ username, ... }:
+
 {
   security = {
     sudo.enable = false; # sudo sucks
@@ -5,7 +7,7 @@
       enable = true;
       extraRules = [
         {
-          users = [ "blackfan321" ];
+          users = [ "${username}" ];
           keepEnv = true;
           persist = true;
         }

@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, username, ... }:
 
 {
   imports = [
@@ -6,16 +6,15 @@
   ];
 
   home = {
-    username = "blackfan321";
-    homeDirectory = "/home/blackfan321";
-    stateVersion = "26.05";
+    inherit username;
+    homeDirectory = "/home/${username}";
     file = {
-      ".face".source = ./assets/face.png;
+      ".face".source = ../assets/face.png;
     };
+
+    stateVersion = "26.05";
   };
 
   xdg.userDirs.enable = true;
   xdg.userDirs.createDirectories = true;
-
-  programs.home-manager.enable = true;
 }

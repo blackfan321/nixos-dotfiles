@@ -78,6 +78,7 @@
       ...
     }@inputs:
     let
+      username = "blackfan321";
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
@@ -104,7 +105,7 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs; };
+        specialArgs = { inherit inputs username; };
         modules = [
           ./nixos/configuration.nix
 
@@ -113,9 +114,9 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = { inherit inputs; };
+              extraSpecialArgs = { inherit inputs username; };
               backupFileExtension = "hm-bak";
-              users.blackfan321 = ./home-manager/home.nix;
+              users.${username} = ./home-manager/home.nix;
             };
           }
         ];

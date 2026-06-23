@@ -1,9 +1,11 @@
+{ username, ... }:
+
 {
   programs.git = {
     enable = true;
     settings = {
       user.name = "Ivan Batrakov";
-      user.email = "blackfan321@gmail.com";
+      user.email = "${username}@gmail.com";
     };
   };
 }
