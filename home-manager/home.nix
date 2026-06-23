@@ -1,8 +1,8 @@
-{ ... }:
+{ inputs, ... }:
 
 {
   imports = [
-    ./modules
+    (inputs.import-tree ./modules)
   ];
 
   home = {

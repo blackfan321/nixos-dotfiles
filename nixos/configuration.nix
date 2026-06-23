@@ -1,6 +1,8 @@
+{ inputs, ... }:
+
 {
   imports = [
-    ./modules
+    (inputs.import-tree ./modules)
   ];
 
   system.stateVersion = "25.11";

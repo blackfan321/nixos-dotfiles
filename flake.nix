@@ -28,6 +28,9 @@
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    import-tree = {
+      url = "github:denful/import-tree";
+    };
     nix-cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
     };
@@ -112,7 +115,7 @@
               useUserPackages = true;
               extraSpecialArgs = { inherit inputs; };
               backupFileExtension = "hm-bak";
-              users.blackfan321 = import ./home-manager/home.nix;
+              users.blackfan321 = ./home-manager/home.nix;
             };
           }
         ];
