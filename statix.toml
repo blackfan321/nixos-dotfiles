@@ -1,4 +1,4 @@
 ignore = [
   ".direnv",
-  "home-manager/modules/zen.nix",
+  "home-manager/modules/zen/profile.nix",
 ]
