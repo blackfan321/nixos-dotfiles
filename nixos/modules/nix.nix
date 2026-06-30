@@ -1,20 +1,14 @@
+{ pkgs, ... }:
+
 {
   nix = {
+    package = pkgs.lixPackageSets.stable.lix;
     settings = {
       experimental-features = [
         "nix-command"
         "flakes"
       ];
       trusted-users = [ "@wheel" ];
-    };
-    gc = {
-      automatic = true;
-      dates = [ "22:00" ];
-      options = "--delete-older-than 7d";
-    };
-    optimise = {
-      automatic = true;
-      dates = [ "22:30" ];
     };
   };
 }

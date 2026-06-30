@@ -1,7 +1,13 @@
 { pkgs, inputs, ... }:
 
 {
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      "pnpm-10.29.2"
+    ];
+  };
+
   nixpkgs.overlays = [
     inputs.networkmanager-amneziawg.overlays.default
   ];
@@ -11,7 +17,6 @@
     vim
     uutils-coreutils-noprefix
     doas-sudo-shim
-    nh
     doggo
     wget
     killall
