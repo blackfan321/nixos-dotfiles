@@ -1,39 +1,24 @@
 # NixOS dotfiles
 
-My flake for NixOS + Home Manager.
+My personal flake for NixOS + Home Manager.
 
 ## Structure
 
 - `flake.nix` - main flake-file
 - `flake.lock` - pinned versions of flake inputs
 - `nixos/` - NixOS configuration
-- `home-manager/` - user configuration
+- `home-manager/` - home-manager configuration
+- `assets/` - some pictures and other stuff
+- `secrets/` - git-crypted files
 - `justfile` - some handy commands
 
-## Quick start
-
-1) Clone the repo:
-
-```sh
-git clone https://github.com/blackfan321/nixos-dotfiles
-cd nixos-dotfiles
-```
-
-2) Replace my username everywhere with your own (e.g., change `blackfan321` to `alice`). If you want a quick bulk replace:
-
-```sh
-rg -l "blackfan321" | xargs sed -i 's/blackfan321/alice/g'
-```
-
-3) The default hostname is `nixos` (change it if you want to).
-
-4) Edit the configs as you like, especially `nixos/modules/hardware.nix` and `nixos/modules/boot.nix`.
-
-5) Build and apply the flake (you can do it as a non-root user):
-
-```sh
-nixos-rebuild switch --sudo --flake .
-```
+## Some Features
+- `CachyOS kernel` - desktop-optimized kernel (zen4 + LTO)
+- `Lix` - community-driven, more alive Nix fork
+- `uutils coreutils` - Rust drop-in replacement for GNU coreutils
+- `nh` - modern, convenient and nice-looking NixOS CLI helper
+- `run0` - systemd-based `sudo` alternative (no more SUID)
+- `networkmanager-amneziawg` - AmneziaVPN right inside NetworkManager (no need for their desktop app)
 
 ## Desktop software
 

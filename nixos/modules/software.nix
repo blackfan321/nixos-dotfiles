@@ -16,7 +16,6 @@
     git
     vim
     uutils-coreutils-noprefix
-    doas-sudo-shim
     doggo
     wget
     killall

@@ -1,6 +1,9 @@
+{ pkgs, ... }:
+
 {
   programs.uv = {
     enable = true;
+    package = pkgs.uv;
 
     settings = {
       python-preference = "only-managed";

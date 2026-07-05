@@ -1,17 +1,10 @@
-{ username, ... }:
-
 {
   security = {
     sudo.enable = false; # sudo sucks
-    doas = {
+    run0 = {
       enable = true;
-      extraRules = [
-        {
-          users = [ "${username}" ];
-          keepEnv = true;
-          persist = true;
-        }
-      ];
+      persistentAuth.enable = true;
+      wheelNeedsPassword = true;
     };
   };
 }

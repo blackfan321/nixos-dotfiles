@@ -1,6 +1,9 @@
+{ pkgs, ... }:
+
 {
   programs.fzf = {
     enable = true;
+    package = pkgs.fzf;
     enableZshIntegration = true;
     colors = {
       # light gray base, blue highlights, red prompt, green marker, purple spinner.

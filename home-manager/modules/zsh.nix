@@ -16,6 +16,10 @@
 
     history.size = 10000;
 
+    shellAliases = {
+      run0 = "command run0 --background=";
+    };
+
     initContent = ''
       PROMPT='%F{green}%n@%m%f %F{blue}%~%f > '
       export GROFF_NO_SGR=1

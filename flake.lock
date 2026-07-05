@@ -469,11 +469,11 @@
         "systems": "systems_2"
       },
       "locked": {
-        "lastModified": 1783272041,
-        "narHash": "sha256-M4vk03c29BzGiN48vLMiqOnRNXTae33wcRMJbGxR418=",
+        "lastModified": 1783284954,
+        "narHash": "sha256-D9aI1KyZfMeJ7+eKbuz6gcBrDRwoxXEQE/L7h1tg8yg=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "90d180e76a2bfe2cd585c50e9b6eda0032ad6752",
+        "rev": "23d6131b8dbfed5b6420880db3608ca0072fe746",
         "type": "github"
       },
       "original": {

@@ -97,9 +97,6 @@
         src = self;
         package = pkgs.prek;
         hooks = {
-          nixfmt.enable = true;
-          nixfmt.priority = 0;
-
           deadnix.enable = true;
           deadnix.priority = 1;
 
