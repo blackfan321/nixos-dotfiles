@@ -10,9 +10,9 @@
         xwayland-indicator.extensionUuid
         notification-timeout.extensionUuid
         pip-on-top.extensionUuid
-        copyous.extensionUuid
         text-extractor.extensionUuid
         quick-settings-audio-panel.extensionUuid
+        vicinae.extensionUuid
       ];
       disable-extension-version-validation = true;
     };
@@ -32,6 +32,10 @@
 
     "org/gnome/shell/extensions/pip-on-top" = {
       stick = true;
+    };
+
+    "org/gnome/shell/extensions/vicinae" = {
+      show-status-indicator = false;
     };
   };
 }

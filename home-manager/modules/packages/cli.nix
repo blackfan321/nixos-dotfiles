@@ -14,6 +14,7 @@
     fd
     sd
     ripgrep
+    sqlite
     tokei
     bandwhich
     broot

@@ -9,9 +9,9 @@
     gnomeExtensions.xwayland-indicator
     gnomeExtensions.notification-timeout
     gnomeExtensions.pip-on-top
-    gnomeExtensions.copyous
     gnomeExtensions.text-extractor
     gnomeExtensions.quick-settings-audio-panel
+    gnomeExtensions.vicinae
   ]
   ++
   [
