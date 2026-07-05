@@ -26,15 +26,18 @@ My personal flake for NixOS + Home Manager.
 - Browser: `Zen Browser`
 - Editor: `Zed`
 - Terminal: `Ptyxis`
+- Launcher: `Vicinae`
 - Password manager: `KeePassXC`
-- Gaming: `Steam`, `PrismLauncher`, `Hytale`
-- Media player: `VLC`
-- Messaging: `Telegram`, `eXpress`, `Loop`
+- Gaming: `Steam`, `ProtonPlus`, `PrismLauncher`, `Hytale`
+- Media: `VLC`, `Amberol`
+- Messaging: `Telegram`, `eXpress`, `Loop`, `Vesktop`
+- Video сalls: `KTalk`
 - Office suite: `OnlyOffice`
 - Remote desktop: `Remmina`
 - Torrent client: `qBittorrent`
 - Learning: `Anki`
 - API client: `Yaak`
+- Drawing: `Pinta`
 
 And some other stuff.
 
