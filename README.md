@@ -6,11 +6,11 @@ My personal flake for NixOS + Home Manager.
 
 - `flake.nix` - main flake-file
 - `flake.lock` - pinned versions of flake inputs
+- `justfile` - some handy commands
 - `nixos/` - NixOS configuration
 - `home-manager/` - home-manager configuration
 - `assets/` - some pictures and other stuff
 - `secrets/` - git-crypted files
-- `justfile` - some handy commands
 
 ## Some Features
 - `CachyOS kernel` - desktop-optimized kernel (zen4 + LTO)

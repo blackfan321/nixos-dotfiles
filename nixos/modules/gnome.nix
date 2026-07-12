@@ -17,6 +17,7 @@ in
   environment.gnome.excludePackages = with pkgs; [
     epiphany
     decibels
+    gnome-connections
     gnome-console
     gnome-maps
     gnome-text-editor

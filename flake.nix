@@ -2,6 +2,7 @@
   description = "NixOS + Home Manager dotfiles";
 
   nixConfig = {
+    warn-dirty = false;
     substituters = [
       "https://cache.nixos.org"
       "https://nix-community.cachix.org"
