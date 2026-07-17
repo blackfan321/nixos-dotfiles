@@ -23,6 +23,7 @@
       packages = [
         "argcomplete"
         "datamodel-code-generator"
+        "complexipy"
       ];
       prune = true;
     };
