@@ -27,9 +27,8 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    git-hooks = {
-      url = "github:cachix/git-hooks.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+    den = {
+      url = "github:denful/den";
     };
     import-tree = {
       url = "github:denful/import-tree";
@@ -81,53 +80,9 @@
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      home-manager,
-      git-hooks,
-      ...
-    }@inputs:
-    let
-      username = "blackfan321";
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      checks.${system}.prek = git-hooks.lib.${system}.run {
-        src = self;
-        package = pkgs.prek;
-        hooks = {
-          deadnix.enable = true;
-          deadnix.priority = 1;
-
-          statix.enable = true;
-          statix.priority = 2;
-        };
-      };
-
-      devShells.${system}.default = pkgs.mkShell {
-        inherit (self.checks.${system}.prek) shellHook;
-        buildInputs = self.checks.${system}.prek.enabledPackages;
-      };
-
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-        inherit system;
-        specialArgs = { inherit inputs username; };
-        modules = [
-          ./nixos/configuration.nix
-
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs username; };
-              backupFileExtension = "hm-bak";
-              users.${username} = ./home-manager/home.nix;
-            };
-          }
-        ];
-      };
-    };
+    inputs:
+    (inputs.nixpkgs.lib.evalModules {
+      modules = [ (inputs.import-tree ./modules) ];
+      specialArgs = { inherit inputs; };
+    }).config.flake;
 }

@@ -7,12 +7,21 @@
   "lsp": {
     "nixd": {
       "settings": {
+        "nixpkgs": {
+          "expr": "import (builtins.getFlake (builtins.toString ./.)).inputs.nixpkgs { }"
+        },
         "formatting": {
           "command": ["nixfmt"]
         },
         "options": {
+          "nixos": {
+            "expr": "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options"
+          },
           "home-manager": {
             "expr": "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []"
+          },
+          "den": {
+            "expr": "(let f = builtins.getFlake (builtins.toString ./.); in (f.inputs.nixpkgs.lib.evalModules { modules = [ (f.inputs.import-tree (f.outPath + \"/modules\")) ]; specialArgs = { inherit (f) inputs; }; }).options)"
           }
         }
       }
