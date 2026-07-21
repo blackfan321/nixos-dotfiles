@@ -1,3 +1,5 @@
+{ username, ... }:
+
 {
   security = {
     sudo.enable = false; # sudo sucks
@@ -7,4 +9,6 @@
       wheelNeedsPassword = true;
     };
   };
+
+  users.extraGroups.wheel.members = [ username ];
 }

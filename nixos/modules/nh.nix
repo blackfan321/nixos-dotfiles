@@ -1,8 +1,9 @@
-{ username, ... }:
+{ username, pkgs, ... }:
 
 {
   programs.nh = {
     enable = true;
+    package = pkgs.nh;
     flake = "/home/${username}/Git/nixos-dotfiles";
 
     clean = {

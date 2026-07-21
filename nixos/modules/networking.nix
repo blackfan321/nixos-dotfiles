@@ -1,8 +1,15 @@
-{ pkgs, ... }:
+{ pkgs, username, inputs, config, lib, ... }:
 
 {
+  nixpkgs.overlays = lib.mkAfter [
+    inputs.networkmanager-amneziawg.overlays.default
+    (import ../overlays/networkmanager-amneziawg.nix)
+    (import ../overlays/amneziawg-kernel.nix)
+  ];
+
   networking = {
     hostName = "nixos";
+    firewall.enable = false;
     networkmanager = {
       enable = true;
       plugins = with pkgs; [
@@ -10,12 +17,14 @@
         networkmanager-amneziawg
       ];
     };
-    # Encrypted using git-crypt; see ../../secrets/networking-hosts.nix
+    # encrypted using git-crypt
     hosts = import ../../secrets/networking-hosts.nix;
   };
 
-  systemd.services.NetworkManager.path = [ pkgs.amneziawg-tools ];
-  systemd.services.NetworkManager.serviceConfig.Environment = [
-    "NM_FORCE_AWG_QUICK=1"
-  ];
+  users.extraGroups.networkmanager.members = [ username ];
+
+  boot = {
+    kernelModules = [ "amneziawg" ];
+    extraModulePackages = [ config.boot.kernelPackages.amneziawg ];
+  };
 }

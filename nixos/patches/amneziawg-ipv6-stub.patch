@@ -1,0 +1,11 @@
+--- a/socket.c
++++ b/socket.c
+@@ -136,7 +136,7 @@
+ 			if (cache)
+ 				dst_cache_reset(cache);
+ 		}
+-		dst = ipv6_stub->ipv6_dst_lookup_flow(sock_net(sock), sock, &fl,
++		dst = ip6_dst_lookup_flow(sock_net(sock), sock, &fl,
+ 						      NULL);
+ 		if (IS_ERR(dst)) {
+ 			ret = PTR_ERR(dst);

@@ -4,14 +4,8 @@
   users = {
     defaultUserShell = pkgs.zsh;
     users.${username} = {
-      isNormalUser = true;
+      isNormalUser = true; # create & set home directory, add users group, etc.
       description = "Ivan Batrakov";
-      extraGroups = [
-        "networkmanager"
-        "wheel"
-        "gamemode"
-        "docker"
-      ];
     };
   };
 }

@@ -1,15 +1,6 @@
-{
-  config,
-  lib,
-  modulesPath,
-  ...
-}:
+{ ... }:
 
 {
-  imports = [
-    (modulesPath + "/installer/scan/not-detected.nix")
-  ];
-
   fileSystems = {
     "/" = {
       device = "/dev/disk/by-uuid/7611b7ff-332f-4c68-827e-0a1461a963e9";
@@ -25,10 +16,12 @@
     };
   };
 
-  swapDevices = [ ];
-
-  nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
-  hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
-
-  hardware.xone.enable = true;
+  hardware = {
+    enableRedistributableFirmware = true;
+    cpu.amd.updateMicrocode = true;
+    graphics = {
+      enable = true;
+      enable32Bit = true;
+    };
+  };
 }
