@@ -2,7 +2,7 @@
 
 {
   nixpkgs.overlays = lib.mkBefore [
-    inputs.nix-cachyos-kernel.overlays.pinned
+    inputs.cachyos-kernel.overlays.pinned
   ];
 
   boot = {
