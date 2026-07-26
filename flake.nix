@@ -73,6 +73,10 @@
       url = "github:blackfan321/text-extractor-ocr-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nautilus-open-in-zed = {
+      url = "github:blackfan321/nautilus-open-in-zed";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     vicinae = {
       url = "github:vicinaehq/vicinae";
     };

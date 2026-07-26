@@ -16,5 +16,6 @@
   ++
   [
     inputs.text-extractor-ocr.packages.${pkgs.system}.text-extractor-ocr
+    inputs.nautilus-open-in-zed.packages.${pkgs.system}.nautilus-open-in-zed
   ];
 }
