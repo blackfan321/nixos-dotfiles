@@ -23,7 +23,13 @@
     enable = true;
     package = pkgs.gamemode;
     enableRenice = true;
-    # TODO: add settings
+    settings = {
+      general.renice = 10; # prob placebo
+      custom = {
+        start = "${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance";
+        end = "${pkgs.power-profiles-daemon}/bin/powerprofilesctl set balanced";
+      };
+    };
   };
 
   users.extraGroups.gamemode.members = [ username ];

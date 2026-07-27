@@ -1,4 +1,6 @@
-# Linux 6.14+ removed ipv6_stub; upstream amneziawg still uses it (as of 1.0.20260611).
+# Linux 6.14+/7.1.5+ API breaks in upstream amneziawg (1.0.20260611):
+# - ipv6_stub removed
+# - udp_tunnel_* takes struct sock* instead of socket*
 # Must use linuxPackages.extend — plain // is dropped when NixOS re-extends boot.kernelPackages.
 _final: prev:
 let
@@ -8,7 +10,7 @@ let
     amneziawg:
     amneziawg.overrideAttrs (old: {
       patches = (old.patches or [ ]) ++ [
-        ../patches/amneziawg-ipv6-stub.patch
+        ../patches/amneziawg-kernel-7.patch
       ];
     });
 

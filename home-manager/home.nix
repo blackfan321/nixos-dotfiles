@@ -17,7 +17,4 @@
 
     stateVersion = "26.05";
   };
-
-  xdg.userDirs.enable = true;
-  xdg.userDirs.createDirectories = true;
 }

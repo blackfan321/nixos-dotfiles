@@ -8,7 +8,7 @@
       "https://mirror.yandex.ru/nixos"       # nixpkgs (RU mirror)
       "https://nix-community.cachix.org"
       "https://attic.xuyh0120.win/lantian"   # cachyos kernel
-      "https://cache.xinux.uz"               # cachyos kernel (mirror)
+      # "https://cache.xinux.uz"               # cachyos kernel (mirror)
       "https://cache.garnix.io"
       "https://vicinae.cachix.org"           # vicinae
     ];
@@ -53,6 +53,22 @@
       url = "github:blackfan321/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    vicinae = {
+      url = "github:vicinaehq/vicinae";
+    };
+    vicinae-extensions = {
+      url = "github:vicinaehq/extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.vicinae.follows = "vicinae";
+    };
+    nautilus-open-in-zed = {
+      url = "github:blackfan321/nautilus-open-in-zed";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    steam-config-nix = {
+      url = "github:different-name/steam-config-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -72,18 +88,6 @@
     text-extractor-ocr = {
       url = "github:blackfan321/text-extractor-ocr-nix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nautilus-open-in-zed = {
-      url = "github:blackfan321/nautilus-open-in-zed";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    vicinae = {
-      url = "github:vicinaehq/vicinae";
-    };
-    vicinae-extensions = {
-      url = "github:vicinaehq/extensions";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.vicinae.follows = "vicinae";
     };
   };
 

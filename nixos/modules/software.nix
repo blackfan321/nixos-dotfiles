@@ -6,7 +6,7 @@
     vim
     uutils-coreutils-noprefix
     doggo
-    wget
+    wget2
     killall
     htop
     file

@@ -1,0 +1,51 @@
+# Linux 6.14+/7.1.5+ API breaks in upstream amneziawg (1.0.20260611):
+# - ipv6_stub removed
+# - udp_tunnel_* takes struct sock* instead of socket*
+# Matching in-tree wireguard (torvalds/linux drivers/net/wireguard/socket.c).
+--- a/socket.c
++++ b/socket.c
+@@ -136,8 +136,7 @@
+ 			if (cache)
+ 				dst_cache_reset(cache);
+ 		}
+-		dst = ipv6_stub->ipv6_dst_lookup_flow(sock_net(sock), sock, &fl,
+-						      NULL);
++		dst = ip6_dst_lookup_flow(sock_net(sock), sock, &fl, NULL);
+ 		if (IS_ERR(dst)) {
+ 			ret = PTR_ERR(dst);
+ 			net_dbg_ratelimited("%s: No route to %pISpfsc, error %d\n",
+@@ -342,7 +341,7 @@
+ 	if (unlikely(!sock))
+ 		return;
+ 	sk_clear_memalloc(sock);
+-	udp_tunnel_sock_release(sock->sk_socket);
++	udp_tunnel_sock_release(sock);
+ }
+ 
+ static void set_sock_opts(struct socket *sock)
+@@ -396,7 +395,7 @@
+ 		goto out;
+ 	}
+ 	set_sock_opts(new4);
+-	setup_udp_tunnel_sock(net, new4, &cfg);
++	setup_udp_tunnel_sock(net, new4->sk, &cfg);
+ 
+ #if IS_ENABLED(CONFIG_IPV6)
+ 	if (ipv6_mod_enabled()) {
+@@ -403,7 +402,7 @@
+ 		port6.local_udp_port = inet_sk(new4->sk)->inet_sport;
+ 		ret = udp_sock_create(net, &port6, &new6);
+ 		if (ret < 0) {
+-			udp_tunnel_sock_release(new4);
++			udp_tunnel_sock_release(new4->sk);
+ 			if (ret == -EADDRINUSE && !port && retries++ < 100)
+ 				goto retry;
+ 			pr_err("%s: Could not create IPv6 socket\n",
+@@ -411,7 +410,7 @@
+ 			goto out;
+ 		}
+ 		set_sock_opts(new6);
+-		setup_udp_tunnel_sock(net, new6, &cfg);
++		setup_udp_tunnel_sock(net, new6->sk, &cfg);
+ 	}
+ #endif

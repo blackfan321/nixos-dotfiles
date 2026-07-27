@@ -12,6 +12,7 @@
       format = "ssh";
       key = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
       signByDefault = true;
+      # TODO: add declarative allowed_signers
     };
   };
 }
