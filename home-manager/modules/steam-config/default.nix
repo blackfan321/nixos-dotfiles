@@ -18,7 +18,6 @@ in
       "The Forest" = {
         id = 242760;
         compatTool = "GE-Proton";
-        language = "russian";
         launchOptions = {
           env = {
             WINE_CPU_TOPOLOGY = "8:0,1,2,3,4,5,6,7";
@@ -79,6 +78,17 @@ in
           wrappers = [ "gamemoderun" ];
         };
       };
+
+      "Ayakashigami" = {
+        id = 565690;
+        compatTool = "GE-Proton";
+        launchOptions = {
+          env = {
+            PROTON_ENABLE_WAYLAND = "1";
+          };
+        };
+      };
+
     };
   };
 }

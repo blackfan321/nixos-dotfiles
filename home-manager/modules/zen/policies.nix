@@ -1,3 +1,5 @@
+{ ... }:
+
 {
   programs.zen-browser.policies = {
     AutofillAddressEnabled = false;

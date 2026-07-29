@@ -7,6 +7,13 @@
       enable = true;
       createDirectories = true;
     };
+
+    configFile."npm/npmrc".text = ''
+      prefix=${config.xdg.dataHome}/npm
+      cache=${config.xdg.cacheHome}/npm
+      init-module=${config.xdg.configHome}/npm/config/npm-init.js
+      logs-dir=${config.xdg.stateHome}/npm/logs
+    '';
   };
 
   # keep $HOME clean: force XDG Base Directory paths for some stubborn apps
@@ -20,5 +27,7 @@
     DOCKER_CONFIG = "${config.xdg.configHome}/docker";
 
     CARGO_HOME = "${config.xdg.dataHome}/cargo";
+
+    NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc";
   };
 }

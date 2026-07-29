@@ -8,21 +8,17 @@
     libnotify
     asciinema
     dive
-    caligula
-    sshuttle
     tldr
     fd
     sd
     ripgrep
     sqlite
     tokei
-    bandwhich
     broot
     jq
     yq
     btop
     tree
-    hwinfo
     prek
     onefetch
   ]
