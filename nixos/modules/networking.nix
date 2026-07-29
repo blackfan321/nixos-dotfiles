@@ -3,7 +3,6 @@
 {
   nixpkgs.overlays = lib.mkAfter [
     inputs.networkmanager-amneziawg.overlays.default
-    (import ../overlays/amneziawg-kernel.nix)
   ];
 
   networking = {

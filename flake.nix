@@ -34,6 +34,10 @@
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nix-gen = {
+      url = "github:htelsiz/nix-gen";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     import-tree = {
       url = "github:denful/import-tree";
     };
@@ -50,7 +54,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     networkmanager-amneziawg = {
-      url = "github:blackfan321/wg-feed";
+      url = "github:Exeteres/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vicinae = {
@@ -124,7 +128,7 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs username; };
+        specialArgs = { inherit inputs username self; };
         modules = [
           ./nixos/configuration.nix
 
