@@ -2,7 +2,6 @@
   description = "NixOS + Home Manager dotfiles";
 
   nixConfig = {
-    warn-dirty = false;
     substituters = [
       "https://cache.nixos.org"              # nixpkgs
       "https://mirror.yandex.ru/nixos"       # nixpkgs (RU mirror)
@@ -128,7 +127,7 @@
 
       nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs username self; };
+        specialArgs = { inherit inputs username self system; };
         modules = [
           ./nixos/configuration.nix
 
@@ -137,7 +136,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = { inherit inputs username; };
+              extraSpecialArgs = { inherit inputs username system; };
               backupFileExtension = "hm-bak";
               users.${username} = ./home-manager/home.nix;
             };

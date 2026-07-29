@@ -1,8 +1,8 @@
-{ inputs, pkgs, ... }:
+{ inputs, system, ... }:
 
 let
   zed-recents =
-    inputs.vicinae-extensions.packages.${pkgs.system}.zed-recents.overrideAttrs (_: {
+    inputs.vicinae-extensions.packages.${system}.zed-recents.overrideAttrs (_: {
       npmFlags = [ "--legacy-peer-deps" ];
     });
 in
@@ -14,7 +14,7 @@ in
   programs.vicinae = {
     enable = true;
 
-    package = inputs.vicinae.packages.${pkgs.system}.default;
+    package = inputs.vicinae.packages.${system}.default;
 
     systemd = {
       enable = true;
@@ -24,7 +24,7 @@ in
 
     extensions = [
       zed-recents
-      inputs.vicinae-extensions.packages.${pkgs.system}.clean-keyboard
+      inputs.vicinae-extensions.packages.${system}.clean-keyboard
     ];
 
     settings = {

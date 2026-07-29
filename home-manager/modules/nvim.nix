@@ -6,7 +6,7 @@
     defaultEditor = true;
     vimAlias = true;
 
-    extraLuaConfig = ''
+    initLua = ''
       vim.opt.number = true
     '';
   };

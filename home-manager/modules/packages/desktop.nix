@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
   home.packages = with pkgs; [
@@ -16,8 +16,8 @@
   ]
   ++
   [
-    inputs.express-messenger.packages.${pkgs.system}.express
-    inputs.loop-messenger.packages.${pkgs.system}.loop-desktop
-    inputs.ktalk.packages.${pkgs.system}.ktalk
+    inputs.express-messenger.packages.${system}.express
+    inputs.loop-messenger.packages.${system}.loop-desktop
+    inputs.ktalk.packages.${system}.ktalk
   ];
 }

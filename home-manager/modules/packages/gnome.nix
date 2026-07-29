@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
   home.packages = with pkgs; [
@@ -15,7 +15,7 @@
   ]
   ++
   [
-    inputs.text-extractor-ocr.packages.${pkgs.system}.text-extractor-ocr
-    inputs.nautilus-open-in-zed.packages.${pkgs.system}.nautilus-open-in-zed
+    inputs.text-extractor-ocr.packages.${system}.text-extractor-ocr
+    inputs.nautilus-open-in-zed.packages.${system}.nautilus-open-in-zed
   ];
 }

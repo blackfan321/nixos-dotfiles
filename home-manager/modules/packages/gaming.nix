@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
   home.packages = with pkgs; [
@@ -8,6 +8,6 @@
   ]
   ++
   [
-    inputs.hytale-launcher.packages.${pkgs.system}.hytale-launcher
+    inputs.hytale-launcher.packages.${system}.hytale-launcher
   ];
 }

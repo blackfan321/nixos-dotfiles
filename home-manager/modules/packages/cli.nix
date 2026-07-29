@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs, system, ... }:
 
 {
   home.packages = with pkgs; [
@@ -24,6 +24,6 @@
   ]
   ++
   [
-    inputs.steam-platform-stats.packages.${pkgs.system}.steam-platform-stats
+    inputs.steam-platform-stats.packages.${system}.steam-platform-stats
   ];
 }
