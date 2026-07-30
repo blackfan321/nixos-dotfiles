@@ -1,10 +1,6 @@
-{ inputs, lib, pkgs, ... }:
+{ pkgs, ... }:
 
 {
-  nixpkgs.overlays = lib.mkBefore [
-    inputs.cachyos-kernel.overlays.pinned
-  ];
-
   boot = {
     kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest-lto-zen4;
 

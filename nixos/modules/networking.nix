@@ -1,10 +1,6 @@
-{ pkgs, username, inputs, config, lib, ... }:
+{ pkgs, username, config, ... }:
 
 {
-  nixpkgs.overlays = lib.mkAfter [
-    inputs.networkmanager-amneziawg.overlays.default
-  ];
-
   networking = {
     hostName = "nixos";
     firewall.enable = false;
