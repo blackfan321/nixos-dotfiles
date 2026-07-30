@@ -49,5 +49,29 @@
         };
       };
     };
+
+    "Vintage Story" = {
+      seed = "vintagestory";
+      target = pkgs.vintagestory;
+      launchOptions.wrappers = [ "gamemoderun" ];
+      artwork = {
+        icon = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/icon/5db1317ed8f7ef0ea3e1398608b608f2.png";
+          hash = "sha256-DbxY3b9EPPMiabIVgqksT90h6y8t596BbNDlHeGe20Y=";
+        };
+        cover = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/grid/3346a6d8537b1bb22d58f279368e0728.png";
+          hash = "sha256-PIg5eWicRcQ8RPvk9fp+yQYB1PrnoEGpVT+/h8n4OhU=";
+        };
+        hero = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/hero/dd698f947326ec5d181520df8f85ba20.png";
+          hash = "sha256-9vIMhxhtgxqPNoYEuyXdXYw1+QALBU5OZRvjdfGP0mA=";
+        };
+        logo = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/logo/c4ceb72ec3f041dfca7cadb443fdc873.png";
+          hash = "sha256-5WQVNw5IxA+bqKPq6I2d0B/uRwh6WkuuGHtn2WC77Es=";
+        };
+      };
+    };
   };
 }
