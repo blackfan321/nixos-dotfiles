@@ -9,7 +9,6 @@
       "https://attic.xuyh0120.win/lantian"   # cachyos kernel
       # "https://cache.xinux.uz"               # cachyos kernel (mirror)
       "https://cache.garnix.io"
-      "https://vicinae.cachix.org"           # vicinae
     ];
     trusted-public-keys = [
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
@@ -17,7 +16,6 @@
       "cache.xinux.uz:BXCrtqejFjWzWEB9YuGB7X2MV4ttBur1N8BkwQRdH+0="
       "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
       "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
-      "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
     ];
   };
 
@@ -55,14 +53,6 @@
     networkmanager-amneziawg = {
       url = "github:Exeteres/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    vicinae = {
-      url = "github:vicinaehq/vicinae";
-    };
-    vicinae-extensions = {
-      url = "github:vicinaehq/extensions";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.vicinae.follows = "vicinae";
     };
     nautilus-open-in-zed = {
       url = "github:blackfan321/nautilus-open-in-zed";

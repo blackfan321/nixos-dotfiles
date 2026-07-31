@@ -16,8 +16,6 @@
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
-      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
-      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
     ];
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -36,18 +34,6 @@
       name = "Open Zen Browser";
       command = "zen-beta";
       binding = "<Super>w";
-    };
-
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-      name = "Toggle Vicinae";
-      command = "vicinae toggle";
-      binding = "<Super>Return";
-    };
-
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
-      name = "Vicinae Clipboard";
-      command = "vicinae deeplink 'vicinae://launch/clipboard/history?toggle=true'";
-      binding = "<Super>backslash";
     };
   };
 }
