@@ -78,17 +78,6 @@ in
           wrappers = [ "gamemoderun" ];
         };
       };
-
-      "Ayakashigami" = {
-        id = 565690;
-        compatTool = "GE-Proton";
-        launchOptions = {
-          env = {
-            PROTON_ENABLE_WAYLAND = "1";
-          };
-        };
-      };
-
     };
   };
 }

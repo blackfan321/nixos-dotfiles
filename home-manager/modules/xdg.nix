@@ -6,6 +6,11 @@
     userDirs = {
       enable = true;
       createDirectories = true;
+
+      # don't create useless directories
+      desktop = null;
+      publicShare = null;
+      templates = null;
     };
 
     configFile."npm/npmrc".text = ''
