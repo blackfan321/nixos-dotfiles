@@ -19,6 +19,10 @@
       init-module=${config.xdg.configHome}/npm/config/npm-init.js
       logs-dir=${config.xdg.stateHome}/npm/logs
     '';
+
+    dataFile."fzf-marks".text = ''
+      nixos-dotfiles : ${config.home.homeDirectory}/Projects/Personal/nixos-dotfiles
+    '';
   };
 
   # keep $HOME clean: force XDG Base Directory paths for some stubborn apps

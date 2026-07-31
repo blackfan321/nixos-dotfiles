@@ -4,7 +4,7 @@
   programs.nh = {
     enable = true;
     package = pkgs.nh;
-    flake = "/home/${username}/Git/nixos-dotfiles";
+    flake = "/home/${username}/Projects/Personal/nixos-dotfiles";
 
     clean = {
       enable = true;
