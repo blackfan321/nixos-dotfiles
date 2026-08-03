@@ -3,8 +3,8 @@
 
   nixConfig = {
     substituters = [
-      "https://cache.nixos.org"              # nixpkgs
       "https://mirror.yandex.ru/nixos"       # nixpkgs (RU mirror)
+      "https://cache.nixos.org"              # nixpkgs
       "https://nix-community.cachix.org"
       "https://attic.xuyh0120.win/lantian"   # cachyos kernel
       # "https://cache.xinux.uz"               # cachyos kernel (mirror)
