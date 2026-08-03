@@ -5,7 +5,6 @@
     keepassxc
     telegram-desktop
     remmina
-    anki
     qbittorrent
     vlc
     yaak
