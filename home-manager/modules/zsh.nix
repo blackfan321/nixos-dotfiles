@@ -45,6 +45,14 @@
     initContent = ''
       bindkey '^A' beginning-of-line
       bindkey '^E' end-of-line
+
+      # zed-editor-fhs hides /etc/subuid so rootless podman breaks; escape via run0
+      # --background= : no privilege tint (same as run0 alias)
+      # -D "$PWD"     : keep cwd (-u alone drops you in $HOME)
+      if [[ -e /.host-etc/subuid && ! -e /etc/subuid ]]; then
+        podman() { command run0 --background= -D "$PWD" -u "$USER" podman "$@"; }
+        docker() { command run0 --background= -D "$PWD" -u "$USER" podman "$@"; }
+      fi
     '';
   };
 }
