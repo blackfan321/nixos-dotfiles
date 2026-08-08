@@ -15,6 +15,10 @@
           url = "https://cdn2.steamgriddb.com/grid/c4626abae9280456d8dd7ea8f518af7c.png";
           hash = "sha256-Iji4R79l/O8yjEwaw0cqZdsY82z2c8SIYxrDSxC6vOM=";
         };
+        header = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/grid/e1e13e230874060d4397c0b1680b1a6f.png";
+          hash = "sha256-/pBvK4YAlvEfv7eOct+dw15KMYwQjM58bu78eFFP+Fo=";
+        };
         hero = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/hero/77fd1d4f4e2edb4384e207a1ab551f9f.png";
           hash = "sha256-tdg3VaLyP9RFMHQmyVo8DaYcjKByRQQh+0b3Om/3GtM=";
@@ -39,6 +43,10 @@
           url = "https://cdn2.steamgriddb.com/grid/24d5d9de8fd0f989a622c597d4bb036b.png";
           hash = "sha256-HOhKUk52ZVXCdeC+IJvln4piGOKl6HBqKVBEXtI/GlA=";
         };
+        header = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/grid/4dfc3a04ca3550205f7414469154c2e1.png";
+          hash = "sha256-SkGPqvhLAFetlk7FVJOVOU81JpDh8RNogE+2QFmbhPI=";
+        };
         hero = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/hero/f9502a4e2c9cb33351220ddd8ac39da5.png";
           hash = "sha256-RPwr9rWO+cyuSVmhUaq1ptJtwU+HH5RdLM+pxPfa598=";
@@ -62,6 +70,10 @@
         cover = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/grid/3346a6d8537b1bb22d58f279368e0728.png";
           hash = "sha256-PIg5eWicRcQ8RPvk9fp+yQYB1PrnoEGpVT+/h8n4OhU=";
+        };
+        header = pkgs.fetchurl {
+          url = "https://cdn2.steamgriddb.com/grid/60f4bacddeef710675c768a57768844c.png";
+          hash = "sha256-nAmErlPzmDhv3DIbKmmBNlmmahiIghaiZhCY/VR9i/E=";
         };
         hero = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/hero/dd698f947326ec5d181520df8f85ba20.png";
