@@ -5,7 +5,7 @@
     "Prism Launcher" = {
       seed = "prismlauncher";
       target = pkgs.prismlauncher;
-      launchOptions.wrappers = [ "gamemoderun" ];
+      wrappers = [ "gamemoderun" ];
       artwork = {
         icon = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/icon/bb8bf48a4f86fb1a77d0d0953d87958e.png";
@@ -33,7 +33,7 @@
     "Hytale" = {
       seed = "hytale";
       target = inputs.hytale-launcher.packages.${system}.hytale-launcher;
-      launchOptions.wrappers = [ "gamemoderun" ];
+      wrappers = [ "gamemoderun" ];
       artwork = {
         icon = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/icon/12bb430be526cebb26b7248683b51fab.png";
@@ -61,7 +61,7 @@
     "Vintage Story" = {
       seed = "vintagestory";
       target = pkgs.vintagestory;
-      launchOptions.wrappers = [ "gamemoderun" ];
+      wrappers = [ "gamemoderun" ];
       artwork = {
         icon = pkgs.fetchurl {
           url = "https://cdn2.steamgriddb.com/icon/5db1317ed8f7ef0ea3e1398608b608f2.png";
