@@ -303,6 +303,7 @@
       },
       "original": {
         "owner": "htelsiz",
+        "ref": "v0.3.0",
         "repo": "nix-gen",
         "type": "github"
       }

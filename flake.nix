@@ -32,7 +32,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gen = {
-      url = "github:htelsiz/nix-gen";
+      url = "github:htelsiz/nix-gen/v0.3.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     import-tree = {
