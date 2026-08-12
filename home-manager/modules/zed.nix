@@ -30,6 +30,21 @@
       buffer_font_size = 15;
       icon_theme = "Zed (Default)";
 
+      file_scan_exclusions = [
+        "**/.git"
+        "**/.svn"
+        "**/.hg"
+        "**/.jj"
+        "**/CVS"
+        "**/.DS_Store"
+        "**/Thumbs.db"
+        "**/.classpath"
+        "**/.settings"
+        "/nix/store/**"
+        "**/result"
+        "**/result-*"
+      ];
+
       theme = {
         mode = "dark";
         light = "Adwaita Light";

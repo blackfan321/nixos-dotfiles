@@ -28,11 +28,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786021444,
-        "narHash": "sha256-inYpVLV6lT459Qp+x/QnEsX8oZDvNnoycuMQijL0TVU=",
+        "lastModified": 1786573766,
+        "narHash": "sha256-bF1IHSkj96JSrBQ0XNNlQNJteB/gkvFMIRLqa25m4h0=",
         "owner": "blackfan321",
         "repo": "express-messenger-nix",
-        "rev": "4853e07314298dcc473db4bf6346d70d7f255537",
+        "rev": "86c9d8778aecc42d6f930e994ca430f3847ffc23",
         "type": "github"
       },
       "original": {
@@ -213,11 +213,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786022015,
-        "narHash": "sha256-NYDsCtHV1RFyA1ILzBhTSPDwC7NZGzImfW/VonxtDvk=",
+        "lastModified": 1786574336,
+        "narHash": "sha256-2jMbfGu/x17llW9drhmjhOK2E7HvJjTaqhoH+tgoeUQ=",
         "owner": "blackfan321",
         "repo": "ktalk-nix",
-        "rev": "f06c4cc8e08f3e38a3292e3db20258b2e1358928",
+        "rev": "28057732bbc391cdad08ad74f9a653ee3e6dbc91",
         "type": "github"
       },
       "original": {
@@ -233,11 +233,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1786022076,
-        "narHash": "sha256-dhtxDEEC9IuC0zaq7wLoin4lBInVUGcJGT2dhwiLVrc=",
+        "lastModified": 1786574476,
+        "narHash": "sha256-0E9lQJ3hF2zS0fvCjvL7ydXfudU25nGYnaVfh9EWfzU=",
         "owner": "blackfan321",
         "repo": "loop-messenger-nix",
-        "rev": "48242a382cbe371539178f4266f06d34d3a3522a",
+        "rev": "f49db522b2de45c6439b65b7aa45feb1a35d2163",
         "type": "github"
       },
       "original": {

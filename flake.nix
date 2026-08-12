@@ -1,5 +1,5 @@
 {
-  description = "NixOS + Home Manager dotfiles";
+  description = "blackfan321's NixOS dotfiles";
 
   inputs = {
     nixpkgs = {
