@@ -275,13 +275,13 @@
       "locked": {
         "lastModified": 1780690150,
         "narHash": "sha256-attdCg/FjUooYxVidEDR5wVeQ8aAPAj4b6HQVL17Tng=",
-        "owner": "feel-co",
+        "owner": "manic-systems",
         "repo": "ncro",
         "rev": "acd3855d7e0d9bc298a0019da46452c664f24081",
         "type": "github"
       },
       "original": {
-        "owner": "feel-co",
+        "owner": "manic-systems",
         "ref": "v2.2.2",
         "repo": "ncro",
         "type": "github"
