@@ -266,6 +266,27 @@
         "type": "github"
       }
     },
+    "ncro": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780690150,
+        "narHash": "sha256-attdCg/FjUooYxVidEDR5wVeQ8aAPAj4b6HQVL17Tng=",
+        "owner": "feel-co",
+        "repo": "ncro",
+        "rev": "acd3855d7e0d9bc298a0019da46452c664f24081",
+        "type": "github"
+      },
+      "original": {
+        "owner": "feel-co",
+        "ref": "v2.2.2",
+        "repo": "ncro",
+        "type": "github"
+      }
+    },
     "networkmanager-amneziawg": {
       "inputs": {
         "flake-utils": "flake-utils",
@@ -366,6 +387,7 @@
         "ktalk": "ktalk",
         "loop-messenger": "loop-messenger",
         "nautilus-open-in-zed": "nautilus-open-in-zed",
+        "ncro": "ncro",
         "networkmanager-amneziawg": "networkmanager-amneziawg",
         "nix-gen": "nix-gen",
         "nixpkgs": "nixpkgs_2",

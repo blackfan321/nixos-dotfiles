@@ -1,25 +1,25 @@
 set shell := ["zsh", "-cu"]
 
 check:
-    nix flake check --accept-flake-config
+    nix flake check
 
 update:
-    nix flake update --accept-flake-config
+    nix flake update
 
 switch:
-    nh os switch --accept-flake-config
+    nh os switch
 
 switch-update:
-    nh os switch --update --accept-flake-config
+    nh os switch --update
 
 boot:
-    nh os boot --accept-flake-config
+    nh os boot
 
 boot-update:
-    nh os boot --update --accept-flake-config
+    nh os boot --update
 
 prek-install:
-    nix develop --accept-flake-config -c prek install
+    nix develop -c prek install
 
 prek:
-    nix develop --accept-flake-config -c prek run --all-files
+    nix develop -c prek run --all-files
