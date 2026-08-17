@@ -329,6 +329,26 @@
         "type": "github"
       }
     },
+    "nix-index-database": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1786852476,
+        "narHash": "sha256-IM5CYtf86W4w8eUPpKcY/LpdHElmVBtJhaKnoTKxZEA=",
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "rev": "c7962dc97b45129df8d751bedaf37beb5a17706e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "nix-index-database",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1786935457,
@@ -390,6 +410,7 @@
         "ncro": "ncro",
         "networkmanager-amneziawg": "networkmanager-amneziawg",
         "nix-gen": "nix-gen",
+        "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs_2",
         "steam-config-nix": "steam-config-nix",
         "steam-platform-stats": "steam-platform-stats",
