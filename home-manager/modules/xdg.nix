@@ -33,8 +33,6 @@
     RENPY_PATH_TO_SAVES = "${config.xdg.dataHome}/renpy";
     RENPY_MULTIPERSISTENT = "${config.xdg.dataHome}/renpy_shared";
 
-    DOCKER_CONFIG = "${config.xdg.configHome}/docker";
-
     CARGO_HOME = "${config.xdg.dataHome}/cargo";
 
     NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc";
