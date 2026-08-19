@@ -41,5 +41,14 @@ in
       env.PROTON_ENABLE_WAYLAND = "1";
       wrappers = [ "gamemoderun" ];
     };
+
+    "Slay the Spire 2" = {
+      id = 2868840;
+      betaBranch = "public-beta";
+      compatTool = "GE-Proton11-5";
+      env.PROTON_ENABLE_WAYLAND = "1";
+      args = [ "--rendering-driver" "vulkan" ];
+      wrappers = [ "mangohud" "gamemoderun" ];
+    };
   };
 }
