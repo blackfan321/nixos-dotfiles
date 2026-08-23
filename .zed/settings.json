@@ -1,4 +1,18 @@
 {
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.svn",
+    "**/.hg",
+    "**/.jj",
+    "**/CVS",
+    "**/.DS_Store",
+    "**/Thumbs.db",
+    "**/.classpath",
+    "**/.settings",
+    "**/nix/store/**",
+    "**/result",
+    "**/result-*"
+  ],
   "languages": {
     "Nix": {
       "language_servers": ["nixd"]

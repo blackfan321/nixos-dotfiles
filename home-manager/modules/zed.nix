@@ -22,6 +22,7 @@
 
     userSettings = {
       cli_default_open_behavior = "new_window";
+      restore_on_startup = "empty_tab";
 
       tab_size = 2;
       format_on_save = "off";
@@ -40,7 +41,7 @@
         "**/Thumbs.db"
         "**/.classpath"
         "**/.settings"
-        "/nix/store/**"
+        "**/nix/store/**"
         "**/result"
         "**/result-*"
       ];

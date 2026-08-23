@@ -3,6 +3,8 @@
 {
   nix = {
     package = pkgs.lixPackageSets.stable.lix;
+    channel.enable = false;
+
     settings = {
       experimental-features = [
         "nix-command"
@@ -10,14 +12,12 @@
       ];
       trusted-users = [ "@wheel" ];
       warn-dirty = false;
+      nix-path = [ "nixpkgs=flake:nixpkgs" ];
+      use-xdg-base-directories = true;
     };
   };
 
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = [
-      "pnpm-10.29.2"
-      "electron-40.10.5"
-    ];
   };
 }

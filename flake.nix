@@ -49,7 +49,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-config-nix = {
-      url = "github:different-name/steam-config-nix/v0.5.0";
+      url = "github:different-name/steam-config-nix/v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     express-messenger = {
