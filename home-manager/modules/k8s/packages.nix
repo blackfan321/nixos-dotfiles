@@ -7,5 +7,6 @@
     kubectx  # kubens, kubectx
     kubeconform
     kubernetes-helm
+    freelens-bin
   ];
 }
