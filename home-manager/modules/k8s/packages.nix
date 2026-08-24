@@ -4,7 +4,7 @@
   home.packages = with pkgs; [
     kubectl
     kubelogin-oidc
-    kubectx
+    kubectx  # kubens, kubectx
     kubeconform
     kubernetes-helm
   ];
