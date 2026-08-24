@@ -27,6 +27,9 @@
 
   # keep $HOME clean: force XDG Base Directory paths for some stubborn apps
   home.sessionVariables = {
+    KUBECONFIG = "${config.xdg.configHome}/kube/config";
+    KUBECACHEDIR = "${config.xdg.cacheHome}/kube";
+
     RENPY_PATH_TO_SAVES = "${config.xdg.dataHome}/renpy";
     RENPY_MULTIPERSISTENT = "${config.xdg.dataHome}/renpy_shared";
 
