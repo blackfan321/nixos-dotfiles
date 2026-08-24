@@ -9,6 +9,7 @@
     "**/Thumbs.db",
     "**/.classpath",
     "**/.settings",
+    "**/.pre-commit-config.yaml",
     "**/nix/store/**",
     "**/result",
     "**/result-*"
