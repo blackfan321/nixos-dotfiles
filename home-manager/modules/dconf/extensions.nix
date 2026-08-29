@@ -12,6 +12,7 @@
         pip-on-top.extensionUuid
         text-extractor.extensionUuid
         quick-settings-audio-panel.extensionUuid
+        wireless-hid.extensionUuid
       ];
       disable-extension-version-validation = true;
     };

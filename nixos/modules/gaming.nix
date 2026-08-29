@@ -17,6 +17,7 @@
   # don't forget to enable ntsync in proton as well
   # enabled by default in Proton-GE
   boot.kernelModules = [ "ntsync" ];
+  boot.kernel.sysctl."vm.max_map_count" = 262144;
 
   # not really sure if this thing is actually useful
   programs.gamemode = {

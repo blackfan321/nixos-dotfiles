@@ -11,6 +11,7 @@
     gnomeExtensions.pip-on-top
     gnomeExtensions.text-extractor
     gnomeExtensions.quick-settings-audio-panel
+    gnomeExtensions.wireless-hid
   ]
   ++
   [

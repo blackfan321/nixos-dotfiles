@@ -7,14 +7,14 @@ in
   programs.steam.config.apps = {
     "The Forest" = {
       id = 242760;
-      compatTool = "GE-Proton";
+      compatTool = "GE-Proton11-6-x86_64";
       env.WINE_CPU_TOPOLOGY = "8:0,1,2,3,4,5,6,7";
       wrappers = [ "gamemoderun" ];
     };
 
     "Dragon's Dogma 2" = {
       id = 2054970;
-      compatTool = "GE-Proton";
+      compatTool = "GE-Proton11-6-x86_64";
       language = "russian";
       env = {
         PROTON_FSR4_UPGRADE = "1";
@@ -29,7 +29,7 @@ in
 
     "Phoenix Wright: Ace Attorney Trilogy" = {
       id = 787480;
-      compatTool = "GE-Proton";
+      compatTool = "GE-Proton11-6-x86_64";
       language = "english";
       env.PROTON_ENABLE_WAYLAND = "1";
       wrappers = [ "gamemoderun" ];
@@ -37,15 +37,23 @@ in
 
     "PEAK" = {
       id = 3527290;
-      compatTool = "GE-Proton";
+      compatTool = "GE-Proton11-6-x86_64";
       env.PROTON_ENABLE_WAYLAND = "1";
       wrappers = [ "gamemoderun" ];
     };
 
+    "Darkest Dungeon" = {
+      id = 262060;
+      compatTool = "GE-Proton11-6-x86_64";
+      betaBranch = "coming_in_hot";
+      language = "russian";
+      args = [ "-skipfeflowintro" ];
+    };
+
     "Slay the Spire 2" = {
       id = 2868840;
+      compatTool = "GE-Proton11-6-x86_64";
       betaBranch = "public-beta";
-      compatTool = "GE-Proton11-5";
       env.PROTON_ENABLE_WAYLAND = "1";
       args = [ "--rendering-driver" "vulkan" ];
       wrappers = [ "mangohud" "gamemoderun" ];
