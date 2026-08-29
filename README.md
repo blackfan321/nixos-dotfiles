@@ -18,4 +18,8 @@ My personal flake for NixOS + Home Manager.
 - `uutils coreutils` - Rust drop-in replacement for GNU coreutils
 - `nh` - modern, convenient and nice-looking NixOS CLI helper
 - `run0` - systemd-based `sudo` alternative (no more SUID)
+- `ncro` - local binary cache proxy to pick the fastest substituter
+- `nix-gen` - human-readable labels for NixOS generations in the boot menu
+- `scx` - sched-ext CPU scheduler for smoother desktop latency
 - `networkmanager-amneziawg` - AmneziaVPN right inside NetworkManager (no need for their desktop app)
+- `steam-config-nix` - declarative steam games configuration
