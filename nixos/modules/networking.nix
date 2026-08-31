@@ -1,4 +1,4 @@
-{ pkgs, username, ... }:
+{ pkgs, username, config, ... }:
 
 {
   networking = {
@@ -17,5 +17,8 @@
 
   users.extraGroups.networkmanager.members = [ username ];
 
-  boot.kernelModules = [ "amneziawg" ];
+  boot = {
+    kernelModules = [ "amneziawg" ];
+    extraModulePackages = [ config.boot.kernelPackages.amneziawg ];
+  };
 }

@@ -1,4 +1,4 @@
-{ pkgs, inputs, system, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -22,9 +22,5 @@
     prek
     onefetch
     appimage-run
-  ]
-  ++
-  [
-    inputs.steam-platform-stats.packages.${system}.steam-platform-stats
   ];
 }
