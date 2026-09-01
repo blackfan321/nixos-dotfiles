@@ -52,16 +52,20 @@
       url = "github:different-name/steam-config-nix/v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    steamfetch = {
+      url = "github:unhappychoice/steamfetch/v0.5.6";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix";
+      url = "github:blackfan321/express-messenger-nix/3.71.40";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     loop-messenger = {
-      url = "github:blackfan321/loop-messenger-nix";
+      url = "github:blackfan321/loop-messenger-nix/6.0.3";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ktalk = {
-      url = "github:blackfan321/ktalk-nix";
+      url = "github:blackfan321/ktalk-nix/3.7.1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
