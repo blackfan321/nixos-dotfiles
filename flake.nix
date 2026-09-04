@@ -57,7 +57,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix/3.71.40";
+      url = "github:blackfan321/express-messenger-nix/3.72.37";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     loop-messenger = {
