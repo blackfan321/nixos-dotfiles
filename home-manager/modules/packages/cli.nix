@@ -8,7 +8,6 @@
     libnotify
     asciinema
     dive
-    tldr
     fd
     sd
     ripgrep

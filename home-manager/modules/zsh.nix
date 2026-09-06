@@ -32,6 +32,9 @@
     shellAliases = {
       run0 = "command run0 --background=";
       wget = "wget2";
+      bc = "bc -lq";
+      k = "kubectl";
+      ports = "run0 netstat -tulpn";
     };
 
     localVariables = {

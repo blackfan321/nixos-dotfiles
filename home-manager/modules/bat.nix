@@ -11,8 +11,7 @@
       batpipe
     ];
     config = {
-      theme = "OneHalfLight";
-      style = "numbers,changes,header";
+      theme = "OneHalfDark";
     };
   };
 }
