@@ -365,15 +365,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1785277844,
-        "narHash": "sha256-dhWOPOJpyaoA5B4s2ZAl07vVB3gw9BpEl1ZPU8Q9qzA=",
-        "owner": "Exeteres",
+        "lastModified": 1788683239,
+        "narHash": "sha256-tr+3LFWlQ2xvVNNO5Q+wSNztiK/LWPOvShQtyoWq5FM=",
+        "owner": "blackfan321",
         "repo": "wg-feed",
-        "rev": "0ea9a96329d873a72c29e5bcfd913368edb76622",
+        "rev": "c047cffee80cc6f713f08dac12d8809537217f24",
         "type": "github"
       },
       "original": {
-        "owner": "Exeteres",
+        "owner": "blackfan321",
         "repo": "wg-feed",
         "type": "github"
       }

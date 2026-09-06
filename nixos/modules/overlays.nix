@@ -8,10 +8,8 @@ let
   ];
 
   local-overrides = final: prev: {
-    # https://github.com/vovochka404/network-manager-amneziawg/pull/9
     networkmanager-amneziawg = prev.networkmanager-amneziawg.overrideAttrs (old: {
       patches = (old.patches or [ ]) ++ [
-        ../patches/networkmanager-amneziawg-kernel-abi.patch
         ../patches/networkmanager-amneziawg-sysfs-version.patch
       ];
     });

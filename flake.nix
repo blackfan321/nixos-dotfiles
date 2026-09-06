@@ -41,7 +41,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     networkmanager-amneziawg = {
-      url = "github:Exeteres/wg-feed";
+      url = "github:blackfan321/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nautilus-open-in-zed = {
