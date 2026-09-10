@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
@@ -8,5 +8,9 @@
     kubeconform
     kubernetes-helm
     freelens-bin
+  ]
+  ++
+  [
+    inputs.sofka.packages.${system}.sofka
   ];
 }

@@ -17,7 +17,7 @@
       DNSOverTLS = "yes";
       DNSSEC = false;
       LLMNR = false;
-      MulticastDNS = false;
+      MulticastDNS = true;
     };
   };
 }
