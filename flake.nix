@@ -62,8 +62,9 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.25.3";
+      url = "github:nklmilojevic/sofka/v0.25.5";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
     };
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix/3.72.37";
