@@ -41,7 +41,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     networkmanager-amneziawg = {
-      url = "github:blackfan321/wg-feed";
+      url = "github:Exeteres/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nautilus-open-in-zed = {
@@ -62,7 +62,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.25.5";
+      url = "github:nklmilojevic/sofka/v0.26.0";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };

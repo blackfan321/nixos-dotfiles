@@ -11,30 +11,33 @@ in
     mkdir -p ${lib.escapeShellArg mangaDir} ${lib.escapeShellArg downloadsDir}
   '';
 
+  programs.zsh.shellAliases = {
+    uchiyomi-start = "systemctl --user start podman-uchiyomi.service";
+    uchiyomi-stop = "systemctl --user stop podman-uchiyomi.service";
+    uchiyomi-status = "systemctl --user status podman-uchiyomi.service";
+  };
+
   services.podman = {
-    # Network is created when a container that references it starts.
     networks.uchiyomi_app = {
       driver = "bridge";
       autoStart = false;
     };
 
     containers = {
-      # Manual only:
-      #   systemctl --user start podman-uchiyomi.service
-      #   systemctl --user stop  podman-uchiyomi.service
       uchiyomi = {
-        image = "ghcr.io/angelosha/uchiyomi:v0.28.0";
+        image = "ghcr.io/angelosha/uchiyomi:v0.28.1";
         description = "Uchiyomi manga server";
         autoStart = false;
         network = [ "uchiyomi_app.network" ];
-        ports = [ "8080:3000" ];
+        ports = [ "8888:3000" ];
+        extraPodmanArgs = [ "--userns=keep-id" ];
         environment = {
           PUID = puid;
           PGID = pgid;
           NODE_ENV = "production";
           PORT = "3000";
           LIBRARY_BACKEND = "owned";
-          PUBLIC_ORIGIN = "http://localhost:8080";
+          PUBLIC_ORIGIN = "http://localhost:8888";
           FLARESOLVERR_URL = "http://uchiyomi-flaresolverr:8191";
           SOURCES_DIR = "/sources";
           CUSTOM_SITES_FILE = "/config/sites.json";
@@ -42,7 +45,6 @@ in
           SUWAYOMI_URL = "http://uchiyomi-suwayomi:4567";
           SUWAYOMI_MAX_SOURCES = "25";
         };
-        # Named volumes (no separate .volume units) — podman creates them on start.
         volumes = [
           "${mangaDir}:/library"
           "${downloadsDir}:/library-dl"
@@ -78,7 +80,6 @@ in
         ];
         extraConfig = {
           Unit.PartOf = [ "podman-uchiyomi.service" ];
-          # Must be a single Container= field — shell pipes break in PodmanArgs.
           Container = {
             HealthCmd = "curl -fsS http://127.0.0.1:8191/ | grep -q 'FlareSolverr is ready' || exit 1";
             HealthInterval = "60s";
