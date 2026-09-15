@@ -36,12 +36,6 @@
         installation_mode = "force_installed";
       };
 
-      # Microslop
-      "microslop@4o4" = {
-        install_url = "https://addons.mozilla.org/firefox/downloads/latest/microslop/latest.xpi";
-        installation_mode = "force_installed";
-      };
-
       # Consent-O-Matic
       "gdpr@cavi.au.dk" = {
         install_url = "https://addons.mozilla.org/firefox/downloads/latest/consent-o-matic/latest.xpi";
@@ -51,6 +45,12 @@
       # ClearURLs
       "{74145f27-f039-47ce-a470-a662b129930a}" = {
         install_url = "https://addons.mozilla.org/firefox/downloads/latest/clearurls/latest.xpi";
+        installation_mode = "force_installed";
+      };
+
+      # Material Icons for GitHub
+      "{eac6e624-97fa-4f28-9d24-c06c9b8aa713}" = {
+        install_url = "https://addons.mozilla.org/firefox/downloads/latest/material-icons-for-github/latest.xpi";
         installation_mode = "force_installed";
       };
     };

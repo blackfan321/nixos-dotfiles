@@ -62,7 +62,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.26.0";
+      url = "github:nklmilojevic/sofka/v0.27.1";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
