@@ -4,10 +4,12 @@
   programs.steam = {
     enable = true;
     package = pkgs.steam;
+
     extraCompatPackages = with pkgs; [
       proton-ge-bin # for cool games
       # dwproton-bin # for chinese casino games
     ];
+
     protontricks = {
       enable = true;
       package = pkgs.protontricks;
@@ -23,6 +25,7 @@
   programs.gamemode = {
     enable = true;
     package = pkgs.gamemode;
+
     settings = {
       custom = {
         start = "${pkgs.power-profiles-daemon}/bin/powerprofilesctl set performance";
@@ -38,6 +41,6 @@
 
   users.extraGroups.gamemode.members = [ username ];
 
-  # fix gamepad disconnecting after hibernation issue
+  # cooler driver for XBOX controllers
   hardware.xone.enable = true;
 }

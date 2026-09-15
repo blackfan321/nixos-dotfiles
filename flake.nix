@@ -36,10 +36,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    hytale-launcher = {
-      url = "github:JPyke3/hytale-launcher-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # hytale-launcher = {
+    #   url = "github:JPyke3/hytale-launcher-nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     networkmanager-amneziawg = {
       url = "github:Exeteres/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -62,7 +62,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.27.1";
+      url = "github:nklmilojevic/sofka/v0.28.0";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };

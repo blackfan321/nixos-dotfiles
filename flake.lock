@@ -210,36 +210,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1789430117,
-        "narHash": "sha256-t+U1mijItLJ64xZOifpfQ17kpAL73nU7pDI48ScacVc=",
+        "lastModified": 1789482455,
+        "narHash": "sha256-pD3qVlQ4mUCFoTWrYtxecpSitQMsgJvJIN0FUIDZoEU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "cda90fd8838825c689fde9d3f3b4e937937790df",
+        "rev": "efa3ccb4c3cc90d832eab232976379058fa75aa3",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "hytale-launcher": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1789070605,
-        "narHash": "sha256-QIo1r169N/jP71+YUXci6+fdD1WqKLE/FfWE8SLAqRI=",
-        "owner": "JPyke3",
-        "repo": "hytale-launcher-nix",
-        "rev": "9c26eaaef7e7b362dafa106e0de9567618e1698e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "JPyke3",
-        "repo": "hytale-launcher-nix",
         "type": "github"
       }
     },
@@ -519,7 +499,6 @@
         "express-messenger": "express-messenger",
         "git-hooks": "git-hooks",
         "home-manager": "home-manager",
-        "hytale-launcher": "hytale-launcher",
         "import-tree": "import-tree",
         "ktalk": "ktalk",
         "loop-messenger": "loop-messenger",
@@ -569,16 +548,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1789297877,
-        "narHash": "sha256-HOMAY5LUsoL4XAdjdPwY17lnllI0f9pUj4cFq1//gbw=",
+        "lastModified": 1789493761,
+        "narHash": "sha256-YnqqW9PP2akQZj0wG1A5dqqK9detqxT6Y9CYhkGIl5g=",
         "owner": "nklmilojevic",
         "repo": "sofka",
-        "rev": "319ccb95a0c099e80ef76e08180e6d659b3a12ca",
+        "rev": "fa3e8684a0b9ebc7cf6ff8595a935093081f1832",
         "type": "github"
       },
       "original": {
         "owner": "nklmilojevic",
-        "ref": "v0.27.1",
+        "ref": "v0.28.0",
         "repo": "sofka",
         "type": "github"
       }
@@ -741,11 +720,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789387191,
-        "narHash": "sha256-UWMvwIlLV3zF2Mkwus17NfLyBzwBsR/5pHFxrWWGyaA=",
+        "lastModified": 1789502641,
+        "narHash": "sha256-WWiyJaRKMeAlxbrCaHV3Bw2l8H78lSRX1KPcth+Xi6k=",
         "owner": "0xc000022070",
         "repo": "zen-browser-flake",
-        "rev": "6a281d7c09c0ed6450c5c948ee9a387390285317",
+        "rev": "af28d05de9c7deff95006c9b812dc9d31a6332af",
         "type": "github"
       },
       "original": {
