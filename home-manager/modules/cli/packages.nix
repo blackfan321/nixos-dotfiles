@@ -13,8 +13,6 @@
     ripgrep
     sqlite
     tokei
-    broot
-    jq
     yq
     btop
     tree

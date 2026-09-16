@@ -11,6 +11,7 @@ in
 {
   services.easyeffects = {
     enable = true;
+    package = pkgs.easyeffects;
     preset = "Perfect EQ";
   };
 

@@ -6,6 +6,7 @@
     firewall.enable = false;
     networkmanager = {
       enable = true;
+      package = pkgs.networkmanager;
       plugins = with pkgs; [
         networkmanager-openvpn
         networkmanager-amneziawg

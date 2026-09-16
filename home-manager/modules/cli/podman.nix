@@ -1,8 +1,9 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   services.podman = {
     enable = true;
+    package = pkgs.podman;
 
     settings = {
       containers.engine.compose_warning_logs = false;

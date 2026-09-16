@@ -4,8 +4,12 @@ set shell := ["zsh", "-cu"]
 default:
     @just --choose
 
+[private]
 _add-label:
-    vim .nixos-label
+    vim \
+      -c 'inoremap <buffer> <Space> -' \
+      -c 'autocmd BufWritePre <buffer> silent! %s/ /-/ge | silent! %s/[^a-zA-Z0-9:_.-]//ge' \
+      .nixos-label
     git add .nixos-label
 
 [group('flake')]
