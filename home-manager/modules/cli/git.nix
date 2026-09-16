@@ -1,5 +1,8 @@
-{ username, pkgs, config, ... }:
+{ username, pkgs, ... }:
 
+let
+  key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIb9Kz8Qk/wpiqut9p0lQEvpdcq530jxr/fbarl1nixz";
+in
 {
   programs.git = {
     enable = true;
@@ -11,10 +14,12 @@
     };
 
     signing = {
+      inherit key;
       format = "ssh";
-      key = "${config.home.homeDirectory}/.ssh/id_ed25519.pub";
       signByDefault = true;
-      # TODO: add declarative allowed_signers
+      allowedSigners = ''
+        ${username}@gmail.com namespaces="git" ${key}
+      '';
     };
   };
 }
