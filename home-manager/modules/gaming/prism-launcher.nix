@@ -45,7 +45,6 @@ in
         };
 
         packages = [
-          # TODO: lithium
           (pkgs.prismnix.mkModrinthPkg {
             name = "fabric-api";
             id = "P7dR8mSH";
@@ -64,6 +63,26 @@ in
               id = "bAZQdGpg";
               file = "sodium-fabric-0.9.2+mc26.3.jar";
               hash = "sha256-h6W7Offm5BEG538SL4L8k/nTvAtuvLdGsxQXKkRqKHo=";
+            };
+          })
+          (pkgs.prismnix.mkModrinthPkg {
+            name = "lithium";
+            id = "gvQqBUqZ";
+            type = "mod";
+            version = {
+              id = "UnOXzpHc";
+              file = "lithium-fabric-0.26.0+mc26.3.jar";
+              hash = "sha256-JMs7PEPRHrrTgf6hItrZ/1W0Jhjg7OrLsKC3isuBvWg=";
+            };
+          })
+          (pkgs.prismnix.mkModrinthPkg {
+            name = "mouse-tweaks";
+            id = "aC3cM3Vq";
+            type = "mod";
+            version = {
+              id = "LeMuMhLv";
+              file = "MouseTweaks-fabric-mc26.3-2.31.jar";
+              hash = "sha256-f6Nd9WjIcMRf0UTcmlQTlFne2CNhXdoyvAnZAlgx5lU=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
