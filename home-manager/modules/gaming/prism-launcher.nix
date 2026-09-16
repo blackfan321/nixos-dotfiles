@@ -6,9 +6,9 @@ let
     id = "YL57xq9U";
     type = "mod";
     version = {
-      id = "2nyTWtzT";
-      file = "iris-fabric-1.11.5+mc26.3.jar";
-      hash = "sha256-kEt1bys68c+mCWRiZF9boZRxhPdNYbEf6Sx5pjiCfC0=";
+      id = "bAdKrpw8";
+      file = "iris-fabric-1.11.6+mc26.3.jar";
+      hash = "sha256-D81viFjblO0fKCEABfz/m5Nkvqpusqjsz5RJpvcJ8U0=";
     };
   };
 in
@@ -50,9 +50,9 @@ in
             id = "P7dR8mSH";
             type = "mod";
             version = {
-              id = "oCYG2H4L";
-              file = "fabric-api-0.160.5+26.3.jar";
-              hash = "sha256-UJbpd01imFAzj8HHO1VxtScXE3SxGsIxaR+5NzHuCuY=";
+              id = "BQfN2OGk";
+              file = "fabric-api-0.160.6+26.3.jar";
+              hash = "sha256-8NAa8HhqynSpfmG/hjUva8ILiRL/oSxX9Kmkt+rfyAw=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -70,9 +70,9 @@ in
             id = "gvQqBUqZ";
             type = "mod";
             version = {
-              id = "UnOXzpHc";
-              file = "lithium-fabric-0.26.0+mc26.3.jar";
-              hash = "sha256-JMs7PEPRHrrTgf6hItrZ/1W0Jhjg7OrLsKC3isuBvWg=";
+              id = "WXHRsMRl";
+              file = "lithium-fabric-0.26.1+mc26.3.jar";
+              hash = "sha256-NOXhl8QNo3L2dQDtSWuyGT2RR8EtUPmI4EpRMgXRgBU=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -86,13 +86,23 @@ in
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
+            name = "fishing-rod-fix";
+            id = "x9ISUf1U";
+            type = "mod";
+            version = {
+              id = "lUbeEytd";
+              file = "fishingrodfix-26.3-v0.5.jar";
+              hash = "sha256-0FYi4aPxp/gMKOEACuteGMuJ10HR0CpaCFCGjWGfRkg=";
+            };
+          })
+          (pkgs.prismnix.mkModrinthPkg {
             name = "scalablelux";
             id = "Ps1zyz6x";
             type = "mod";
             version = {
-              id = "z2JqNJyJ";
-              file = "ScalableLux-fabric-0.3.0-alpha.0.4-all.jar";
-              hash = "sha256-zqrVR50Xn49POkFM9KJZIqvd9Ygk14IWl19sB3S/xh4=";
+              id = "g4eqNSKd";
+              file = "ScalableLux-fabric-mc26.3-0.3.0-alpha.0.6-all.jar";
+              hash = "sha256-6RN6BP3vyk/R9HQKs9xhlLXqfBVFbGaRN2uRAFOFOik=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -100,9 +110,9 @@ in
             id = "nvQzSEkH";
             type = "mod";
             version = {
-              id = "vdhnGNqO";
-              file = "Jade-mc26.3-Fabric-26.3.0.jar";
-              hash = "sha256-9DcEqMcSQPcqbZMr3xU7oaNTVsMzS7dxPK8v/xyqvio=";
+              id = "lt43vWtF";
+              file = "Jade-mc26.3-Fabric-26.3.1.jar";
+              hash = "sha256-wvUwjaW38+unpxHwzy5YriZmvHK+/81KAMYW2nWn5/A=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
