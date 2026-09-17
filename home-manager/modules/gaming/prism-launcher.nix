@@ -50,9 +50,9 @@ in
             id = "P7dR8mSH";
             type = "mod";
             version = {
-              id = "BQfN2OGk";
-              file = "fabric-api-0.160.6+26.3.jar";
-              hash = "sha256-8NAa8HhqynSpfmG/hjUva8ILiRL/oSxX9Kmkt+rfyAw=";
+              id = "hHj6EvFZ";
+              file = "fabric-api-0.160.7+26.3.jar";
+              hash = "sha256-FyDjGrZcYtTebpY2BtdNtNYGO/WLBl9AKWzaposldZ0=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -73,6 +73,16 @@ in
               id = "WXHRsMRl";
               file = "lithium-fabric-0.26.1+mc26.3.jar";
               hash = "sha256-NOXhl8QNo3L2dQDtSWuyGT2RR8EtUPmI4EpRMgXRgBU=";
+            };
+          })
+          (pkgs.prismnix.mkModrinthPkg {
+            name = "ferritecore";
+            id = "uXXizFIs";
+            type = "mod";
+            version = {
+              id = "d5ddUdiB";
+              file = "ferritecore-9.0.0-fabric.jar";
+              hash = "sha256-ITlmxy7ZZ6zHOSvrKKhm+6MB/1a5l2wueAHC233mvyI=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
