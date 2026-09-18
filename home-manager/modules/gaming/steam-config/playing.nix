@@ -21,10 +21,7 @@ in
         PROTON_ENABLE_WAYLAND = "1";
         PROTON_ENABLE_HDR = "1";
       };
-      wrappers = [
-        hdrHook
-        "gamemoderun"
-      ];
+      wrappers = [ hdrHook "gamemoderun" ];
     };
 
     "Phoenix Wright: Ace Attorney Trilogy" = {
@@ -57,6 +54,18 @@ in
       env.PROTON_ENABLE_WAYLAND = "1";
       args = [ "--rendering-driver" "vulkan" ];
       wrappers = [ "mangohud" "gamemoderun" ];
+    };
+
+    "Trails in the Sky 1st Chapter" = {
+      id = 3375780;
+      compatTool = "GE-Proton11-7-x86_64";
+      env = {
+        PROTON_ENABLE_WAYLAND = "1";
+        PROTON_ENABLE_HDR = "1";
+        DXVK_FRAME_RATE = "170";
+        WINEDLLOVERRIDES = "xinput1_4=n,b";
+      };
+      wrappers = [ hdrHook "gamemoderun" ];
     };
   };
 }
