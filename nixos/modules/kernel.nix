@@ -17,5 +17,6 @@
     };
 
     supportedFilesystems = [ "ntfs" ];
+    blacklistedKernelModules = [ "ntfs3" ];
   };
 }
