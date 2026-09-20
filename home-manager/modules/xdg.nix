@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, lib, ... }:
 
 {
   xdg = {
@@ -12,6 +12,17 @@
       publicShare = null;
       templates = null;
     };
+
+    # hide useless desktop shortcuts
+    desktopEntries = lib.genAttrs [
+      "btop"
+      "htop"
+      "nvim"
+      "vim"
+    ] (name: {
+      inherit name;
+      noDisplay = true;
+    });
 
     configFile."npm/npmrc".text = ''
       prefix=${config.xdg.dataHome}/npm

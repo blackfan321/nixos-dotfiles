@@ -18,5 +18,7 @@
 
     supportedFilesystems = [ "ntfs" ];
     blacklistedKernelModules = [ "ntfs3" ];
+
+    tmp.cleanOnBoot = true;
   };
 }

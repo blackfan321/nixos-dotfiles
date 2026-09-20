@@ -20,4 +20,7 @@
   nixpkgs.config = {
     allowUnfree = true;
   };
+
+  # drop useless "NixOS Manual" desktop shortcut
+  documentation.nixos.enable = false;
 }
