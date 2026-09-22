@@ -11,6 +11,7 @@ let
     networkmanager-amneziawg = prev.networkmanager-amneziawg.overrideAttrs (old: {
       patches = (old.patches or [ ]) ++ [
         ../patches/networkmanager-amneziawg-sysfs-version.patch
+        ../patches/networkmanager-amneziawg-pr11.patch
       ];
     });
 
