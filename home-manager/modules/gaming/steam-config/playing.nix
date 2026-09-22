@@ -59,5 +59,16 @@ in
       };
       wrappers = [ hdrHook "gamemoderun" ];
     };
+
+    "CHAOS;HEAD NOAH" = {
+      id = 1961950;
+      compatTool = "GE-Proton11-7-x86_64";
+      language = "english";
+      env = {
+        PROTON_ENABLE_WAYLAND = "1";
+        DXVK_FRAME_RATE = "60";
+      };
+      wrappers = [ "gamemoderun" ];
+    };
   };
 }
