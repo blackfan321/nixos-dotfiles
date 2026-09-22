@@ -24,14 +24,6 @@ in
       wrappers = [ hdrHook "gamemoderun" ];
     };
 
-    "Phoenix Wright: Ace Attorney Trilogy" = {
-      id = 787480;
-      compatTool = "GE-Proton11-7-x86_64";
-      language = "english";
-      env.PROTON_ENABLE_WAYLAND = "1";
-      wrappers = [ "gamemoderun" ];
-    };
-
     "PEAK" = {
       id = 3527290;
       compatTool = "GE-Proton11-7-x86_64";
