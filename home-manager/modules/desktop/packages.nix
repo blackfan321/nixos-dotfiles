@@ -7,7 +7,6 @@
     vlc
     yaak
     pinta
-    amberol
   ]
   ++
   [

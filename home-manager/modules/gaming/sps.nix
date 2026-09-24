@@ -8,6 +8,12 @@ let
       "4294490" = {
         custom_name = "KOTAMON";
       };
+      "22490" = {
+        custom_name = "Fallout: New Vegas";
+      };
+      "31280" = {
+        custom_name = "Poken Night at the Inventory";
+      };
     };
   };
 in
