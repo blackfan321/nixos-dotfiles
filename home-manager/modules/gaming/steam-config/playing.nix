@@ -70,5 +70,15 @@ in
       };
       wrappers = [ "gamemoderun" ];
     };
+
+    "Valheim" = {
+      id = 892970;
+      compatTool = "GE-Proton11-7-x86_64";
+      env = {
+        PROTON_ENABLE_WAYLAND = "1";
+        DXVK_FRAME_RATE = "170";
+      };
+      wrappers = [ "gamemoderun" ];
+    };
   };
 }
