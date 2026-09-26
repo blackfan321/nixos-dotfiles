@@ -11,6 +11,7 @@ in
     settings = {
       user.name = "Ivan Batrakov";
       user.email = "${username}@gmail.com";
+      core.editor = "re.sonny.Commit";
     };
 
     signing = {

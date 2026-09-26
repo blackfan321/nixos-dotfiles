@@ -50,9 +50,9 @@ in
             id = "P7dR8mSH";
             type = "mod";
             version = {
-              id = "hHj6EvFZ";
-              file = "fabric-api-0.160.7+26.3.jar";
-              hash = "sha256-FyDjGrZcYtTebpY2BtdNtNYGO/WLBl9AKWzaposldZ0=";
+              id = "bNnaTiuM";
+              file = "fabric-api-0.161.0+26.3.jar";
+              hash = "sha256-hvFheKPOzIh6haTP6aedkvpzQdjzm1lRpNatgAq2V6Y=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -100,9 +100,9 @@ in
             id = "x9ISUf1U";
             type = "mod";
             version = {
-              id = "lUbeEytd";
-              file = "fishingrodfix-26.3-v0.5.jar";
-              hash = "sha256-0FYi4aPxp/gMKOEACuteGMuJ10HR0CpaCFCGjWGfRkg=";
+              id = "tBPcVWlJ";
+              file = "fishingrodfix-26.3-v0.6.jar";
+              hash = "sha256-UgmIHkq8JH1QPv/y/c1yhwvFXY8HPdKaJPmQli944U0=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
