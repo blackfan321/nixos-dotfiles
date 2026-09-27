@@ -9,6 +9,9 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nixpkgs-patcher = {
+      url = "github:gepbird/nixpkgs-patcher";
+    };
     git-hooks = {
       url = "github:cachix/git-hooks.nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,10 +47,6 @@
       url = "github:Exeteres/wg-feed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nautilus-open-in-zed = {
-      url = "github:blackfan321/nautilus-open-in-zed";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     steam-config-nix = {
       url = "github:different-name/steam-config-nix/v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -66,6 +65,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+
+    # ── my own flakes ──
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix/3.73.51";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -86,12 +87,23 @@
       url = "github:blackfan321/text-extractor-ocr-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nautilus-open-in-zed = {
+      url = "github:blackfan321/nautilus-open-in-zed";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # ── nixpkgs patches ──
+    nixpkgs-patch-throne-1-3-1 = {
+      url = "https://github.com/NixOS/nixpkgs/pull/566708.diff";
+      flake = false;
+    };
   };
 
   outputs =
     {
       self,
       nixpkgs,
+      nixpkgs-patcher,
       home-manager,
       git-hooks,
       ...
@@ -119,9 +131,11 @@
         buildInputs = self.checks.${system}.prek.enabledPackages;
       };
 
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.nixos = nixpkgs-patcher.lib.nixosSystem {
         inherit system;
-        specialArgs = { inherit inputs username self system; };
+        specialArgs = inputs // {
+          inherit inputs username self system;
+        };
         modules = [
           ./nixos/configuration.nix
 
