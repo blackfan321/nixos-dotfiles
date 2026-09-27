@@ -18,6 +18,5 @@
     tree
     prek
     onefetch
-    appimage-run
   ];
 }
