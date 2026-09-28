@@ -12,4 +12,6 @@
       extraArgs = "--keep-since 7d --optimise";
     };
   };
+
+  environment.variables.NH_SHOW_ACTIVATION_LOGS = "1";
 }

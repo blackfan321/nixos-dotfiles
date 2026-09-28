@@ -13,6 +13,8 @@
         networkmanager-amneziawg
       ];
     };
+    # encrypted using git-crypt
+    hosts = import ../../secrets/networking-hosts.nix;
   };
 
   users.extraGroups.networkmanager.members = [ username ];

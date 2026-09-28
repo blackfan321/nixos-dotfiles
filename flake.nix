@@ -27,7 +27,7 @@
       url = "github:xddxdd/nix-cachyos-kernel/release";
     };
     ncro = {
-      url = "github:manic-systems/ncro/v2.2.2";
+      url = "github:manic-systems/ncro/ad5fdb93d13327c721f5a16590ebf40754e2901f";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-index-database = {
