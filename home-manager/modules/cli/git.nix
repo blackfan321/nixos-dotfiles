@@ -12,6 +12,7 @@ in
       user.name = "Ivan Batrakov";
       user.email = "${username}@gmail.com";
       core.editor = "re.sonny.Commit";
+      credential.helper = "libsecret";
     };
 
     signing = {
