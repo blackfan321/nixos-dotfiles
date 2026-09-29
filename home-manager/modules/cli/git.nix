@@ -1,4 +1,4 @@
-{ username, pkgs, ... }:
+{ username, pkgs, lib, ... }:
 
 let
   key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIb9Kz8Qk/wpiqut9p0lQEvpdcq530jxr/fbarl1nixz";
@@ -13,12 +13,6 @@ in
       user.email = "${username}@gmail.com";
       core.editor = "re.sonny.Commit";
       credential.helper = "libsecret";
-
-      "re.sonny.Commit" = {
-        title-length-hint = 50;
-        body-length-wrap = 72;
-        auto-capitalize-title = false;
-      };
     };
 
     signing = {
@@ -29,5 +23,16 @@ in
         ${username}@gmail.com namespaces="git" ${key}
       '';
     };
+  };
+
+  xdg.configFile."git/config" = {
+    force = true;
+    text = lib.mkAfter ''
+
+      [re.sonny.Commit]
+      	title-length-hint = 50
+      	body-length-wrap = 72
+      	auto-capitalize-title = false
+    '';
   };
 }
