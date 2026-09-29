@@ -4,7 +4,7 @@ let
   flakeOverlays = [
     inputs.cachyos-kernel.overlays.pinned
     inputs.networkmanager-amneziawg.overlays.default
-    inputs.prismnix.overlays.default
+    inputs.prism-launcher.overlays.default
   ];
 
   local-overrides = final: prev: {

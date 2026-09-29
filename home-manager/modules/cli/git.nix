@@ -13,6 +13,12 @@ in
       user.email = "${username}@gmail.com";
       core.editor = "re.sonny.Commit";
       credential.helper = "libsecret";
+
+      "re.sonny.Commit" = {
+        title-length-hint = 50;
+        body-length-wrap = 72;
+        auto-capitalize-title = false;
+      };
     };
 
     signing = {

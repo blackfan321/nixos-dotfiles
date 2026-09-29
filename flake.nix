@@ -55,20 +55,20 @@
       url = "github:unhappychoice/steamfetch/v0.5.6";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    prismnix = {
+    prism-launcher = {
       url = "github:qacow37/prismnix";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.28.4";
+      url = "github:nklmilojevic/sofka/v0.29.6";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
 
     # ── my own flakes ──
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix/3.73.51";
+      url = "github:blackfan321/express-messenger-nix/3.74.36";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     loop-messenger = {

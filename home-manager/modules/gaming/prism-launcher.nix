@@ -13,7 +13,7 @@ let
   };
 in
 {
-  imports = [ inputs.prismnix.homeModules.prismnix ];
+  imports = [ inputs.prism-launcher.homeModules.prismnix ];
 
   programs.prismnix = {
     enable = true;
@@ -70,9 +70,9 @@ in
             id = "gvQqBUqZ";
             type = "mod";
             version = {
-              id = "WXHRsMRl";
-              file = "lithium-fabric-0.26.1+mc26.3.jar";
-              hash = "sha256-NOXhl8QNo3L2dQDtSWuyGT2RR8EtUPmI4EpRMgXRgBU=";
+              id = "xS0Q8LSi";
+              file = "lithium-fabric-0.26.2+mc26.3.jar";
+              hash = "sha256-C+Wxfvn26SRM0HsksidVOnOuwM+TFYzygJnzCUwWfxs=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
@@ -120,9 +120,9 @@ in
             id = "nvQzSEkH";
             type = "mod";
             version = {
-              id = "lt43vWtF";
-              file = "Jade-mc26.3-Fabric-26.3.1.jar";
-              hash = "sha256-wvUwjaW38+unpxHwzy5YriZmvHK+/81KAMYW2nWn5/A=";
+              id = "CLp83j6n";
+              file = "Jade-mc26.3-Fabric-26.3.2.jar";
+              hash = "sha256-fFzo1CTRQlEF3+S/Wsyaay3E/AojoZhPYpfh7nb3KSI=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {

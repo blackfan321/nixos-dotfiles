@@ -15,7 +15,8 @@
     decibels
     gnome-connections
     gnome-console
-    # gnome-maps
+    gnome-maps
+    gnome-system-monitor
     gnome-text-editor
     gnome-contacts
     gnome-tour

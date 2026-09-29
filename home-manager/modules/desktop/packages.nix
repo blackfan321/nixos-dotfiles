@@ -7,6 +7,7 @@
     vlc
     yaak
     pinta
+    crow-translate
   ]
   ++
   [
