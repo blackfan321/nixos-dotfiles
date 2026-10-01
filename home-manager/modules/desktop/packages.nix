@@ -8,6 +8,7 @@
     yaak
     pinta
     crow-translate
+    convey
   ]
   ++
   [
