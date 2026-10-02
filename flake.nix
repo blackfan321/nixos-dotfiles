@@ -93,10 +93,10 @@
     };
 
     # ── nixpkgs patches ──
-    nixpkgs-patch-throne-1-3-1 = {
-      url = "https://github.com/NixOS/nixpkgs/pull/566708.diff";
-      flake = false;
-    };
+    # nixpkgs-patch-throne-1-3-1 = {
+    #   url = "https://github.com/NixOS/nixpkgs/pull/566708.diff";
+    #   flake = false;
+    # };
   };
 
   outputs =
