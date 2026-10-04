@@ -6,9 +6,9 @@ let
     id = "YL57xq9U";
     type = "mod";
     version = {
-      id = "bAdKrpw8";
-      file = "iris-fabric-1.11.6+mc26.3.jar";
-      hash = "sha256-D81viFjblO0fKCEABfz/m5Nkvqpusqjsz5RJpvcJ8U0=";
+      id = "vTN4NRGW";
+      file = "iris-fabric-1.11.7+mc26.3.jar";
+      hash = "sha256-g6tNMBPdVqwFrlA6L1lpaJEQAcTvPYLFnFx55kw03Zg=";
     };
   };
 in
@@ -120,9 +120,9 @@ in
             id = "nvQzSEkH";
             type = "mod";
             version = {
-              id = "CLp83j6n";
-              file = "Jade-mc26.3-Fabric-26.3.2.jar";
-              hash = "sha256-fFzo1CTRQlEF3+S/Wsyaay3E/AojoZhPYpfh7nb3KSI=";
+              id = "71CTWqdE";
+              file = "Jade-mc26.3-Fabric-26.3.5.jar";
+              hash = "sha256-SJnWxgr6KvhZs6fggk0O9rQE8mRY+DHj2Hf6o2vprxw=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {
