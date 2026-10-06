@@ -5,6 +5,9 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -25,6 +28,7 @@
     };
     cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
+      inputs.flake-parts.follows = "flake-parts";
     };
     ncro = {
       url = "github:manic-systems/ncro/ad5fdb93d13327c721f5a16590ebf40754e2901f";
@@ -50,6 +54,7 @@
     steam-config-nix = {
       url = "github:different-name/steam-config-nix/v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
     steamfetch = {
       url = "github:unhappychoice/steamfetch/v0.5.6";
@@ -61,8 +66,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.29.6";
-      inputs.nixpkgs.follows = "nixpkgs";
+      url = "github:nklmilojevic/sofka/v0.30.0";
       inputs.home-manager.follows = "home-manager";
     };
 
@@ -70,6 +74,7 @@
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix/3.74.36";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
     loop-messenger = {
       url = "github:blackfan321/loop-messenger-nix/6.0.3";
@@ -100,56 +105,9 @@
   };
 
   outputs =
-    {
-      self,
-      nixpkgs,
-      nixpkgs-patcher,
-      home-manager,
-      git-hooks,
-      ...
-    }@inputs:
-    let
-      username = "blackfan321";
-      system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-    in
-    {
-      checks.${system}.prek = git-hooks.lib.${system}.run {
-        src = self;
-        package = pkgs.prek;
-        hooks = {
-          deadnix.enable = true;
-          deadnix.priority = 1;
-
-          statix.enable = true;
-          statix.priority = 2;
-        };
-      };
-
-      devShells.${system}.default = pkgs.mkShell {
-        inherit (self.checks.${system}.prek) shellHook;
-        buildInputs = self.checks.${system}.prek.enabledPackages;
-      };
-
-      nixosConfigurations.nixos = nixpkgs-patcher.lib.nixosSystem {
-        inherit system;
-        specialArgs = inputs // {
-          inherit inputs username self system;
-        };
-        modules = [
-          ./nixos/configuration.nix
-
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = { inherit inputs username system; };
-              backupFileExtension = "hm-bak";
-              users.${username} = ./home-manager/home.nix;
-            };
-          }
-        ];
-      };
+    inputs@{ flake-parts, ... }:
+    flake-parts.lib.mkFlake { inherit inputs; } {
+      imports = [ (inputs.import-tree ./flake) ];
+      systems = [ "x86_64-linux" ];
     };
 }

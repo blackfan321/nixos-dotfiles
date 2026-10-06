@@ -20,14 +20,14 @@ let
       x11Support = false;
     };
 
-    anki = prev.anki.overrideAttrs (old: {
-      preFixup = (old.preFixup or "") + ''
-        makeWrapperArgs+=(
-          --set QT_QPA_PLATFORM wayland
-          --set ANKI_WAYLAND 1
-        )
-      '';
-    });
+    # apostrophe (python312) only — don't touch python314/anyio used by lix
+    python312Packages = prev.python312Packages.overrideScope (
+      _pyFinal: pyPrev: {
+        anyio = pyPrev.anyio.overridePythonAttrs (_old: {
+          doCheck = false;
+        });
+      }
+    );
   };
 in
 {

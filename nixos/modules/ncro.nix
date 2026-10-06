@@ -33,6 +33,12 @@
           public_key = "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs=";
         }
         {
+          # sofka
+          url = "https://nkl-sofka.cachix.org";
+          priority = 35;
+          public_key = "nkl-sofka.cachix.org-1:hLg9frFNJynrxe7SSBb/p6pbawlpZmG10bw+wLsTufw=";
+        }
+        {
           # CachyOS kernel
           url = "https://attic.xuyh0120.win/lantian";
           priority = 40;

@@ -2,12 +2,10 @@
 
 {
   home.packages = with pkgs; [
-    telegram-desktop
     qbittorrent
     vlc
     yaak
     pinta
-    convey
   ]
   ++
   [
