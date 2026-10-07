@@ -31,7 +31,7 @@
       inputs.flake-parts.follows = "flake-parts";
     };
     ncro = {
-      url = "github:manic-systems/ncro/v2.3.0";
+      url = "github:manic-systems/ncro/v2.4.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-index-database = {
@@ -66,7 +66,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.31.0";
+      url = "github:nklmilojevic/sofka/v0.31.1";
       inputs.home-manager.follows = "home-manager";
     };
 

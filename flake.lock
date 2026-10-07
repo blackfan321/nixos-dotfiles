@@ -405,16 +405,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1791198183,
-        "narHash": "sha256-+jkCy826eI/CQjh8lfzYq4HbwKoCkoTqiB8FOeD7I0U=",
+        "lastModified": 1791376630,
+        "narHash": "sha256-xuMwlDKryFsd+wYA1sQSJZWoU4f+c3/tqs2rb8sSfXg=",
         "owner": "manic-systems",
         "repo": "ncro",
-        "rev": "c3484690b8b1f3202ac0a178a9369816bd897f71",
+        "rev": "b79d4d48ed92d05fc0708f5f9057dd369b44904e",
         "type": "github"
       },
       "original": {
         "owner": "manic-systems",
-        "ref": "v2.3.0",
+        "ref": "v2.4.0",
         "repo": "ncro",
         "type": "github"
       }
@@ -640,16 +640,16 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1791318580,
-        "narHash": "sha256-NDBLwieahWiXnnID1s7ER9m2/Ygz315FVqpsvDiRPbM=",
+        "lastModified": 1791387065,
+        "narHash": "sha256-779LE4ttADC12QImV37W8L5cJSlcUwV5SuMeToD2ARk=",
         "owner": "nklmilojevic",
         "repo": "sofka",
-        "rev": "ac178b71c11f38d21876e27d96689d4471c46512",
+        "rev": "3801370f5a0a7359245b189831af66854368cae0",
         "type": "github"
       },
       "original": {
         "owner": "nklmilojevic",
-        "ref": "v0.31.0",
+        "ref": "v0.31.1",
         "repo": "sofka",
         "type": "github"
       }

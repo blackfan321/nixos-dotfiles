@@ -19,5 +19,6 @@
     prek
     onefetch
     mcp-nixos
+    betterleaks
   ];
 }
