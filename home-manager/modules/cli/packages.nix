@@ -18,5 +18,6 @@
     tree
     prek
     onefetch
+    mcp-nixos
   ];
 }

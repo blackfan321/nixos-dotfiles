@@ -9,9 +9,6 @@
     inherit username;
     homeDirectory = "/home/${username}";
 
-    # force Telegram to use GTK4 file-picker
-    sessionVariables.QT_QPA_PLATFORMTHEME = "xdgdesktopportal";
-
     stateVersion = "26.05";
   };
 }
