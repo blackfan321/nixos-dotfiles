@@ -85,8 +85,9 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
-      url = "github:blackfan321/steam-platform-stats/0.4.1";
+      url = "github:blackfan321/steam-platform-stats/0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
     };
     text-extractor-ocr = {
       url = "github:blackfan321/text-extractor-ocr-nix";
