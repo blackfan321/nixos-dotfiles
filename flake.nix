@@ -66,8 +66,13 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.31.1";
+      url = "github:nklmilojevic/sofka/v0.31.6";
+      # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
+    };
+    wfetch = {
+      url = "github:iynaix/wfetch";
+      # don't follow nixpkgs to use the cache
     };
 
     # ── my own flakes ──

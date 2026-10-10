@@ -39,9 +39,15 @@
           public_key = "nkl-sofka.cachix.org-1:hLg9frFNJynrxe7SSBb/p6pbawlpZmG10bw+wLsTufw=";
         }
         {
+          # wfetch
+          url = "https://wfetch.cachix.org";
+          priority = 40;
+          public_key = "wfetch.cachix.org-1:lFMD3l0uT/M4+WwqUXpmPAm2kvEH5xFGeIld1av0kus=";
+        }
+        {
           # CachyOS kernel
           url = "https://attic.xuyh0120.win/lantian";
-          priority = 40;
+          priority = 45;
           public_key = "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc=";
         }
         {

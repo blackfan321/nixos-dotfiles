@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.uv = {
@@ -27,5 +27,23 @@
       ];
       prune = true;
     };
+  };
+
+  systemd.user.services.uv-cache-clean = {
+    Unit.Description = "Clean uv package cache";
+    Service = {
+      Type = "oneshot";
+      ExecStart = "${config.programs.uv.package}/bin/uv cache clean";
+    };
+  };
+
+  systemd.user.timers.uv-cache-clean = {
+    Unit.Description = "Weekly uv cache clean";
+    Timer = {
+      OnCalendar = "weekly";
+      Persistent = true;
+      RandomizedDelaySec = "1h";
+    };
+    Install.WantedBy = [ "timers.target" ];
   };
 }

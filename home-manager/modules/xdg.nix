@@ -47,5 +47,7 @@
 
     REDISCLI_HISTFILE = "${config.xdg.dataHome}/redis/rediscli_history";
     REDISCLI_RCFILE = "${config.xdg.configHome}/redis/redisclirc";
+
+    PULSE_COOKIE = "${config.xdg.configHome}/pulse/cookie";
   };
 }
