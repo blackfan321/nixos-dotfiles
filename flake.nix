@@ -28,6 +28,7 @@
     };
     cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
+      # don't follow nixpkgs to use the cache
       inputs.flake-parts.follows = "flake-parts";
     };
     ncro = {
@@ -73,6 +74,7 @@
     wfetch = {
       url = "github:iynaix/wfetch";
       # don't follow nixpkgs to use the cache
+      inputs.flake-parts.follows = "flake-parts";
     };
 
     # ── my own flakes ──
