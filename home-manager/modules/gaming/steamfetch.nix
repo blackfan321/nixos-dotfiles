@@ -1,11 +1,11 @@
-{ inputs, system, pkgs, ... }:
+{ inputs, system, pkgs, self, ... }:
 
 let
   steamfetch = inputs.steamfetch.packages.${system}.default.overrideAttrs (_: {
     doCheck = false;
   });
 
-  secrets = import ../../../secrets/steamfetch.nix;
+  secrets = import "${self}/secrets/steamfetch.nix";
 
   steamfetchConfig = {
     api = {

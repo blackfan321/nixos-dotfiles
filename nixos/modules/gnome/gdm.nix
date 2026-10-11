@@ -1,12 +1,11 @@
-{ username, ... }:
+{ username, self, ... }:
 
 let
-  faceIcon = ../../../assets/face.png;
+  faceIcon = "${self}/assets/face.png";
 in
 {
   services.displayManager.gdm = {
     enable = true;
-    banner = "Hello!";
     autoSuspend = true;
   };
 

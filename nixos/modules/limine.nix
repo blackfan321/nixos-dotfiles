@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, self, ... }:
 
 let
   resolution = "3440x1440";
@@ -30,7 +30,7 @@ in
       };
 
       style = {
-        wallpapers = [ ../../assets/boot-wallpaper.png ];
+        wallpapers = [ "${self}/assets/boot-wallpaper.png" ];
         wallpaperStyle = "stretched";
         backdrop = "05070A";
 

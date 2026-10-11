@@ -4,7 +4,6 @@
   home.packages = with pkgs; [
     qbittorrent
     vlc
-    yaak
     pinta
   ]
   ++

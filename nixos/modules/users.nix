@@ -1,7 +1,7 @@
-{ pkgs, username, ... }:
+{ pkgs, username, self, ... }:
 
 let
-  secrets = import ../../secrets/password.nix;
+  secrets = import "${self}/secrets/password.nix";
 in
 {
   services.userborn = {

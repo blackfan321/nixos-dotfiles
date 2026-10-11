@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, self, ... }:
 
 let
   flakeOverlays = [
@@ -10,8 +10,8 @@ let
   local-overrides = final: prev: {
     networkmanager-amneziawg = prev.networkmanager-amneziawg.overrideAttrs (old: {
       patches = (old.patches or [ ]) ++ [
-        ../patches/networkmanager-amneziawg-sysfs-version.patch
-        ../patches/networkmanager-amneziawg-pr11.patch
+        "${self}/nixos/patches/networkmanager-amneziawg-sysfs-version.patch"
+        "${self}/nixos/patches/networkmanager-amneziawg-pr11.patch"
       ];
     });
 

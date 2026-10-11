@@ -13,16 +13,19 @@ in
         self = inputs.self;
       };
       modules = [
-        ../nixos/configuration.nix
+        "${inputs.self}/nixos/configuration.nix"
 
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            extraSpecialArgs = { inherit inputs username system; };
+            extraSpecialArgs = {
+              inherit inputs username system;
+              self = inputs.self;
+            };
             backupFileExtension = "hm-bak";
-            users.${username} = ../home-manager/home.nix;
+            users.${username} = "${inputs.self}/home-manager/home.nix";
           };
         }
       ];

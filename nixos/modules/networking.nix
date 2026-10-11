@@ -1,4 +1,4 @@
-{ pkgs, username, config, ... }:
+{ pkgs, username, config, self, ... }:
 
 {
   networking = {
@@ -14,7 +14,7 @@
       ];
     };
     # encrypted using git-crypt
-    hosts = import ../../secrets/networking-hosts.nix;
+    hosts = import "${self}/secrets/networking-hosts.nix";
   };
 
   users.extraGroups.networkmanager.members = [ username ];
