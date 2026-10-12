@@ -50,9 +50,9 @@ in
             id = "P7dR8mSH";
             type = "mod";
             version = {
-              id = "bNnaTiuM";
-              file = "fabric-api-0.161.0+26.3.jar";
-              hash = "sha256-hvFheKPOzIh6haTP6aedkvpzQdjzm1lRpNatgAq2V6Y=";
+              id = "v2j28coa";
+              file = "fabric-api-0.162.0+26.3.jar";
+              hash = "sha256-hibBibcC9GaACxyN2sYgPPih4L2u51pfmjOxjCuqgbE=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {

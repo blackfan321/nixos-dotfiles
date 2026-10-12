@@ -7,6 +7,7 @@
     initContent = lib.mkAfter ''
       wfetch() {
         command ${inputs.wfetch.packages.${system}.wfetch}/bin/wfetch \
+          --wallpaper \
           --challenge \
           --challenge-timestamp "$(stat -c '%W' /nix)" \
           --challenge-years 5 \
