@@ -9,8 +9,7 @@ let
 
   steamfetchConfig = {
     api = {
-      steam_api_key = secrets.steam_api_key;
-      steam_id = secrets.steam_id;
+      inherit (secrets) steam_api_key steam_id;
     };
 
     display = {

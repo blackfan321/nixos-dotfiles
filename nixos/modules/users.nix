@@ -14,7 +14,7 @@ in
     users.${username} = {
       isNormalUser = true; # create & set home directory, add users group, etc.
       description = "Ivan Batrakov";
-      hashedPassword = secrets.hashedPassword;
+      inherit (secrets) hashedPassword;
 
       # some staff to fix rootless podman issue
       subUidRanges = [

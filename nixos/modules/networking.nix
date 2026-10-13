@@ -1,4 +1,4 @@
-{ pkgs, username, config, self, ... }:
+{ pkgs, username, self, ... }:
 
 {
   networking = {
@@ -10,7 +10,6 @@
       package = pkgs.networkmanager;
       plugins = with pkgs; [
         networkmanager-openvpn
-        networkmanager-amneziawg
       ];
     };
     # encrypted using git-crypt
@@ -21,10 +20,8 @@
 
   boot = {
     kernelModules = [
-      "amneziawg"
       "tcp_bbr3"
     ];
-    extraModulePackages = [ config.boot.kernelPackages.amneziawg ];
     kernel.sysctl = {
       "net.core.default_qdisc" = "fq";
       "net.ipv4.tcp_congestion_control" = "bbr3";

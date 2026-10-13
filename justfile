@@ -36,6 +36,10 @@ boot: _add-label
 boot-update: _add-label
     nh os boot --update
 
+[group('nh')]
+clean:
+    nh clean all --ask --keep-since 7d --optimise
+
 [group('prek')]
 prek-install:
     nix develop -c prek install

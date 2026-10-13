@@ -5,6 +5,9 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs/nixos-unstable";
     };
+    determinate = {
+      url = "github:DeterminateSystems/determinate/v3.23.1";
+    };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
     };
@@ -24,7 +27,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     import-tree = {
-      url = "github:denful/import-tree";
+      url = "github:denful/import-tree/v0.3.0";
     };
     cachyos-kernel = {
       url = "github:xddxdd/nix-cachyos-kernel/release";
@@ -44,14 +47,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    # hytale-launcher = {
-    #   url = "github:JPyke3/hytale-launcher-nix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-    networkmanager-amneziawg = {
-      url = "github:Exeteres/wg-feed";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     steam-config-nix = {
       url = "github:different-name/steam-config-nix/v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -67,7 +62,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.31.6";
+      url = "github:nklmilojevic/sofka/v0.31.8";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };

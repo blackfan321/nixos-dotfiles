@@ -10,19 +10,18 @@ in
       inherit system;
       specialArgs = inputs // {
         inherit inputs username system;
-        self = inputs.self;
       };
       modules = [
         "${inputs.self}/nixos/configuration.nix"
 
+        inputs.determinate.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            extraSpecialArgs = {
+            extraSpecialArgs = inputs // {
               inherit inputs username system;
-              self = inputs.self;
             };
             backupFileExtension = "hm-bak";
             users.${username} = "${inputs.self}/home-manager/home.nix";
