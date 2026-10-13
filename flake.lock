@@ -449,6 +449,7 @@
       },
       "original": {
         "owner": "denful",
+        "ref": "v0.3.0",
         "repo": "import-tree",
         "type": "github"
       }
@@ -596,6 +597,27 @@
       "original": {
         "owner": "nix-community",
         "repo": "nix-index-database",
+        "type": "github"
+      }
+    },
+    "nix-update-git": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1788533371,
+        "narHash": "sha256-HZVoM2allyz79kCAQEcvAyPKJghk3NGqlmxokiBS7+I=",
+        "owner": "yuxqiu",
+        "repo": "nix-update-git",
+        "rev": "9d6b8ee4d453b8484e234c287f4349efadedeccf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "yuxqiu",
+        "ref": "v0.7.0",
+        "repo": "nix-update-git",
         "type": "github"
       }
     },
@@ -794,6 +816,7 @@
         "ncro": "ncro",
         "nix-gen": "nix-gen",
         "nix-index-database": "nix-index-database",
+        "nix-update-git": "nix-update-git",
         "nixpkgs": "nixpkgs_4",
         "nixpkgs-patcher": "nixpkgs-patcher",
         "prism-launcher": "prism-launcher",
@@ -835,16 +858,16 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1791630249,
-        "narHash": "sha256-2JBryutOcxb9zf90+lVL/QOknEtH32o6D6JvCB0yh3E=",
+        "lastModified": 1791797375,
+        "narHash": "sha256-KIIc6Ls70z4mh+eUuc0YrdqU4XqtoinDRuz1uiRBHpk=",
         "owner": "nklmilojevic",
         "repo": "sofka",
-        "rev": "886d25e28ee7772be7811946b9b4cb83ec9e1bf6",
+        "rev": "286893dfebbde7d51899416eaad64366a2a01aca",
         "type": "github"
       },
       "original": {
         "owner": "nklmilojevic",
-        "ref": "v0.31.6",
+        "ref": "v0.31.8",
         "repo": "sofka",
         "type": "github"
       }

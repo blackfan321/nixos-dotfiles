@@ -3,10 +3,10 @@
 
   inputs = {
     nixpkgs = {
-      url = "github:nixos/nixpkgs/nixos-unstable";
+      url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     determinate = {
-      url = "github:DeterminateSystems/determinate/v3.23.1";
+      url = "github:DeterminateSystems/determinate?ref=v3.23.1";
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -23,19 +23,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-gen = {
-      url = "github:htelsiz/nix-gen/v0.3.0";
+      url = "github:htelsiz/nix-gen?ref=v0.3.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     import-tree = {
-      url = "github:denful/import-tree/v0.3.0";
+      url = "github:denful/import-tree?ref=v0.3.0";
     };
     cachyos-kernel = {
-      url = "github:xddxdd/nix-cachyos-kernel/release";
+      url = "github:xddxdd/nix-cachyos-kernel?ref=release";
       # don't follow nixpkgs to use the cache
       inputs.flake-parts.follows = "flake-parts";
     };
     ncro = {
-      url = "github:manic-systems/ncro/v2.4.0";
+      url = "github:manic-systems/ncro?ref=v2.4.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    nix-update-git = {
+      url = "github:yuxqiu/nix-update-git?ref=v0.7.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-index-database = {
@@ -48,12 +52,12 @@
       inputs.home-manager.follows = "home-manager";
     };
     steam-config-nix = {
-      url = "github:different-name/steam-config-nix/v0.6.0";
+      url = "github:different-name/steam-config-nix?ref=v0.6.0";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
     };
     steamfetch = {
-      url = "github:unhappychoice/steamfetch/v0.5.6";
+      url = "github:unhappychoice/steamfetch?ref=v0.5.6";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     prism-launcher = {
@@ -62,7 +66,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka/v0.31.8";
+      url = "github:nklmilojevic/sofka?ref=v0.31.8";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -74,20 +78,20 @@
 
     # ── my own flakes ──
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix/3.74.36";
+      url = "github:blackfan321/express-messenger-nix?ref=3.74.36";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
     };
     loop-messenger = {
-      url = "github:blackfan321/loop-messenger-nix/6.0.3";
+      url = "github:blackfan321/loop-messenger-nix?ref=6.0.3";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     ktalk = {
-      url = "github:blackfan321/ktalk-nix/3.7.1";
+      url = "github:blackfan321/ktalk-nix?ref=3.7.1";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
-      url = "github:blackfan321/steam-platform-stats/0.4.2";
+      url = "github:blackfan321/steam-platform-stats?ref=0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
     };

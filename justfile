@@ -20,6 +20,10 @@ check:
 update:
     nix flake update
 
+[group('flake')]
+check-for-releases:
+    nix-update-git --update flake.nix
+
 [group('nh')]
 switch: _add-label
     nh os switch
