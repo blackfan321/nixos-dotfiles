@@ -6,9 +6,11 @@
     isDefault = true;
 
     settings = {
-      zen.view.experimental-no-window-controls = true;
-      zen.theme.content-element-separation = 3;
-      zen.workspaces.continue-where-left-off = true;
+      zen = {
+        view.experimental-no-window-controls = true;
+        theme.content-element-separation = 3;
+        workspaces.continue-where-left-off = true;
+      };
       browser.toolbars.bookmarks.visibility = "never";
     };
 

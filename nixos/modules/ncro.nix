@@ -27,6 +27,12 @@
           public_key = "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=";
         }
         {
+          # Determinate Nix
+          url = "https://install.determinate.systems";
+          priority = 25;
+          public_key = "cache.flakehub.com-3:hJuILl5sVK4iKm86JzgdXW12Y2Hwd5G07qKtHTOcDCM=";
+        }
+        {
           # unfree packages
           url = "https://nix-community.cachix.org";
           priority = 30;

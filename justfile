@@ -20,6 +20,10 @@ check:
 update:
     nix flake update
 
+[group('flake')]
+check-for-releases:
+    nix-update-git --update flake.nix
+
 [group('nh')]
 switch: _add-label
     nh os switch
@@ -35,6 +39,10 @@ boot: _add-label
 [group('nh')]
 boot-update: _add-label
     nh os boot --update
+
+[group('nh')]
+clean:
+    nh clean all --ask --keep-since 7d --optimise
 
 [group('prek')]
 prek-install:
