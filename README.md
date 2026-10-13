@@ -14,6 +14,7 @@ My personal flake for NixOS + Home Manager.
 - `secrets/` - git-crypted files
 
 ## 🧩 Infra Flakes
+- [`home-manager`](https://github.com/nix-community/home-manager) - $HOME, but declarative
 - [`flake-parts`](https://github.com/hercules-ci/flake-parts) - modular flake outputs
 - [`import-tree`](https://github.com/denful/import-tree) - manual imports are no more
 - [`DetSys nix`](https://github.com/DeterminateSystems/determinate) - they have lazy-trees!
