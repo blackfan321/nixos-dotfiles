@@ -35,4 +35,9 @@ My personal flake for NixOS + Home Manager.
 - [`prismnix`](https://github.com/qacow37/prismnix) - declarative minecraft
 
 ---
+
+<div align="center">
+
 <a href="https://никспобеда.рф"><img src="https://img.shields.io/badge/никспобеда.рф-❄️_НИКС_ПОБЕДА-1793D1?style=for-the-badge&logo=nixos&logoColor=white" alt="никспобеда.рф"/></a>
+
+</div>
