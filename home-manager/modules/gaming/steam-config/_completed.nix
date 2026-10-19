@@ -15,7 +15,7 @@
 
     "Phoenix Wright: Ace Attorney Trilogy" = {
       id = 787480;
-      compatTool = "GE-Proton11-7-x86_64";
+      compatTool = "GE-Proton11-7";
       language = "english";
       env.PROTON_ENABLE_WAYLAND = "1";
       wrappers = [ "gamemoderun" ];

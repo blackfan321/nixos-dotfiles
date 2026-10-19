@@ -1,13 +1,14 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
+  imports = [ inputs.proton-ge.nixosModules.default ];
+
   programs.steam = {
     enable = true;
     package = pkgs.steam;
 
     extraCompatPackages = with pkgs; [
-      proton-ge-bin # for cool games
-      # dwproton-bin # for chinese casino games
+      GE-Proton11-11
     ];
 
     protontricks = {

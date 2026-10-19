@@ -35,7 +35,7 @@ in
         mod-loader = {
           enable = true;
           loader = "fabric";
-          version = "0.19.5";
+          version = "0.20.0";
         };
 
         shader-loader = {
@@ -50,9 +50,9 @@ in
             id = "P7dR8mSH";
             type = "mod";
             version = {
-              id = "v2j28coa";
-              file = "fabric-api-0.162.0+26.3.jar";
-              hash = "sha256-hibBibcC9GaACxyN2sYgPPih4L2u51pfmjOxjCuqgbE=";
+              id = "LEklt8GT";
+              file = "fabric-api-0.164.0+26.3.jar";
+              hash = "sha256-WnUZhxWlCoZ4dlhhewO5famTbTLfBIlnSMEhNbpwneM=";
             };
           })
           (pkgs.prismnix.mkModrinthPkg {

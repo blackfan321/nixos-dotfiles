@@ -5,7 +5,7 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
-    determinate = {
+    determinate = {  # pin
       url = "github:DeterminateSystems/determinate?ref=v3.23.2";
     };
     flake-parts = {
@@ -46,6 +46,10 @@
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # nix-proxy-manager = {
+    #   url = "github:aleadag/nix-proxy-manager";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -66,7 +70,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka?ref=v0.31.8";
+      url = "github:nklmilojevic/sofka?ref=v0.31.12";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -75,12 +79,23 @@
       # don't follow nixpkgs to use the cache
       inputs.flake-parts.follows = "flake-parts";
     };
+    proton-ge = {
+      url = "github:blackfan321/proton-ge-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
+    };
+
 
     # ── my own flakes ──
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix?ref=3.74.36";
+      url = "github:blackfan321/express-messenger-nix?ref=3.75.56";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
     };
     loop-messenger = {
       url = "github:blackfan321/loop-messenger-nix?ref=6.0.3";
@@ -94,6 +109,7 @@
       url = "github:blackfan321/steam-platform-stats?ref=0.4.2";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
     };
     text-extractor-ocr = {
       url = "github:blackfan321/text-extractor-ocr-nix";

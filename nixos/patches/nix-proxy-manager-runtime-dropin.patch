@@ -1,0 +1,20 @@
+--- a/main.py
++++ b/main.py
+@@ -46,7 +46,7 @@
+ 
+ def get_current_proxy_linux():
+     """Get the current nix-daemon proxy settings for Linux"""
+-    proxy_config = Path("/etc/systemd/system/nix-daemon.service.d/proxy-override.conf")
++    proxy_config = Path("/run/systemd/system/nix-daemon.service.d/proxy-override.conf")
+     
+     if not proxy_config.exists():
+         return None
+@@ -101,7 +101,7 @@
+ 
+ def set_proxy_linux(proxy_url):
+     """Set the nix-daemon proxy for Linux"""
+-    systemd_dir = Path("/etc/systemd/system/nix-daemon.service.d")
++    systemd_dir = Path("/run/systemd/system/nix-daemon.service.d")
+     proxy_config = systemd_dir / "proxy-override.conf"
+     
+     if proxy_url:
