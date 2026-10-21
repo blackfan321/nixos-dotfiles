@@ -1,7 +1,8 @@
-{ username, pkgs, lib, ... }:
+{ self, pkgs, lib, ... }:
 
 let
-  key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIb9Kz8Qk/wpiqut9p0lQEvpdcq530jxr/fbarl1nixz";
+  personal = import "${self}/secrets/git/personal.nix";
+  ugsk = import "${self}/secrets/git/ugsk.nix";
 in
 {
   programs.git = {
@@ -9,20 +10,33 @@ in
     package = pkgs.gitFull;
 
     settings = {
-      user.name = "Ivan Batrakov";
-      user.email = "${username}@gmail.com";
+      user.name = personal.name;
+      user.email = personal.email;
       core.editor = "re.sonny.Commit";
       credential.helper = "libsecret";
     };
 
     signing = {
-      inherit key;
+      key = personal.signingKey;
       format = "ssh";
       signByDefault = true;
       allowedSigners = ''
-        ${username}@gmail.com namespaces="git" ${key}
+        ${personal.email} namespaces="git" ${personal.signingKey}
+        ${ugsk.email} namespaces="git" ${ugsk.signingKey}
       '';
     };
+
+    # Work config
+    includes = [
+      {
+        condition = "gitdir:~/Projects/UGSK/";
+        contents = {
+          user.name = ugsk.name;
+          user.email = ugsk.email;
+          user.signingKey = ugsk.signingKey;
+        };
+      }
+    ];
   };
 
   xdg.configFile."git/config" = {

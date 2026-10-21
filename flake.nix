@@ -88,7 +88,6 @@
       inputs.import-tree.follows = "import-tree";
     };
 
-
     # ── my own flakes ──
     express-messenger = {
       url = "github:blackfan321/express-messenger-nix?ref=3.75.56";

@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  defaultProton = "GE-Proton11-10";
+  defaultProton = "GE-Proton11-11";
   inherit (import ./_wrappers.nix { inherit pkgs; }) hdrHook;
 in
 {
@@ -20,7 +20,6 @@ in
       env = {
         PROTON_FSR4_UPGRADE = "1";
         PROTON_ENABLE_WAYLAND = "1";
-        # PROTON_ENABLE_HDR = "1";
       };
       wrappers = [ hdrHook "gamemoderun" ];
     };
@@ -54,7 +53,6 @@ in
       compatTool = defaultProton;
       env = {
         PROTON_ENABLE_WAYLAND = "1";
-        # PROTON_ENABLE_HDR = "1";
         DXVK_FRAME_RATE = "170";
         WINEDLLOVERRIDES = "xinput1_4=n,b";
       };
