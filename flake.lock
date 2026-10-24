@@ -803,6 +803,7 @@
         "steam-platform-stats": "steam-platform-stats",
         "steamfetch": "steamfetch",
         "text-extractor-ocr": "text-extractor-ocr",
+        "voxcribe": "voxcribe",
         "wfetch": "wfetch",
         "zen-browser": "zen-browser"
       }
@@ -1026,6 +1027,36 @@
         "owner": "numtide",
         "repo": "treefmt-nix",
         "type": "github"
+      }
+    },
+    "voxcribe": {
+      "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "git-hooks"
+        ],
+        "import-tree": [
+          "import-tree"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1792883371,
+        "narHash": "sha256-nsbpg8pT6iJ8h6qaykoaZ1mvGo9jsaD5YtS76jB8nQE=",
+        "ref": "feat/modular-flake",
+        "rev": "991d82e7c37d29e2f67674479bb8b6b1c50ef8fe",
+        "revCount": 19,
+        "type": "git",
+        "url": "ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git"
+      },
+      "original": {
+        "ref": "feat/modular-flake",
+        "type": "git",
+        "url": "ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git"
       }
     },
     "wfetch": {

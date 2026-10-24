@@ -118,10 +118,13 @@
       url = "github:blackfan321/nautilus-open-in-zed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # voxcribe = {
-    #   url = "git+ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git?ref=main";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    voxcribe = {
+      url = "git+ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git?ref=feat/modular-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
+    };
 
     # ── nixpkgs patches ──
     # nixpkgs-patch-throne-1-3-1 = {
