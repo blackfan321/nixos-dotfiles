@@ -2,11 +2,11 @@
 
 {
   environment.systemPackages = with pkgs; [
-    amberol
+    # amberol
     apostrophe
     collision
     commit
-    errands
+    # errands
     gradia
     impression
     iotas

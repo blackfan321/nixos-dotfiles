@@ -5,8 +5,8 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
-    determinate = {  # pin
-      url = "github:DeterminateSystems/determinate?ref=v3.23.2";
+    determinate = {
+      url = "github:DeterminateSystems/determinate?ref=v3.24.0";
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -70,7 +70,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka?ref=v0.31.12";
+      url = "github:nklmilojevic/sofka?ref=v0.32.0";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -105,7 +105,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
-      url = "github:blackfan321/steam-platform-stats?ref=0.4.2";
+      url = "github:blackfan321/steam-platform-stats/392a75f5f97821afe3d16c9d9641aed854921723";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -118,6 +118,10 @@
       url = "github:blackfan321/nautilus-open-in-zed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    # voxcribe = {
+    #   url = "git+ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git?ref=main";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # ── nixpkgs patches ──
     # nixpkgs-patch-throne-1-3-1 = {

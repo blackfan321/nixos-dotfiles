@@ -18,7 +18,21 @@
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
       "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+      "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
     ];
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      name = "Voxcribe Start";
+      command = "voxcribe start";
+      binding = "<Super>Insert";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
+      name = "Voxcribe Stop";
+      command = "voxcribe stop";
+      binding = "<Shift><Super>Insert";
+    };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       name = "Open Terminal";

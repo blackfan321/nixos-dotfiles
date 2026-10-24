@@ -26,14 +26,22 @@ in
       '';
     };
 
-    # Work config
     includes = [
+      # Work config
       {
         condition = "gitdir:~/Projects/UGSK/";
         contents = {
           user.name = ugsk.name;
           user.email = ugsk.email;
           user.signingKey = ugsk.signingKey;
+        };
+      }
+      {
+        # gitea.apollo-kitten.space
+        condition = "gitdir:~/Projects/Personal/Gitea/";
+        contents = {
+          http.sslCert = "${self}/secrets/certs/gitea-cert.pem";
+          http.sslKey = "${self}/secrets/certs/gitea-key.pem";
         };
       }
     ];

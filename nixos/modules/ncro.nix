@@ -52,16 +52,16 @@
         }
         {
           # CachyOS kernel
-          url = "https://attic.xuyh0120.win/lantian";
+          url = "https://cache.lantian.pub/lantian";
           priority = 45;
-          public_key = "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc=";
+          public_key = "lantian:WVGO7vsRMSEN+h7Lp7kv6SAmrkEXgUGbbXm7jMDjBuQ=";
         }
-        {
-          # CachyOS kernel (backup mirror)
-          url = "https://cache.xinux.uz";
-          priority = 50;
-          public_key = "cache.xinux.uz:BXCrtqejFjWzWEB9YuGB7X2MV4ttBur1N8BkwQRdH+0=";
-        }
+        # {
+        #   # CachyOS kernel (backup mirror)
+        #   url = "https://cache.xinux.uz";
+        #   priority = 50;
+        #   public_key = "lantian:WVGO7vsRMSEN+h7Lp7kv6SAmrkEXgUGbbXm7jMDjBuQ=";
+        # }
       ];
     };
   };
