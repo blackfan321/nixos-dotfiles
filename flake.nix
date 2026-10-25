@@ -5,8 +5,8 @@
     nixpkgs = {
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
-    determinate = {
-      url = "github:DeterminateSystems/determinate?ref=v3.24.0";
+    detsys-nix = {
+      url = "github:DeterminateSystems/nix-src?ref=v3.24.0";
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";

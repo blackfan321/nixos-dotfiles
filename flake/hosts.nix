@@ -14,7 +14,6 @@ in
       modules = [
         "${inputs.self}/nixos/configuration.nix"
 
-        inputs.determinate.nixosModules.default
         inputs.home-manager.nixosModules.home-manager
         {
           home-manager = {

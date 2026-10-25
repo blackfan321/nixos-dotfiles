@@ -6,11 +6,11 @@
     package = pkgs.nh;
     flake = "/home/${username}/Projects/Personal/nixos-dotfiles";
 
-    # clean = {
-    #   enable = true;
-    #   dates = "*-*-1/3 22:00";
-    #   extraArgs = "--keep-since 7d --optimise";
-    # };
+    clean = {
+      enable = true;
+      dates = "*-*-1/3 22:00";
+      extraArgs = "--keep-since 7d --optimise";
+    };
   };
 
   environment.variables.NH_SHOW_ACTIVATION_LOGS = "1";
