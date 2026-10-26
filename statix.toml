@@ -5,4 +5,6 @@ disabled = [
 ignore = [
   ".direnv",
   "home-manager/modules/zen/profile.nix",
+  "home-manager/modules/cli/git.nix",
+  "flake.nix"
 ]

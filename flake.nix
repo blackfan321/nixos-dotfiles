@@ -6,7 +6,7 @@
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     detsys-nix = {
-      url = "github:DeterminateSystems/nix-src?ref=v3.24.0";
+      url = "github:DeterminateSystems/nix-src?ref=v3.24.1";
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -80,7 +80,7 @@
       inputs.flake-parts.follows = "flake-parts";
     };
     proton-ge = {
-      url = "github:blackfan321/proton-ge-overlay";
+      url = "github:daluca/proton-ge-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
       inputs.flake-parts.follows = "flake-parts";
@@ -105,7 +105,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     steam-platform-stats = {
-      url = "github:blackfan321/steam-platform-stats/392a75f5f97821afe3d16c9d9641aed854921723";
+      url = "github:blackfan321/steam-platform-stats?ref=0.4.3";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -119,7 +119,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     voxcribe = {
-      url = "git+ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git?ref=feat/modular-flake";
+      url = "git+ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";

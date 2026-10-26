@@ -49,5 +49,9 @@ prek-install:
     nix develop -c prek install
 
 [group('prek')]
-prek:
+prek-uninstall:
+    nix develop -c prek uninstall
+
+[group('prek')]
+prek-run:
     nix develop -c prek run --all-files

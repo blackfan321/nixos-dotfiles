@@ -3,16 +3,16 @@
     "bdwgc": {
       "flake": false,
       "locked": {
-        "lastModified": 1791890853,
-        "narHash": "sha256-Wip2gE+2EJGC6trYxO9Pl36rkgA3BJJkAsiWTVGXFBc=",
+        "lastModified": 1792766812,
+        "narHash": "sha256-ZXxPgcmKohIJv8sYVHJaUV36/OCfTGQh+N7VfrPHVAM=",
         "owner": "DeterminateSystems",
         "repo": "bdwgc",
-        "rev": "d569c29c479acb44bcf4e992acfc776fb88fb857",
+        "rev": "8505c09cafce7bd2cffc421fd94b79390f37e428",
         "type": "github"
       },
       "original": {
         "owner": "DeterminateSystems",
-        "ref": "user-defined-stacks",
+        "ref": "nix-patches-master",
         "repo": "bdwgc",
         "type": "github"
       }
@@ -80,16 +80,16 @@
         "nixpkgs-regression": "nixpkgs-regression"
       },
       "locked": {
-        "lastModified": 1792697051,
-        "narHash": "sha256-wBbomknnynmW74SjD4xRgpymGxJx96aUtYr3Dnyi4/Y=",
+        "lastModified": 1792969108,
+        "narHash": "sha256-pDSWr7TQd9V9thIxlsqHzVGkuymDkckQpgaXLf7EuJ0=",
         "owner": "DeterminateSystems",
         "repo": "nix-src",
-        "rev": "9993a12bd434f653d5081b9b35f50900412fece8",
+        "rev": "240bbbcb10d3fc4bce957fafc1000b85ffb004d0",
         "type": "github"
       },
       "original": {
         "owner": "DeterminateSystems",
-        "ref": "v3.24.0",
+        "ref": "v3.24.1",
         "repo": "nix-src",
         "type": "github"
       }
@@ -586,16 +586,16 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1787962033,
-        "narHash": "sha256-u6z9VTZA4Kf3RkHQo9sQI7NI4Ei/uiU9vrMqOiwWP1Y=",
-        "rev": "c5c4a43b0e8056328ec4529f735cabdb8f1942bb",
-        "revCount": 1012930,
+        "lastModified": 1792949843,
+        "narHash": "sha256-kqilDNgied/b97sKLUjXlRzmRvP2nDZKLBJ6SnA3Qz0=",
+        "rev": "d176bec6d3f7dc613eb18ae8cec9397610ef826f",
+        "revCount": 1017174,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.2605.1012930%2Brev-c5c4a43b0e8056328ec4529f735cabdb8f1942bb/01a053c0-7061-7382-b001-102e9148a5b5/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/DeterminateSystems/nixpkgs-2605-mirror-staging-next/0.2605.1017174%2Brev-d176bec6d3f7dc613eb18ae8cec9397610ef826f/01a17516-2348-7af2-a0bb-e270a3fd61b5/source.tar.gz"
       },
       "original": {
         "type": "tarball",
-        "url": "https://flakehub.com/f/NixOS/nixpkgs/0.2605"
+        "url": "https://flakehub.com/f/DeterminateSystems/nixpkgs-2605-mirror-staging-next/%3D0.2605.1017174"
       }
     },
     "nixpkgs_3": {
@@ -692,15 +692,15 @@
         "treefmt": "treefmt"
       },
       "locked": {
-        "lastModified": 1792452330,
-        "narHash": "sha256-eMvRp7WdK/5avhBZEbnEm67YnPYMO0/Z++m7t1Culfw=",
-        "owner": "blackfan321",
+        "lastModified": 1792519569,
+        "narHash": "sha256-HeJIM64ltPtBBE+6cR8W5zsZKrLUVN19SUxeATSiT+Q=",
+        "owner": "daluca",
         "repo": "proton-ge-overlay",
-        "rev": "ce8882f00a8e65042e9dce838e4a35200a7c4536",
+        "rev": "e44902bf4095703663f9b7ec6b4060a78e02426e",
         "type": "github"
       },
       "original": {
-        "owner": "blackfan321",
+        "owner": "daluca",
         "repo": "proton-ge-overlay",
         "type": "github"
       }
@@ -826,8 +826,8 @@
       },
       "original": {
         "owner": "blackfan321",
+        "ref": "0.4.3",
         "repo": "steam-platform-stats",
-        "rev": "392a75f5f97821afe3d16c9d9641aed854921723",
         "type": "github"
       }
     },
@@ -972,18 +972,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1792883371,
-        "narHash": "sha256-nsbpg8pT6iJ8h6qaykoaZ1mvGo9jsaD5YtS76jB8nQE=",
-        "ref": "feat/modular-flake",
-        "rev": "991d82e7c37d29e2f67674479bb8b6b1c50ef8fe",
-        "revCount": 19,
+        "lastModified": 1792954691,
+        "narHash": "sha256-h09UsxhBNpIzfstEGRg0/FkyY/Tpp9Gv9pNx382wIAM=",
+        "ref": "refs/heads/main",
+        "rev": "09df0de094971642bc440095f9e293f275c16d18",
+        "revCount": 29,
         "type": "git",
-        "url": "ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git"
+        "url": "ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git"
       },
       "original": {
-        "ref": "feat/modular-flake",
         "type": "git",
-        "url": "ssh://git@gitea.apollo-kitten.space:359/kolinahira/voxcribe.git"
+        "url": "ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git"
       }
     },
     "wfetch": {
