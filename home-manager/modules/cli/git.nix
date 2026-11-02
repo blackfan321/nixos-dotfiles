@@ -27,13 +27,14 @@ in
     };
 
     includes = [
-      # Work config
       {
+        # Work config
         condition = "gitdir:~/Projects/UGSK/";
         contents = {
           user.name = ugsk.name;
           user.email = ugsk.email;
           user.signingKey = ugsk.signingKey;
+          core.sshCommand = "ssh -i ~/.ssh/ugsk";
         };
       }
       {

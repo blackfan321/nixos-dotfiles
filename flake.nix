@@ -70,7 +70,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka?ref=v0.32.0";
+      url = "github:nklmilojevic/sofka?ref=v0.34.0";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -87,10 +87,21 @@
       inputs.git-hooks.follows = "git-hooks";
       inputs.import-tree.follows = "import-tree";
     };
+    voxcribe = {
+      url = "git+ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
+    };
+    horizon-launcher = {
+      url = "github:Granddave/horizon-launcher.nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # ── my own flakes ──
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix?ref=3.75.56";
+      url = "github:blackfan321/express-messenger-nix?ref=3.76.74";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -117,13 +128,6 @@
     nautilus-open-in-zed = {
       url = "github:blackfan321/nautilus-open-in-zed";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    voxcribe = {
-      url = "git+ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.flake-parts.follows = "flake-parts";
-      inputs.git-hooks.follows = "git-hooks";
-      inputs.import-tree.follows = "import-tree";
     };
 
     # ── nixpkgs patches ──
