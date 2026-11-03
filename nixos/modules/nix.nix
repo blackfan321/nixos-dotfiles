@@ -31,7 +31,4 @@
     LimitSTACK = lib.mkOverride 75 "64M";
     TasksMax = lib.mkOverride 75 1048576;
   };
-
-  # drop useless "NixOS Manual" desktop shortcut
-  documentation.nixos.enable = false;
 }
