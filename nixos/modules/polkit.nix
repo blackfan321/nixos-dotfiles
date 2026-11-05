@@ -1,11 +1,11 @@
 { pkgs, ... }:
 
 {
-  # GNOME app.slice processes have no logind session, so force the auth dialog
+  # force authentication for KeePassXC database unlock
   security.polkit.extraConfig = ''
     polkit.addRule(function(action, subject) {
       if (action.id === "org.keepassxc.KeePassXC.unlockDatabase") {
-        return polkit.Result.AUTH_SELFAUTH_SELFAUTH_SELF;
+        return polkit.Result.AUTH_SELF;
       }
     });
   '';
