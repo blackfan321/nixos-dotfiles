@@ -19,13 +19,7 @@
     };
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    ## https://github.com/NixOS/nixpkgs/issues/410814
-    problems.handlers."gtk+".broken = "warn";
-  };
-
-  # detsys daemon defaults
+  # detsys nix daemon defaults
   systemd.services.nix-daemon.serviceConfig = {
     LimitNOFILE = lib.mkOverride 75 1048576;
     LimitSTACK = lib.mkOverride 75 "64M";

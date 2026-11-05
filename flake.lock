@@ -404,21 +404,30 @@
     },
     "loop-messenger": {
       "inputs": {
+        "flake-parts": [
+          "flake-parts"
+        ],
+        "git-hooks": [
+          "git-hooks"
+        ],
+        "import-tree": [
+          "import-tree"
+        ],
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1786574101,
-        "narHash": "sha256-wyIdLTcIoLBHq5ZQQlGCmGfRtF46hZ56Qqn35tLOw2k=",
+        "lastModified": 1793909733,
+        "narHash": "sha256-cG86cA0VDgpIl1LTTblc23q9SKIV6yEL6xEnaSjNu1I=",
         "owner": "blackfan321",
         "repo": "loop-messenger-nix",
-        "rev": "ed4f108390573be590d55992e8c9d7db2fb2f372",
+        "rev": "01ff3e726c6e2800f94293588c280c2545c19e2f",
         "type": "github"
       },
       "original": {
         "owner": "blackfan321",
-        "ref": "6.0.3",
+        "ref": "6.0.4",
         "repo": "loop-messenger-nix",
         "type": "github"
       }

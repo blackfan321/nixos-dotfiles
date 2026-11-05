@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  defaultProton = "GE-Proton11-11";
+  defaultProton = "GE-Proton11-12";
   inherit (import ./_wrappers.nix { inherit pkgs; }) hdrHook;
 in
 {

@@ -108,8 +108,11 @@
       inputs.import-tree.follows = "import-tree";
     };
     loop-messenger = {
-      url = "github:blackfan321/loop-messenger-nix?ref=6.0.3";
+      url = "github:blackfan321/loop-messenger-nix?ref=6.0.4";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
     };
     ktalk = {
       url = "github:blackfan321/ktalk-nix?ref=3.7.1";
