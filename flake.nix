@@ -94,10 +94,10 @@
       inputs.git-hooks.follows = "git-hooks";
       inputs.import-tree.follows = "import-tree";
     };
-    horizon-launcher = {
-      url = "github:Granddave/horizon-launcher.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # horizon-launcher = {
+    #   url = "github:Granddave/horizon-launcher.nix";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # ── my own flakes ──
     express-messenger = {

@@ -1,11 +1,9 @@
-{ pkgs, ... }:
-
 {
-  services.scx = {
+  services.scx-loader = {
     enable = true;
-    package = pkgs.scx.rustscheds;
-
-    scheduler = "scx_lavd";
-    extraArgs = [ "--autopower" ];
+    config = {
+      default_sched = "scx_lavd";
+      default_mode = "Auto";
+    };
   };
 }

@@ -1,9 +1,9 @@
-{ inputs, pkgs, system, ... }:
+{ pkgs, ... }:
 
 {
   home.packages = with pkgs; [
     vintagestory
     protonplus
-    inputs.horizon-launcher.packages.${system}.default
+    # inputs.horizon-launcher.packages.${system}.default
   ];
 }
