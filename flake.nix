@@ -36,7 +36,7 @@
     };
     ncro = {
       url = "github:manic-systems/ncro?ref=v2.4.0";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # don't follow nixpkgs — build with ncro's own pinned toolchain
     };
     nix-update-git = {
       url = "github:yuxqiu/nix-update-git?ref=v0.7.0";
@@ -115,11 +115,14 @@
       inputs.import-tree.follows = "import-tree";
     };
     ktalk = {
-      url = "github:blackfan321/ktalk-nix?ref=3.7.1";
+      url = "github:blackfan321/ktalk-nix?ref=3.8.0";
       inputs.nixpkgs.follows = "nixpkgs";
+      inputs.flake-parts.follows = "flake-parts";
+      inputs.git-hooks.follows = "git-hooks";
+      inputs.import-tree.follows = "import-tree";
     };
     steam-platform-stats = {
-      url = "github:blackfan321/steam-platform-stats?ref=0.4.3";
+      url = "github:blackfan321/steam-platform-stats?ref=main";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -134,10 +137,10 @@
     };
 
     # ── nixpkgs patches ──
-    # nixpkgs-patch-throne-1-3-1 = {
-    #   url = "https://github.com/NixOS/nixpkgs/pull/566708.diff";
-    #   flake = false;
-    # };
+    nixpkgs-patch-anki-tomlkit = {
+      url = "https://github.com/NixOS/nixpkgs/pull/584713.diff";
+      flake = false;
+    };
   };
 
   outputs =
