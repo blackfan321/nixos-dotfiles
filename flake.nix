@@ -60,17 +60,13 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
     };
-    steamfetch = {
-      url = "github:unhappychoice/steamfetch?ref=v0.5.6";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     prism-launcher = {
       url = "github:qacow37/prismnix";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka?ref=v0.34.0";
+      url = "github:nklmilojevic/sofka?ref=v0.37.0";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -88,7 +84,7 @@
       inputs.import-tree.follows = "import-tree";
     };
     voxcribe = {
-      url = "git+ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git";
+      url = "git+ssh://git@gitea.apollo-kitten.space:359/voxcribe/voxcribe.git?ref=refs/tags/v0.5.0";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -101,7 +97,7 @@
 
     # ── my own flakes ──
     express-messenger = {
-      url = "github:blackfan321/express-messenger-nix?ref=3.76.74";
+      url = "github:blackfan321/express-messenger-nix?ref=3.77.74";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-parts.follows = "flake-parts";
       inputs.git-hooks.follows = "git-hooks";
@@ -137,10 +133,10 @@
     };
 
     # ── nixpkgs patches ──
-    nixpkgs-patch-anki-tomlkit = {
-      url = "https://github.com/NixOS/nixpkgs/pull/584713.diff";
-      flake = false;
-    };
+    # nixpkgs-patch-anki-tomlkit = {
+    #  url = "https://github.com/NixOS/nixpkgs/pull/584713.diff";
+    #  flake = false;
+    #};
   };
 
   outputs =

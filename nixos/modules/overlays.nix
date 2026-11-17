@@ -17,6 +17,11 @@ let
       nix = inputs.detsys-nix.packages.${prev.system}.default;
     };
 
+     # use detsys nix instead of vanilla one
+    nix-direnv = prev.nix-direnv.override {
+      nix = inputs.detsys-nix.packages.${prev.system}.default;
+    };
+
     # CachyOS patch: PPD switches scx_loader modes on GNOME power profile change
     # https://github.com/CachyOS/CachyOS-PKGBUILDS/tree/master/power-profiles-daemon
     power-profiles-daemon = prev.power-profiles-daemon.overrideAttrs (old: {
