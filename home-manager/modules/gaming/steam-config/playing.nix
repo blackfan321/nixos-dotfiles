@@ -1,7 +1,7 @@
 { pkgs, ... }:
 
 let
-  defaultProton = "GE-Proton11-12";
+  defaultProton = "GE-Proton11-14";
   inherit (import ./_wrappers.nix { inherit pkgs; }) hdrHook;
 in
 {
@@ -76,6 +76,17 @@ in
       env = {
         PROTON_ENABLE_WAYLAND = "1";
         DXVK_FRAME_RATE = "120";
+      };
+      wrappers = [ "gamemoderun" ];
+    };
+
+    "Black Mesa" = {
+      id = 362890;
+      compatTool = defaultProton;
+      env = {
+        PROTON_ENABLE_WAYLAND = "1";
+        PROTON_FORCE_LARGE_ADDRESS_AWARE = "1";
+        PROTON_USE_WOW64 = "1";
       };
       wrappers = [ "gamemoderun" ];
     };

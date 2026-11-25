@@ -6,7 +6,7 @@
       url = "github:nixos/nixpkgs?ref=nixos-unstable";
     };
     detsys-nix = {
-      url = "github:DeterminateSystems/nix-src?ref=v3.24.2";
+      url = "github:DeterminateSystems/nix-src?ref=v3.24.3";
     };
     flake-parts = {
       url = "github:hercules-ci/flake-parts";
@@ -66,7 +66,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     sofka = {
-      url = "github:nklmilojevic/sofka?ref=v0.37.0";
+      url = "github:nklmilojevic/sofka?ref=v0.38.0";
       # don't follow nixpkgs to use the cache
       inputs.home-manager.follows = "home-manager";
     };
@@ -90,10 +90,11 @@
       inputs.git-hooks.follows = "git-hooks";
       inputs.import-tree.follows = "import-tree";
     };
-    # horizon-launcher = {
-    #   url = "github:Granddave/horizon-launcher.nix";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    hex = {
+      url = "github:anomalyco/hex?ref=v3.4.0";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
 
     # ── my own flakes ──
     express-messenger = {

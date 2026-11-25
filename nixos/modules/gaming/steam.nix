@@ -8,7 +8,7 @@
     package = pkgs.steam;
 
     extraCompatPackages = with pkgs; [
-      GE-Proton11-12
+      GE-Proton11-14
     ];
 
     protontricks = {

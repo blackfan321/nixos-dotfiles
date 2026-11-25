@@ -17,9 +17,9 @@ in
 
       inherit resolution;
 
-      extraInstallCommands = ''
-        sed -i 's|^/+NixOS default profile$|/+NixOS|' /boot/limine/limine.conf
-      '';
+      # extraInstallCommands = ''
+      #   sed -i 's|^/+NixOS default profile$|/+NixOS|' /boot/limine/limine.conf
+      # '';
 
       additionalFiles = {
         "efi/memtest86/BOOTX64.efi" = "${pkgs.memtest86-efi}/BOOTX64.efi";
