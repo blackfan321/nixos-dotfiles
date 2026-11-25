@@ -23,6 +23,13 @@ in
               inherit inputs username system;
             };
             backupFileExtension = "hm-bak";
+            sharedModules = [
+              inputs.hex.homeManagerModules.hex
+              inputs.steam-config-nix.homeModules.default
+              inputs.zen-browser.homeModules.beta
+              inputs.prism-launcher.homeModules.prismnix
+              inputs.sofka.homeManagerModules.default
+            ];
             users.${username} = "${inputs.self}/home-manager/home.nix";
           };
         }

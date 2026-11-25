@@ -11,7 +11,10 @@
       warn-dirty = false;
       nix-path = [ "nixpkgs=flake:nixpkgs" ];
       use-xdg-base-directories = true;
-      experimental-features = [ "cgroups" ];
+      experimental-features = [
+        "cgroups"
+        "flakes"  # not needed by detsys nix (on by default), kept for nixd
+      ];
       use-cgroups = true;
       # detsys-only features
       eval-cores = 0;

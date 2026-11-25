@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 
 let
   iris = pkgs.prismnix.mkModrinthPkg {
@@ -13,8 +13,6 @@ let
   };
 in
 {
-  imports = [ inputs.prism-launcher.homeModules.prismnix ];
-
   programs.prismnix = {
     enable = true;
     package = pkgs.prismlauncher;
